@@ -1,0 +1,4 @@
+DEN = {
+    color = rgb { 35 75 40 }
+	color_ui = rgb { 10 80 15 }
+}
