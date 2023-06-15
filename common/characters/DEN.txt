@@ -1,0 +1,95 @@
+characters = {
+	DNN_insanegorey = {
+		name = "Insanegorey" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+
+    DNN_muller ={
+		name="Muller"
+		advisor={
+			slot = high_command
+			idea_token = DNN_muller_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			cost = -1
+		}
+		portraits={
+			army={
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+	}
+
+    DNN_miah ={
+		name="Miah"
+		advisor={
+			slot = high_command
+			idea_token = DNN_miah_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			cost = -1
+		}
+		portraits={
+			army={
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+	}
+
+    DNN_killeritch ={
+		name="Killeritch"
+		advisor={
+			slot = high_command
+			idea_token = DNN_killeritch_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			cost = -1
+		}
+		portraits={
+			army={
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+	}
+
+    DNN_flimsypike ={
+		name="FlimsyPike"
+		advisor={
+			slot = high_command
+			idea_token = DNN_flimsypike_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			cost = -1
+		}
+		portraits={
+			army={
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+	}
+}

@@ -6,8 +6,8 @@ state={
 	
 	state_category = town
 	history={
-		owner = DEN
-		add_core_of = DEN
+		owner = DNN
+		add_core_of = DNN
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
