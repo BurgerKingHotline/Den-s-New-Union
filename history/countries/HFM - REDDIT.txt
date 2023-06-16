@@ -1,4 +1,4 @@
-﻿capital = 570
+﻿capital = 40
 
 recruit_character = HFM_insanegorey
 
