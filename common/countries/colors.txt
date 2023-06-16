@@ -22,3 +22,7 @@ XUA = {
 	color = rgb { 20 20 20 }
 	color_ui = rgb { 20 20 20 }
 }
+CSP = {
+	color = rgb { 75 0 130 }
+	color_ui = rgb { 75 0 130 }
+}
