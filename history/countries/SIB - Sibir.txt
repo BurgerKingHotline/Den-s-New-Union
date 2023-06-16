@@ -1,9 +1,9 @@
-capital = 653
+capital = 403
 set_research_slots = 3
 set_stability = 0.43
 set_war_support = 0.22
 starting_train_buffer = 3.0
-
+set_oob = "SIB_1936"
 # BORING ASS TECH SHIT BEGINNING
 set_technology = {
 	infantry_weapons = 1

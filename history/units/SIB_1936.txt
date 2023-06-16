@@ -1,0 +1,91 @@
+﻿division_template = {
+	name = "Siberian Riflemen"
+
+	#division_names_group = AFG_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Militia"				# Militia units (lowest experience, oldest equipment)
+
+	#division_names_group = AFG_GAR_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Sverdlovsk Division"
+		location = 1821
+		division_template = "Siberian Riflemen"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Chyelabinsk Division"
+
+		location = 9292
+		division_template = "Siberian Riflemen"
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Tyumen Division"
+
+		location = 4824
+		division_template = "Siberian Riflemen"
+		start_equipment_factor = 0.3
+
+	}
+
+
+
+
+
+	division = {
+		name = "Tobolsk Militia"
+		location = 1659
+		division_template = "Militia"
+		start_equipment_factor = 0.2
+	}	
+	division = {
+		name = "Salekhard Militia"
+		location = 1684
+		division_template = "Militia"
+		start_equipment_factor = 0.2
+	}	
+	division = {
+		name = "Surgut Militia"
+		location = 1726
+		division_template = "Militia"
+		start_equipment_factor = 0.2
+	}	
+
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SIB"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

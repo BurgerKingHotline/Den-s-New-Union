@@ -318,18 +318,161 @@ focus_tree = {
 			398 = { add_claim_by = SIB }
 			581 = { add_claim_by = SIB }
 			573 = { add_claim_by = SIB }
+####################################################################################################################################################################################
+			#create_wargoal = {
+			#	type = take_state_focus
+			#	target = TAG
+			#	generator = { 581 }
+			#}
 
 			#create_wargoal = {
 			#	type = take_state_focus
 			#	target = TAG
-			#	generator = { 573 581 398 }
+			#	generator = { 573 }
 			#}
 
 			#create_wargoal = {
 			#	type = take_state_focus
-			#	target = DNN
-			#	generator = { 571 578 570}
+			#	target = TAG
+			#	generator = { 398 }
 			#}
+####################################################################################################################################################################################
+		}
+	}
+	focus = {
+		id = SIB_push_on
+		icon = GFX_goal_generic_major_war
+
+		prerequisite = { focus = SIB_retake_urals }
+		mutually_exclusive = { focus = SIB_fortify_urals }
+		x = -1
+		y = 1
+		relative_position_id = SIB_retake_urals
+		cost = 10
+		available = {
+			has_army_manpower = {
+				size > 230000
+			}
+		}
+		completion_reward = {
+			398 = { add_core_of = SIB }
+			581 = { add_core_of = SIB }
+			573 = { add_core_of = SIB }
+		}
+	}
+	focus = {
+		id = SIB_fortify_urals
+		icon = GFX_goal_generic_construct_military
+
+		prerequisite = { focus = SIB_retake_urals }
+		mutually_exclusive = { focus = SIB_push_on }
+		x = 1
+		y = 1
+		relative_position_id = SIB_retake_urals
+		cost = 5
+		available = {
+			398 = { is_fully_controlled_by = SIB }
+			573 = { is_fully_controlled_by = SIB }
+			581 = { is_fully_controlled_by = SIB }
+		}
+		completion_reward = {
+			398 = {
+				add_core_of = SIB
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7824
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12659
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10216
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7375
+					instant_build = yes
+				}
+			}
+			581 = {
+				add_core_of = SIB
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10551
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10677
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12502
+					instant_build = yes
+				}
+			}
+			573 = {
+				add_core_of = SIB
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11307
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4758
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7320
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11223
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10329
+					instant_build = yes
+				}
+			}
+			579 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 13076
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12157
+					instant_build = yes
+				}
+			}
 		}
 	}
 }

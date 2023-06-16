@@ -23,6 +23,10 @@
  SIB_irredentism_desc:0 "Our state once held all sides of the urals, and every tributary of the Ob river. These territories are ours by historical right."
  SIB_retake_urals:0 "Retake the Urals"
  SIB_retake_urals_desc:0 "Our natural defense that kept the russians at bay has fallen under hands of opposing forces, if we wish to maintain our independence in the future we will need to defend ourselves from the west."
+ SIB_push_on:0 "Push On"
+ SIB_push_on_desc:0 "We are on a roll into the plains west of the Urals, our conquest will be endless!"
+ SIB_fortify_urals:0 "Consolidate the Western Defenses"
+ SIB_fortify_urals_desc:0 "Sibir is not meant to go west, for we would be no better than the Kossacks who once destroyed us."
 
  #ideas
  SIB_balanced_spending_1:0 "Nearing Bankruptcy"
@@ -33,3 +37,5 @@
  SIB_balanced_spending_6:0 "Underspending"
  SIB_balanced_spending_7:0 "Large Underspending"
  SIB_balanced_spending_8:0 "Very Large Underspending"
+
+ VICTORY_POINTS_1726:0 "Surgut"
