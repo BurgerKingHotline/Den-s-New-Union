@@ -1,0 +1,29 @@
+﻿l_english:
+ SIB_fascism:0 "New Khanate of Sibir"
+ SIB_fascism_DEF:0 "the Khanate of Sibir"
+ SIB_democratic:0 "Sibir Republic"
+ SIB_democratic_DEF:0 "the Sibir Republic"
+ SIB_neutrality:1 "Sibir"
+ SIB_neutrality_DEF:1 "Sibir"
+ SIB_communism:0 "Sibir Soviet Socialist Republic"
+ SIB_communism_DEF:0 "Soviet Sibir"
+
+ #focuses
+ SIB_infra_one:0 "Railways To The Coast"
+ SIB_infra_one_desc:0 ""
+ SIB_infra_two:0 "Create Military Infrastructure"
+ SIB_infra_two_desc:0 ""
+ SIB_infra_three:0 "Industrial Investments"
+ SIB_infra_three_desc:0 ""
+ SIB_infra_four:0 "Invest in Surgut"
+ SIB_infra_four_desc:0 ""
+
+ #ideas
+ SIB_balanced_spending_1:0 "Nearing Bankruptcy"
+ SIB_balanced_spending_2:0 "Massive Overspending"
+ SIB_balanced_spending_3:0 "Large Overspending"
+ SIB_balanced_spending_4:0 "Overspending"
+ SIB_balanced_spending_5:0 "Balanced Spending"
+ SIB_balanced_spending_6:0 "Underspending"
+ SIB_balanced_spending_7:0 "Large Underspending"
+ SIB_balanced_spending_8:0 "Very Large Underspending"

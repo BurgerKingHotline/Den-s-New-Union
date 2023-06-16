@@ -1,0 +1,148 @@
+ideas = {
+	country = {
+
+		SIB_balanced_spending_1 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				stability_weekly = -0.008
+				drift_defence_factor = -0.6
+				political_power_factor = -0.4
+			}
+		}
+
+		SIB_balanced_spending_2 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_weekly = -0.006
+				drift_defence_factor = -0.45
+				political_power_factor = -0.3
+			}
+		}
+
+		SIB_balanced_spending_3 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.004
+				drift_defence_factor = -0.3
+				political_power_factor = -0.2
+			}
+		}
+
+		SIB_balanced_spending_4 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_weekly = -0.002
+				drift_defence_factor = -0.15
+				political_power_factor = -0.1
+			}
+		}
+
+		SIB_balanced_spending_5 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				#consumer_goods_factor = -0.1
+				#stability_weekly = -0.002
+				#drift_defence_factor = -0.1
+			}
+		}
+
+		SIB_balanced_spending_6 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.0015
+				#drift_defence_factor = -0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		SIB_balanced_spending_7 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.2
+				stability_weekly = 0.003
+				#drift_defence_factor = -0.1
+				political_power_factor = 0.2
+			}
+		}
+
+		SIB_balanced_spending_8 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SIB
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.3
+				stability_weekly = 0.004
+				#drift_defence_factor = -0.1
+				political_power_factor = 0.3
+			}
+		}
+
+	}
+}

@@ -3,10 +3,13 @@ state = {
 	id = 824
 	name = "STATE_824" # Yamalia
 	manpower = 21974
+
 	
 	state_category = pastoral
 
 	history = {
+		owner = SIB
+		add_core_of = SIB
 		buildings = {
 			infrastructure = 1
 		}

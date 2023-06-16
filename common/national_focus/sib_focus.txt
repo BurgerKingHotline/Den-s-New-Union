@@ -1,0 +1,227 @@
+focus_tree = {
+	id = sib_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SIB
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+    focus = {
+		id = SIB_infra_one
+		icon = GFX_goal_generic_construct_infrastructure
+
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 0
+		#relative_position_id =
+
+		cost = 5
+		available = {
+			#
+		}
+		completion_reward = {
+			SIB_spending_bad = yes
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SIB
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 4824 4754 1659 7867 10620 7768 1664 1684 4669}
+				start_province = 4824
+				target_province = 4669
+			}
+			579 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			824 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			577 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			580 = {
+				#add_extra_state_shared_building_slots = 2
+				#add_building_construction = {
+				#	type = industrial_complex
+				#	level = 1
+				#	instant_build = yes
+				#}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SIB_infra_two
+		icon = GFX_goal_generic_construct_mil_factory
+
+		prerequisite = { focus = SIB_infra_one }
+		relative_position_id = SIB_infra_one
+		#mutually_exclusive = { focus =  }
+		x = -2
+		y = 1
+
+		cost = 5
+		available = {
+			#
+		}
+		completion_reward = {
+			SIB_spending_bad = yes
+			580 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 1659
+					instant_build = yes
+				}
+			}
+			579 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 4669
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SIB_infra_three
+		icon = GFX_goal_generic_construct_civ_factory
+
+		prerequisite = { focus = SIB_infra_one }
+		relative_position_id = SIB_infra_one
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+
+		cost = 10
+		available = {
+			#
+		}
+		completion_reward = {
+			SIB_spending_bad = yes
+			579 = {
+				add_manpower = 3244
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			580 = {
+				add_manpower = 622
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SIB_infra_four
+		icon = GFX_goal_generic_oil_refinery
+
+		prerequisite = { focus = SIB_infra_one }
+		relative_position_id = SIB_infra_one
+		#mutually_exclusive = { focus =  }
+		x = 2
+		y = 1
+
+		cost = 10
+		available = {
+			#
+		}
+		completion_reward = {
+			SIB_spending_bad = yes
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SIB
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 7867 12602 4817 12672 1726 }
+				start_province = 7867
+				target_province = 1726
+			}
+			577 = {
+				add_manpower = 5744
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 1726
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = oil
+				amount = 22
+				state = 577
+			}
+		}
+	}
+}
