@@ -1,0 +1,15 @@
+characters = {
+	TOM_Emergency_Committee = {
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TOM_Directory"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = { }
+			expire = "2024.1.1.1"
+			id = -1
+		}
+	}
+}

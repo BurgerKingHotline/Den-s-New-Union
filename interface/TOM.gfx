@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_TOM_Directory"
+		texturefile = "gfx/leaders/TOM/Portrait_TOM_Directory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_TOM_Ukrainian_Resistance"
+		texturefile = "gfx/interface/ideas/TOM_Ukrainian_Resistance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_TOM_Chaos"
+		texturefile = "gfx/interface/ideas/TOM_Chaos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_TOM_Opening"
+		texturefile = "gfx/event_pictures/report_event_TOM_Opening.dds"
+	}
+}

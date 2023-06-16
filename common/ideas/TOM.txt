@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		TOM_Chaos = {
+			allowed = {
+				tag = TOM
+			}
+		}
+		TOM_Ukrainian_Resistance = {
+			allowed = {
+				tag = TOM
+			}
+		}
+	}
+}

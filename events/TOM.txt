@@ -1,0 +1,14 @@
+﻿add_namespace = TOM_Opening
+
+# Opening event
+country_event = {
+	id = TOM_Opening.1
+	title = TOM_Opening.1.title
+	desc = TOM_Opening.1.desc
+	picture = GFX_report_event_TOM_Opening
+	fire_only_once = yes
+
+	option = {
+		name = TOM_Opening.1.a
+	}
+}
