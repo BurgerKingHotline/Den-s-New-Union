@@ -1,0 +1,36 @@
+spriteTypes = {	
+
+	# Ideas 
+
+	SpriteType = {
+		name = "GFX_idea_CIR_circassian_resilience"
+		texturefile = "gfx/interface/ideas/CIR_circassian_resilience.dds"
+	}	
+	SpriteType = {
+		name = "GFX_idea_CIR_berzegs_legacy"
+		texturefile = "gfx/interface/ideas/CIR_berzegs_legacy.dds"
+	}
+	
+	# Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_pshemakho_kotsev"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_pshemakho_kotsev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_ismail_hakki_berkok"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_ ismail_hakki_berkok.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_cemil_cahit_toydemir"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_cemil_cahit_toydemir.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_cerkes_ethem"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_cerkes_ethem.dds"
+	}
+	
+}

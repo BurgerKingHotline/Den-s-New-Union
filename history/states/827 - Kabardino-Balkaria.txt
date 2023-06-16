@@ -6,10 +6,13 @@ state = {
 	}
 
 	history = {
+		owner = CIR
 		buildings = {
 			infrastructure = 2
 
 		}
+		add_core_of = CIR
+		add_core_of = KBK
 		victory_points = {
 			11614 1
 		}
