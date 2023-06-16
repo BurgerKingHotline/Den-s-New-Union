@@ -9,6 +9,8 @@
  SIB_communism_DEF:0 "Soviet Sibir"
 
  #focuses
+ SIB_mine_urals:0 "Mine The Urals"
+ SIB_mine_urals_desc:0 ""
  SIB_infra_one:0 "Railways To The Coast"
  SIB_infra_one_desc:0 ""
  SIB_infra_two:0 "Create Military Infrastructure"
@@ -17,6 +19,10 @@
  SIB_infra_three_desc:0 ""
  SIB_infra_four:0 "Invest in Surgut"
  SIB_infra_four_desc:0 ""
+ SIB_irredentism:0 "Sibir Irredentism"
+ SIB_irredentism_desc:0 "Our state once held all sides of the urals, and every tributary of the Ob river. These territories are ours by historical right."
+ SIB_retake_urals:0 "Retake the Urals"
+ SIB_retake_urals_desc:0 "Our natural defense that kept the russians at bay has fallen under hands of opposing forces, if we wish to maintain our independence in the future we will need to defend ourselves from the west."
 
  #ideas
  SIB_balanced_spending_1:0 "Nearing Bankruptcy"

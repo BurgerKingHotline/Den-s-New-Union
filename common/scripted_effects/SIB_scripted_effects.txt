@@ -66,42 +66,42 @@ SIB_spending_bad = {
 			add_idea = SIB_balanced_spending_7
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_7 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_7
 			add_idea = SIB_balanced_spending_6
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_6 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_6
 			add_idea = SIB_balanced_spending_5
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_5 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_5
 			add_idea = SIB_balanced_spending_4
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_4 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_4
 			add_idea = SIB_balanced_spending_3
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_3 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_3
 			add_idea = SIB_balanced_spending_2
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = SIB_balanced_spending_2 }
 		swap_ideas = {
 			remove_idea = SIB_balanced_spending_2
