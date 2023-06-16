@@ -7,6 +7,33 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
+			traits = { anti_communist }
+			expire = "3000.1.1.1"
+			id = -1
+		}
+	}
+	KRE_paavo_talvela = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\KRE\paavo_talvela.dds
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { fascist_militia_leader }
+			expire = "3000.1.1.1"
+			id = -1
+		}
+	}
+	KRE_pavel_prokkonen = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\KRE\pavel_prokkonen.dds
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { staunch_stalinist }
 			expire = "3000.1.1.1"
 			id = -1
 		}

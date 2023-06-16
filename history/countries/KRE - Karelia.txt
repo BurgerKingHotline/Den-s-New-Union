@@ -10,8 +10,8 @@ set_technology = {
 }
 
 recruit_character = KRE_jalmari_takkinen
-#recruit_character = KRE_paavo_talvela #fash
-#recruit_character = KRE_pavel_prokkonen #com
+recruit_character = KRE_paavo_talvela
+recruit_character = KRE_pavel_prokkonen
 
 
 
@@ -25,7 +25,9 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 65
+	fascism = 30
+	communism = 5
 }
 
 
