@@ -1,0 +1,32 @@
+﻿capital = 215
+
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = KRE_jalmari_takkinen
+#recruit_character = KRE_paavo_talvela #fash
+#recruit_character = KRE_pavel_prokkonen #com
+
+
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+
+
