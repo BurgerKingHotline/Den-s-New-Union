@@ -2,3 +2,7 @@ DNN = {
     color = rgb { 35 75 40 }
 	color_ui = rgb { 10 80 15 }
 }
+HFM = {
+    color = rgb { 75 60 35 }
+	color_ui = rgb { 75 55 10 }
+}

@@ -7,6 +7,7 @@ state={
 	state_category = town
 	history={
 		owner = DNN
+		add_core_of = HFM
 		add_core_of = DNN
 		buildings = {
 			infrastructure = 2

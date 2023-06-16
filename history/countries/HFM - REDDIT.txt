@@ -1,18 +1,6 @@
 ﻿capital = 570
 
-HFM = {
-	set_autonomy = {
-		target = DNN
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-
-recruit_character = DNN_insanegorey
-recruit_character = DNN_muller
-recruit_character = DNN_muller2
-recruit_character = DNN_miah
-recruit_character = DNN_killeritch
-recruit_character = DNN_flimsypike
+recruit_character = HFM_insanegorey
 
 set_research_slots = 3
 

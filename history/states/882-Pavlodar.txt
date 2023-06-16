@@ -10,6 +10,7 @@ state = {
 
 	history = {
 		owner = DNN
+		add_core_of = HFM
 		add_core_of = DNN
 		buildings = {
 			infrastructure = 2

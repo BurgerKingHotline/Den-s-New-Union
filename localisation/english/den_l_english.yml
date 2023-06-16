@@ -1,6 +1,12 @@
 ﻿l_english:
-DNN: "Modding Den"
-DNN_DEF: "Hoi4 Modding Den"
+DNN: "Hoi4 Modding Den"
+DNN_DEF: "the Hoi4 Modding Den"
 DNN_ADJ: "Denizen"
 
+HFM: "r/hoi4modding"
+HFM_DEF: "r/hoi4modding"
+HFM_ADJ: "Modder"
+
+
 VICTORY_POINTS_1860: "chat-chat-chat-chat-chat-chat-chat-chat"
+VICTORY_POINTS_2606: "admin-channel"

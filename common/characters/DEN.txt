@@ -21,7 +21,27 @@ characters = {
 			allowed = {
 				original_tag = DNN
 			}
-			cost = -1
+			can_be_fired = no
+		}
+		portraits={
+			army={
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+	}
+
+    DNN_muller2 ={
+		name="Muller"
+		advisor={
+			slot = political_advisor
+			idea_token = DNN_muller_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
 		}
 		portraits={
 			army={
@@ -41,7 +61,7 @@ characters = {
 			allowed = {
 				original_tag = DNN
 			}
-			cost = -1
+			can_be_fired = no
 		}
 		portraits={
 			army={
@@ -61,7 +81,7 @@ characters = {
 			allowed = {
 				original_tag = DNN
 			}
-			cost = -1
+			can_be_fired = no
 		}
 		portraits={
 			army={
@@ -81,7 +101,7 @@ characters = {
 			allowed = {
 				original_tag = DNN
 			}
-			cost = -1
+			can_be_fired = no
 		}
 		portraits={
 			army={

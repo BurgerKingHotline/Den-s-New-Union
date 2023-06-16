@@ -8,9 +8,11 @@ state={
 
 	history={
 		owner = DNN
+		add_core_of = HFM
 		add_core_of = DNN
 		victory_points = {
 			1860 10
+			12606 5
 		}
 		buildings = {
 			infrastructure = 2
