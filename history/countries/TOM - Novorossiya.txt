@@ -1,8 +1,9 @@
 capital = 137
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.15
 set_war_support = 0.3
 starting_train_buffer = 3.0
+load_oob = TOM
 
 # BORING ASS TECH SHIT BEGINNING
 set_technology = {
@@ -164,7 +165,7 @@ if = {
 }
 # BORING ASS TECH SHIT OVER
 
-set_convoys = 50
+set_convoys = 5
 
 add_ideas = {
 	TOM_Chaos
@@ -186,8 +187,3 @@ set_popularities = {
 	neutrality = 50
 }
 set_cosmetic_tag = TOM_Federation
-
-country_event = {
-	id = TOM_Opening.1
-	hours = 1
-}
