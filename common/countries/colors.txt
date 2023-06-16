@@ -10,3 +10,7 @@ TOM = {
     color = rgb { 40 75 45 }
 	color_ui = rgb { 40 75 45 }
 }
+KRE = {
+	color = rgb { 0 95 22 }
+	color_ui = rgb { 0 95 22 }
+}

@@ -1,0 +1,14 @@
+characters = {
+	KRE_jalmari_takkinen = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\KRE\jalmari_takkinen.dds
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "3000.1.1.1"
+			id = -1
+		}
+	}
+}
