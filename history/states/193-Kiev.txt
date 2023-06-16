@@ -7,6 +7,8 @@ state={
 	state_category = city
 
 	history={
+		owner = XUA
+		add_core_of = XUA
 		victory_points = {
 			3568 3
 		}
