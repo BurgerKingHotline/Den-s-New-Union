@@ -1,0 +1,7 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			country_event = TOM_Opening.1
+		}
+	}
+}

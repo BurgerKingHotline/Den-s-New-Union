@@ -1,0 +1,4 @@
+d_TOM_claim_dnipro_kharkov = {
+	add_state_claim = 221
+	add_state_claim = 226
+}

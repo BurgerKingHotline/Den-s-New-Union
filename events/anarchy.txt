@@ -1,0 +1,14 @@
+add_namespace = anarchy
+
+# Victory in war
+news_event = {
+	id = anarchy.1
+	title = anarchy.1.title
+	desc = anarchy.1.desc
+	picture = GFX_news_event_generic_read_write
+	fire_only_once = yes
+
+	option = {
+		name = anarchy.1.a
+	}
+}
