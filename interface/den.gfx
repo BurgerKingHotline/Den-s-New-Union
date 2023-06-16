@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_DEN_reddit"
+		texturefile = "gfx/DEN/ideas/reddit.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_chefjones"
+		texturefile = "gfx/DEN/characters/advisors/chef.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_divexz"
+		texturefile = "gfx/DEN/characters/advisors/dive.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_insanegorey"
+		texturefile = "gfx/DEN/characters/advisors/gorey.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_killeritch"
+		texturefile = "gfx/DEN/characters/advisors/killer.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_miah"
+		texturefile = "gfx/DEN/characters/advisors/miah.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_muller"
+		texturefile = "gfx/DEN/characters/advisors/muller.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_flimsypike"
+		texturefile = "gfx/DEN/characters/advisors/pike.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_DEN_empty"
+		texturefile = "gfx/DEN/characters/advisors/empty.dds"
+	}
+}		

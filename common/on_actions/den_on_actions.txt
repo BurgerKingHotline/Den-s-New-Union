@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            DNN = {
+                country_event = { id = DEN_moderator.1 days = 30 random_days = 30 }
+            }
+        }
+    }
+}

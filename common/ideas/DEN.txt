@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		DEN_reddit = {	
+			allowed = {
+				original_tag = DNN 
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1		
+			picture = DEN_reddit
+			modifier = {
+			}
+		}
+		DEN_muller_gone = {	
+			allowed = {
+				original_tag = DNN 
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1		
+			picture = DEN_
+			modifier = {
+			}
+		}
+    }
+}

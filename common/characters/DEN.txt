@@ -22,19 +22,8 @@ characters = {
 				original_tag = DNN
 			}
 			can_be_fired = no
+			cost = -1
 		}
-		portraits={
-			army={
-				small = "GFX_idea_generic_air_south_america_1"
-			}
-			civilian = {
-				large = GFX_portrait_Kirill_Bechvaya
-			}
-		}
-	}
-
-    DNN_muller2 ={
-		name="Muller"
 		advisor={
 			slot = political_advisor
 			idea_token = DNN_muller_advisor
@@ -42,13 +31,14 @@ characters = {
 				original_tag = DNN
 			}
 			can_be_fired = no
+			cost = -1
 		}
 		portraits={
 			army={
-				small = "GFX_idea_generic_air_south_america_1"
+				small = "GFX_advisor_DEN_muller"
 			}
 			civilian = {
-				large = GFX_portrait_Kirill_Bechvaya
+				large = GFX_advisor_DEN_muller
 			}
 		}
 	}
@@ -62,13 +52,23 @@ characters = {
 				original_tag = DNN
 			}
 			can_be_fired = no
+			cost = -1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = DNN_miah_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
 		}
 		portraits={
 			army={
-				small = "GFX_idea_generic_air_south_america_1"
+				small = "GFX_advisor_DEN_miah"
 			}
 			civilian = {
-				large = GFX_portrait_Kirill_Bechvaya
+				large = GFX_advisor_DEN_miah
 			}
 		}
 	}
@@ -82,13 +82,23 @@ characters = {
 				original_tag = DNN
 			}
 			can_be_fired = no
+			cost = -1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = DNN_killeritch_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
 		}
 		portraits={
 			army={
-				small = "GFX_idea_generic_air_south_america_1"
+				small = "GFX_advisor_DEN_killeritch"
 			}
 			civilian = {
-				large = GFX_portrait_Kirill_Bechvaya
+				large = GFX_advisor_DEN_killeritch
 			}
 		}
 	}
@@ -102,14 +112,129 @@ characters = {
 				original_tag = DNN
 			}
 			can_be_fired = no
+			cost = -1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = DNN_flimsypike_advisor
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
 		}
 		portraits={
 			army={
-				small = "GFX_idea_generic_air_south_america_1"
+				small = "GFX_advisor_DEN_flimsypike"
 			}
 			civilian = {
-				large = GFX_portrait_Kirill_Bechvaya
+				large = GFX_advisor_DEN_flimsypike
 			}
+		}
+	}
+
+
+
+    DNN_blank1 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = blank1
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
+		}
+	}
+    DNN_blank2 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = blank2
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
+		}
+	}
+    DNN_blank3 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = blank3
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
+		}
+	}
+    DNN_blank4 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = blank4
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
+		}
+	}
+    DNN_blank5 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = blank5
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
+		}
+	}
+    DNN_blank6 ={
+		name="-----"
+		portraits={
+			army={
+				small = "GFX_advisor_DEN_empty"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = blank6
+			allowed = {
+				original_tag = DNN
+			}
+			can_be_fired = no
+			cost = -1
 		}
 	}
 }

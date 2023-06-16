@@ -9,10 +9,26 @@ HFM = {
 
 recruit_character = DNN_insanegorey
 recruit_character = DNN_muller
-recruit_character = DNN_muller2
 recruit_character = DNN_miah
 recruit_character = DNN_killeritch
 recruit_character = DNN_flimsypike
+
+recruit_character = DNN_blank1
+add_ideas = blank1
+recruit_character = DNN_blank2
+add_ideas = blank2
+recruit_character = DNN_blank3
+add_ideas = blank3
+recruit_character = DNN_blank4
+add_ideas = blank4
+recruit_character = DNN_blank5
+add_ideas = blank5
+recruit_character = DNN_blank6
+add_ideas = blank6
+
+add_ideas = {
+	DEN_reddit
+}
 
 set_research_slots = 3
 

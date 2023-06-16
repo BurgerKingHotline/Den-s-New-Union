@@ -1,0 +1,19 @@
+add_namespace = DEN_moderator
+
+country_event = {
+	id = DEN_moderator.1 # bye bye muller
+	title = DEN_moderator.1.title
+	desc = DEN_moderator.1.desc
+	picture = GFX_
+	fire_only_once = yes
+
+	option = {
+		name = DEN_moderator.1.a
+        remove_ideas = {
+            DNN_muller_advisor
+        }
+        add_ideas = {
+            DEN_muller_gone
+        }
+	}
+}

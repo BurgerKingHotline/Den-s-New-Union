@@ -12,6 +12,8 @@ state={
 		add_core_of = DNN
 		victory_points = {
 			1860 10
+		}
+		victory_points = {
 			12606 5
 		}
 		buildings = {
