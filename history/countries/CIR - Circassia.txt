@@ -167,7 +167,7 @@ create_country_leader = {
 		interwar_artillery = 1
 
 		#doctrines
-		air_suCIRiority = 1
+		air_superiority = 1
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
@@ -188,8 +188,8 @@ create_country_leader = {
 		fuel_silos = 1
 		construction1 = 1
 		construction2 = 1
-		disCIRsed_industry = 1
-		disCIRsed_industry2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
 	if = {
 		limit = {
