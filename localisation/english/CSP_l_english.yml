@@ -1,0 +1,11 @@
+﻿l_english:
+  CSP:0 "Regnum Caspium"
+  CSP_DEF:0 "Regnum Caspium"
+  CSP_ADJ:0 "Regnum Caspium"
+
+  CSP_neutrality_party:0 "Legionary Junta"
+  CSP_democratic_party:0 "Opposition"
+
+  CSP_events.1.title:0 "A Roman Kingdom?"
+  CSP_events.1.desc:0 "Residents of Astrakhan, on the Caspian Sea, awoke to a strange reality. During the otherwise quiet night, anarchy had befallen upon the city, and indeed, the rest of the world. In this power vacuum, an armed organization claiming to be the successor to the great Roman Empire seized control over the northern Caspian coast. Though many are wary of their new impromptu rulers, others have readily embraced this new regime. Only time will tell what will come of the Legionary Junta."
+  CSP_events.1.a:0 "Glory to the Caspian Kingdom!"

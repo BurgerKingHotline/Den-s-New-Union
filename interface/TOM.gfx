@@ -18,4 +18,14 @@ spriteTypes = {
 		name = "GFX_report_event_TOM_Opening"
 		texturefile = "gfx/event_pictures/report_event_TOM_Opening.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_TOM_Go_Russian"
+		texturefile = "gfx/interface/goals/TOM_Go_Russian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_TOM_Go_Ukrainian"
+		texturefile = "gfx/interface/goals/TOM_Go_Ukrainian.dds"
+	}
 }

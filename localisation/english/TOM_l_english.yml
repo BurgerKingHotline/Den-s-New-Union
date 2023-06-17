@@ -1,18 +1,38 @@
 ﻿l_english:
+# Country Names
  TOM: "Novorossiya"
  TOM_DEF: "Novorossiya"
  TOM_ADJ: "Novorossiyan"
  TOM_Federation: "Russian Federation"
  TOM_Federation_DEF: "the Russian Federation"
  TOM_Federation_ADJ: "Russian Federation"
+ TOM_Free_Ukraine: "Free Republic of Ukraine"
+ TOM_Free_Ukraine_DEF: "the Free Republic of Ukraine"
+ TOM_Free_Ukraine_ADJ: "Free Republic of Ukraine"
 
+# Parties
+ TOM_neutrality_party: "United Russia"
+ TOM_neutrality_party_long: "United Russia"
+ TOM_communism_party: "Communist Party"
+ TOM_communism_party_long: "Communist Party of the Russian Federation"
+ TOM_fascism_party: "Liberal Democratic Party"
+ TOM_fascism_party_long: "Liberal Democratic Party of Russia"
+ TOM_democratic_party: "Resistance"
+ TOM_democratic_party_long: "Resistance"
+
+# Characters
  TOM_Emergency_Committee: "Emergency Committee"
+ TOM_Resistance_Executive_Council: "Resistance Executive Council"
 
+# Ideas
  TOM_Chaos: "Chaos"
  TOM_Ukrainian_Resistance: "Ukrainian Resistance"
 
- TOM_neutrality_party: "United Russia"
+# Focus tree
+ TOM_Glory_to_Ukraine: "Glory to Ukraine"
+ TOM_Unite_All_Russia: "Unite the All-Russian Nation"
 
+# Events
  TOM_Opening.1.title: "Big Trouble in Little Russia"
  TOM_Opening.1.desc: "The people of, what at the very least once was, Southern and Eastern Ukraine woke up to mass hysteria and confusion. People in the Crimean, Kherson, Zaporozhye, Donetsk and Luhansk regions under control of the Russian Army woke up to what must be an alternate dimension. Russia and Ukraine divided among warlord forces and independent republics in an anarchic order. Not just Russia and Ukraine for that matter, the whole world completely foreign to what it was the day before. Was this an act of god? A science experiment gone wrong? Had the matrix corrupted and sent them to an alternate dimension? Nobody knows. And, in all likelyhood, nobody will know.\n\nCut off from Moscow, the Heads and Governors of the five regions have formed an Emergency Committee, also populated with military officials. Political chaos is bound to set in, not just from the Ukrainian resistance that also see themselves isolated from their nation but from the inevitable radical movements that will wish to take matters into their own hands."
  TOM_Opening.1.a: "There goes my plans..."

@@ -1,0 +1,58 @@
+characters = {
+	NCR_diego = {
+		name = "William Bedford Diego"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_diego
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
+			expire = "2114.1.1.1"
+			id = -1
+		}
+	}
+	NCR_shodan= {
+		name = "SHODAN"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_shodan
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
+			expire = "2114.1.1.1"
+			id = -1
+		}
+	}
+	NCR_the_many= {
+		name = "The Many"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_the_many
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "2114.1.1.1"
+			id = -1
+		}
+	}
+	NCR_khieu= {
+		name = "Khieu Samphan"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_khieu
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { }
+			expire = "2114.1.1.1"
+			id = -1
+		}
+	}
+}

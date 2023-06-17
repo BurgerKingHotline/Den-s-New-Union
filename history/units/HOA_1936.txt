@@ -1,0 +1,48 @@
+division_template = {
+	name = "Neighborhood Watch"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		division_template = "Neighborhood Watch"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.4
+		location = 3151
+		name = "Old City Watch"
+	}
+
+    division = {
+		division_template = "Neighborhood Watch"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.4
+		location = 149
+		name = "Priozersk Watch"
+	}
+
+    division = {
+		division_template = "Neighborhood Watch"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.4
+		location = 9098
+		name = "Luga Watch"
+	}
+
+    division = {
+		division_template = "Neighborhood Watch"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.4
+		location = 11186
+		name = "Sosnovy Bor Watch"
+	}
+}

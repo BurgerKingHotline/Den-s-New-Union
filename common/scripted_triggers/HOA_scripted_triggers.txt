@@ -1,0 +1,71 @@
+HOA_Residents_Content_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 1
+        }
+
+        check_variable = {
+            HOA_Anger > 15
+        }
+    }
+}
+
+HOA_Residents_Unsatisfied_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 15
+        }
+
+        check_variable = {
+            HOA_Anger > 25
+        }
+    }
+}
+
+HOA_Residents_Upset_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 25
+        }
+
+        check_variable = {
+            HOA_Anger > 40
+        }
+    }
+}
+
+HOA_Residents_Angry_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 40
+        }
+
+        check_variable = {
+            HOA_Anger > 60
+        }
+    }
+}
+
+HOA_Residents_Plotting_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 60
+        }
+
+        check_variable = {
+            HOA_Anger > 80
+        }
+    }
+}
+
+HOA_Residents_Revolt_Trigger = {
+    AND = {
+        check_variable = {
+            HOA_Anger < 80
+        }
+
+        check_variable = {
+            HOA_Anger > 101
+        }
+    }
+}

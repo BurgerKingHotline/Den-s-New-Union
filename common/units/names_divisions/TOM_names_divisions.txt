@@ -1,0 +1,25 @@
+TOM_INF_01 = 
+{
+	name = "Combined Arms"
+
+	for_countries = { TOM }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Combined Arms Army"
+}
+
+TOM_INF_02 = 
+{
+	name = "Motor Rifle"
+
+	for_countries = { TOM }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Motor Rifle Division"
+}

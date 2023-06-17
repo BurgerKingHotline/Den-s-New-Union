@@ -9,6 +9,8 @@ state={
 	}
 
 	history={
+		owner = SKH
+		add_core_of = SKH
 		victory_points = {
 			4797 3 
 		}
@@ -18,7 +20,7 @@ state={
 			air_base = 1
 
 		}
-		}
+	}
 
 	provinces={
 		1707 1727 1829 4797 4815 7838 10596 10661 12525 12540 12647 

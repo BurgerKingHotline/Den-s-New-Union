@@ -1,0 +1,28 @@
+﻿l_english:
+# Country Names
+ NCR_democratic: "Tau Ceti V"
+ NCR_democratic_DEF: "Tau Ceti V"
+ NRC_democratic_ADJ: "Tau Cetian"
+ NCR_neutrality: "Body of the Many"
+ NCR_neutrality_DEF: "the Body of the Many"
+ NRC_neutrality_ADJ: "the Many"
+ NCR_fascism: "Dominion of SHODAN"
+ NCR_fascism_DEF: "the Dominion of SHODAN"
+ NRC_fascism_ADJ: "Shodan's"
+ NCR_communism: "Democratic Russia"
+ NCR_communism_DEF: "Democratic Russia"
+ NRC_communism_ADJ: "Democratic"
+
+# Parties
+ NCR_neutrality_party: "The Many"
+ NCR_communism_party: "PCK-Bolshevik"
+ NCR_fascism_party: "Shodan"
+ NCR_democratic_party: "TriOptimum"
+
+# Ideas
+ NCR_Shodan: "Shodan"
+
+# Events
+ NCR_Start.1.title: "TriOptimum"
+ NCR_Start.1.desc: "yeada yead yad"
+ NCR_Start.1.a: "goac"

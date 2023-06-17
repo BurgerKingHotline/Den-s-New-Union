@@ -1,0 +1,135 @@
+division_template = {
+	name = "Combined Arms Army"
+
+	division_names_group = TOM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Motor Rifle Division"
+
+	division_names_group = TOM_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 568
+		name = "22nd Army Corps"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 568
+		name = "49th Combined Arms Army"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 737
+		name = "5th Combined Arms Army"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 6596
+		name = "58th Combined Arms Army"
+	}
+	division = {
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 3767
+		name = "19th Motorized Rifle Division"
+	}
+	division = {
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 6776
+		name = "42nd Motorized Rifle Division"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 6474
+		name = "1st Donetsk Army Corps"
+	}
+	division = {
+		division_template = "Motor Rifle Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 6474
+		name = "20th Motorized Rifle Division"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 6505
+		name = "7th Assault Airborne Division"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 9461
+		name = "2nd Guards Luhansk-Sievierodonetsk Army Corps"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 547
+		name = "20th Combined Arms Army"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 523
+		name = "41st Combined Arms Army"
+	}
+	division = {
+		division_template = "Combined Arms Army"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.65
+		location = 11487
+		name = "4th Guards Tanks Division"
+	}
+}

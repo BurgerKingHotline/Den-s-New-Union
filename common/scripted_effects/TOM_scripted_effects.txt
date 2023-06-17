@@ -1,0 +1,43 @@
+d_TOM_claim_dnipro_kharkov = {
+	add_state_claim = 221
+	add_state_claim = 226
+}
+
+TOM_civil_war = {
+	hidden_effect = {
+		set_temp_variable = { a = 0.6 }
+		if = {
+			limit = {
+				if = {
+					limit = {
+						has_country_flag = choose_russia
+					}
+					set_temp_variable = { a = 0.4 }
+				}
+			}
+		}
+		start_civil_war = {
+			ideology = democratic
+			size = var:a
+			set_cosmetic_tag = TOM_Free_Ukraine
+			save_global_event_target_as = TOM_Ukrainian
+			load_focus_tree = {
+				tree = TOM_Focus_Tree
+				keep_completed = yes
+			}
+			complete_national_focus = TOM_Glory_to_Ukraine
+		}
+		complete_national_focus = TOM_Unite_All_Russia
+		save_global_event_target_as = TOM_Russian
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = choose_russia
+			}
+		}
+		event_target:TOM_Ukrainian = {
+			change_tag_from = ROOT
+		}
+	}
+}

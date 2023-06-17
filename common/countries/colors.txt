@@ -18,3 +18,26 @@ CIR = {
 	color = rgb { 41  105  18 }
 	color_ui = rgb { 41  105  18 }
 }
+XUA = {
+	color = rgb { 20 20 20 }
+	color_ui = rgb { 20 20 20 }
+}
+CSP = {
+	color = rgb { 75 0 130 }
+	color_ui = rgb { 75 0 130 }
+}
+
+NCR = {
+	color = rgb { 176  196  222 }
+	color_ui = rgb { 176  196  222 }
+}
+
+SKH = {
+	color = rgb { 148 44 44 }
+	color_ui = rgb { 148 44 44 }
+}
+
+HOA = {
+	color = rgb { 130 200 110 }
+	color_ui = rgb { 130 200 110 }
+}

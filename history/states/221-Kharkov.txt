@@ -11,6 +11,8 @@ state={
 	}
 
 	history={
+		owner = XUA
+		add_core_of = XUA
 		victory_points = {
 			418 10
 		}
