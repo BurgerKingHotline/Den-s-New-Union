@@ -1,8 +1,9 @@
 ﻿capital = 233
 
 add_ideas = {
-	CIR_circassian_resilience
+	CIR_inal_the_great
 	CIR_berzegs_legacy
+	CIR_circassian_resilience
 	CIR_circassian_pride
 	CIR_horrors_of_the_past
 }

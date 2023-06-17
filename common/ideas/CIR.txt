@@ -34,10 +34,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_defence_factor = 0.075
-				army_attack_factor = 0.075
-				army_org_factor = 0.075
-				political_power_gain = 0.4
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				political_power_gain = 0.15
 			}
 		}
 		
@@ -74,6 +74,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				war_support_factor = -0.05
 				custom_modifier_tooltip = CIR_decrease_relations_tom
 			}
 			
@@ -90,6 +91,28 @@ ideas = {
 					target = TOM 
 					modifier = large_increase
 				}
+			}
+		}
+		
+		CIR_inal_the_great = {
+			picture = CIR_inal_the_great
+			
+			allowed = {
+				tag = CIR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = 0.05
+				planning_speed = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1 
 			}
 		}
 	}

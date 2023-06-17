@@ -18,6 +18,10 @@ spriteTypes = {
 		name = "GFX_idea_CIR_horrors_of_the_past"
 		texturefile = "gfx/interface/ideas/CIR_horrors_of_the_past.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_CIR_inal_the_great"
+		texturefile = "gfx/interface/ideas/CIR_inal_the_great.dds"
+	}
 	
 	# Leaders
 	
