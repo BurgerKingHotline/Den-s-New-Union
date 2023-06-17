@@ -1,0 +1,16 @@
+characters = {
+	SKH_stalinkhan = {
+		name = "Stalin Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_stalin_khan
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { spirit_of_genghis }
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}

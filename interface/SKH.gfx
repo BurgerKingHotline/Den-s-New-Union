@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_stalin_khan"
+		texturefile = "gfx/leaders/SKH/portrait_skh_stalinkhan.dds"
+	}
+}

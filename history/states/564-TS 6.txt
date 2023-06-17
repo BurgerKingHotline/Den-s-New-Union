@@ -12,6 +12,8 @@ state={
 	}
 
 	history={
+		owner = SKH
+		add_core_of = SKH
 		victory_points = {
 			7835 2 
 		}
@@ -22,7 +24,7 @@ state={
 			infrastructure = 2
 
 		}
-		}
+	}
 
 	provinces={
 		1696 1762 1810 4716 4766 4835 4837 7736 7816 7835 10524 10528 10543 10658 12506 12575 12644 13152

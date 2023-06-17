@@ -26,8 +26,13 @@ CSP = {
 	color = rgb { 75 0 130 }
 	color_ui = rgb { 75 0 130 }
 }
+
 NCR = {
 	color = rgb { 176  196  222 }
 	color_ui = rgb { 176  196  222 }
 }
 
+SKH = {
+	color = rgb { 148 44 44 }
+	color_ui = rgb { 148 44 44 }
+}
