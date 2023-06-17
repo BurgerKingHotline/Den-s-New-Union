@@ -9,8 +9,9 @@ state={
 	history={
 		buildings = {
 			infrastructure = 3 #was: 5
-			air_base = 3
 		}
+		owner = HOA
+		add_core_of = HOA
 		victory_points = {
 			9098 1
 		}
