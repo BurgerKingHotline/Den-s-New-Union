@@ -7,6 +7,8 @@ state={
 	state_category = rural
 
 	history={
+		owner = CSP
+		add_core_of = CSP
 		victory_points = {
 			9753 3 
 		}
