@@ -1,0 +1,62 @@
+defined_text = {
+    name = HOA_Get_Anger_Level
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Content
+            }
+        }
+        localisation_key = HOA_RES_I
+    }
+
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Unsastified
+            }
+        }
+        localisation_key = HOA_RES_II
+    }
+
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Upset
+            }
+        }
+        localisation_key = HOA_RES_III
+    }
+
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Angry
+            }
+        }
+        localisation_key = HOA_RES_IV
+    }
+
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Plotting
+            }
+        }
+        localisation_key = HOA_RES_V
+    }
+
+    text = {
+        trigger = {
+            original_tag = HOA
+            HOA = {
+                has_idea = HOA_Residents_Revolt
+            }
+        }
+        localisation_key = HOA_RES_VI
+    }
+}

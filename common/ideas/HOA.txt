@@ -1,0 +1,116 @@
+ideas = {
+    country = {
+        HOA_Residents_Content = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+        }
+
+        HOA_Residents_Unsastified = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                stability_factor = -0.05
+                line_change_production_efficiency_factor = -0.05
+            }
+        }
+
+        HOA_Residents_Upset = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.1
+                line_change_production_efficiency_factor = -0.07
+                consumer_goods_factor = 0.03
+            }
+        }
+
+        HOA_Residents_Angry = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                line_change_production_efficiency_factor = -0.15
+                consumer_goods_factor = 0.05
+            }
+        }
+
+        HOA_Residents_Plotting = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                stability_factor = -0.15
+                war_support_factor = -0.15
+                line_change_production_efficiency_factor = -0.20
+                consumer_goods_factor = 0.1
+            }
+
+            hidden_modifier = {
+                attrition = 0.01
+            }
+        }
+
+        HOA_Residents_Revolt = {
+            allowed = {
+                original_tag = HOA
+            }
+
+            removal_cost = -1
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                stability_factor = -0.15
+                war_support_factor = -0.15
+                line_change_production_efficiency_factor = -0.20
+                consumer_goods_factor = 0.1
+            }
+
+            hidden_modifier = {
+                attrition = 0.05
+            }
+        }
+    }
+}
