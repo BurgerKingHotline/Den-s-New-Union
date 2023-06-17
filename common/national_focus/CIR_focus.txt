@@ -1,0 +1,47 @@
+focus_tree = {
+	id = CIR_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CIR
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = CIR_choosing_our_capital
+		icon = GFX_CIR_choosing_our_capital
+		cost = 10
+		
+		x = 25
+		y = 0
+		relative_position_id = #CIR_
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			hidden_effect = { set_country_flag = choose_capital }
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+
+	}
+}

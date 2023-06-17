@@ -14,7 +14,7 @@ state = {
 		add_core_of = CIR
 		add_core_of = NOA
 		victory_points = {
-			9628 3
+			9628 5
 		}
 	}
 

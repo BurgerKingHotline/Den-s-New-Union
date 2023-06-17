@@ -40,5 +40,57 @@ ideas = {
 				political_power_gain = 0.4
 			}
 		}
+		
+		CIR_circassian_pride = {
+			picture = CIR_circassian_pride
+			
+			allowed = {
+				tag = CIR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		
+		CIR_horrors_of_the_past = {
+			picture = CIR_horrors_of_the_past
+			
+			allowed = {
+				tag = CIR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = CIR_decrease_relations_tom
+			}
+			
+
+			
+			on_add = {
+				add_opinion_modifier = { 
+					target = TOM 
+					modifier = large_decrease
+				}
+			}
+			on_remove = {
+				add_opinion_modifier = { 
+					target = TOM 
+					modifier = large_increase
+				}
+			}
+		}
 	}
 }

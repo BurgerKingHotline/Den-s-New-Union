@@ -161,6 +161,24 @@ units = {
 #########################
 
 instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CIR"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tech_support
+			creator = "CIR"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
 }
 
 #####################

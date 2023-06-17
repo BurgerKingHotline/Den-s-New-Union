@@ -10,6 +10,14 @@ spriteTypes = {
 		name = "GFX_idea_CIR_berzegs_legacy"
 		texturefile = "gfx/interface/ideas/CIR_berzegs_legacy.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_CIR_circassian_pride"
+		texturefile = "gfx/interface/ideas/CIR_circassian_pride.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CIR_horrors_of_the_past"
+		texturefile = "gfx/interface/ideas/CIR_horrors_of_the_past.dds"
+	}
 	
 	# Leaders
 	
