@@ -22,6 +22,8 @@
  #custom effect tooltips
  CIR_choose_Sochi:0 "Keeps capital in §YSochi§!"
  CIR_decrease_relations_tom:0 "Decreases relations with the §YRussian Federation§! by §R-50§!"
+ CIR_take_the_south_tt:0 "Gains §YConquer (Focus)§! war goal agains nations in the south Caucasus"
+ CIR_take_the_east_tt:0 "Gains §YConquer (Focus)§! war goal agains nations in the east Caucasus"
  #events
  CIR_choose_capial.1.title:0 "Choosing Our Capital City"
  CIR_choose_capial.1.desc:0 ""
@@ -39,4 +41,4 @@
  CIR_circassian_pride:0"Circassian Pride"
  CIR_circassian_pride_desc:0 "The Circassian people, with their vibrant cultural heritage and rich traditions, carry a deep and unyielding sense of pride that has been forged through centuries of history. Their ancestral lands have witnessed their unwavering determination and resilience in the face of countless challenges. It is this resolute pride that fuels their spirits and shapes their national identity, igniting a fervent passion for their homeland and a steadfast commitment to preserving their cultural legacy."
  CIR_horrors_of_the_past:0 "Horrors Of The Past"
- CIR_horrors_of_the_past_desc:0 "The Circassian people bear the indelible scars of a tragic history—the Circassian genocide. During the entirety of the 19th century, they endured forced displacement, violence, and unfathomable suffering. The memories of lost homes, shattered families, and countless lives haunt their collective consciousness. After a painstaking 72-year wait, they have finally reclaimed their homeland. However, the profound pain inflicted during that dark era continues to fuel a deep resentment among most Circassians, specifically towards the Russian government, as they denounce the abhorrent act inflicted upon their people."
+ CIR_horrors_of_the_past_desc:0 "The Circassian people bear the indelible scars of a tragic history—the Circassian genocide. During the entirety of the 19th century, they endured forced displacement, violence, and unfathomable suffering. The memories of lost homes, shattered families, and countless lives haunt their collective consciousness. After a painstaking 72-year wait, they have finally reclaimed their homeland. However, the profound pain inflicted during that dark era continues to fuel a deep resentment among most Circassians, specifically towards the Russian government, as they denounce the abhorrent act inflicted upon our people."
