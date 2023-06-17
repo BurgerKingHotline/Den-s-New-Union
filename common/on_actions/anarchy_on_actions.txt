@@ -38,6 +38,8 @@ on_actions = {
 							remove_claim_by = ROOT
 						}
 					}
+					FROM = { save_event_target_as = loser_anarchy }
+					FROM.FROM = { save_event_target_as = anarchy_state }
 					news_event = anarchy.1
 				}
 			}

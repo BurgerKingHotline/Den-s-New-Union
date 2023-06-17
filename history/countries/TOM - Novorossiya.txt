@@ -173,6 +173,7 @@ add_ideas = {
 }
 
 recruit_character = TOM_Emergency_Committee
+recruit_character = TOM_Resistance_Executive_Council
 
 set_politics = {
 	ruling_party = neutrality

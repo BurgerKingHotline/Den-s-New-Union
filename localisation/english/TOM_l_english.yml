@@ -6,6 +6,9 @@
  TOM_Federation: "Russian Federation"
  TOM_Federation_DEF: "the Russian Federation"
  TOM_Federation_ADJ: "Russian Federation"
+ TOM_Free_Ukraine: "Free Republic of Ukraine"
+ TOM_Free_Ukraine_DEF: "the Free Republic of Ukraine"
+ TOM_Free_Ukraine_ADJ: "Free Republic of Ukraine"
 
 # Parties
  TOM_neutrality_party: "United Russia"
@@ -19,10 +22,15 @@
 
 # Characters
  TOM_Emergency_Committee: "Emergency Committee"
+ TOM_Resistance_Executive_Council: "Resistance Executive Council"
 
 # Ideas
  TOM_Chaos: "Chaos"
  TOM_Ukrainian_Resistance: "Ukrainian Resistance"
+
+# Focus tree
+ TOM_Glory_to_Ukraine: "Glory to Ukraine"
+ TOM_Unite_All_Russia: "Unite the All-Russian Nation"
 
 # Events
  TOM_Opening.1.title: "Big Trouble in Little Russia"
