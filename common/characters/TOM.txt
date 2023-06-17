@@ -12,4 +12,17 @@ characters = {
 			id = -1
 		}
 	}
+	TOM_Resistance_Executive_Council = {
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TOM_Resistance_Executive_Council"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			expire = "2024.1.1.1"
+			id = -1
+		}
+	}
 }

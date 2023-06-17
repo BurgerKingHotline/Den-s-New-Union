@@ -21,6 +21,8 @@ state = {
 			}
 
 		}
+		owner = NCR
+		add_core_of = NCR
 		}
 
 	provinces = {

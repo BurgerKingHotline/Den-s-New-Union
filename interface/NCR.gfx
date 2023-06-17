@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_diego"
+		texturefile = "gfx/leaders/NCR/portrait_diego.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_shodan"
+		texturefile = "gfx/leaders/NCR/portrait_shodan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_the_many"
+		texturefile = "gfx/leaders/NCR/portrait_the_many.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_khieu"
+		texturefile = "gfx/leaders/NCR/portrait_khieu.dds"
+	}
+	
+}

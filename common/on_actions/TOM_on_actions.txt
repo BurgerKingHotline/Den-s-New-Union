@@ -1,7 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			country_event = TOM_Opening.1
+			TOM = {
+				country_event = TOM_Opening.1
+			}
 		}
 	}
 }

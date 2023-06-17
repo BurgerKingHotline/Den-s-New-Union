@@ -6,6 +6,6 @@
 
  DIPLOMACY_WAR_ENABLE_TRIGGER_ANARCHY: "§RYou must claim an owned state to declare war on an anarchy tag.§!"
 
- anarchy.1.title: "Victory in the [FROM.GetName]"
- anarchy.1.desc: "With the capture of [FROM.FROM.GetName], we have secured control of our claimed land in the [FROM.GetName]. Our forces shall march back to us from the anarchy in triumphant victory after completing the goal of expanding our borders."
+ anarchy.1.title: "Victory in the [loser_anarchy.GetName]"
+ anarchy.1.desc: "With the capture of [anarchy_state.GetName], we have secured control of our claimed land in the [loser_anarchy.GetName]. Our forces shall march back to us from the anarchy in triumphant victory after completing the goal of expanding our borders."
  anarchy.1.a: "Excellent!"
