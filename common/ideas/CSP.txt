@@ -1,0 +1,10 @@
+ideas = {
+    country = {
+        CSP_miniscule_army = {
+        }
+        CSP_low_public_trust = {
+        }
+        CSP_lack_of_industrialization = {
+        }
+    }
+}

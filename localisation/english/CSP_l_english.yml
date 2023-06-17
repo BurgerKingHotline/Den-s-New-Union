@@ -1,11 +1,22 @@
 ﻿l_english:
+  # Country Names
   CSP:0 "Regnum Caspium"
   CSP_DEF:0 "Regnum Caspium"
   CSP_ADJ:0 "Regnum Caspium"
 
+  # Parties
   CSP_neutrality_party:0 "Legionary Junta"
   CSP_democratic_party:0 "Opposition"
 
+  # Events
   CSP_events.1.title:0 "A Roman Kingdom?"
   CSP_events.1.desc:0 "Residents of Astrakhan, on the Caspian Sea, awoke to a strange reality. During the otherwise quiet night, anarchy had befallen upon the city, and indeed, the rest of the world. In this power vacuum, an armed organization claiming to be the successor to the great Roman Empire seized control over the northern Caspian coast. Though many are wary of their new impromptu rulers, others have readily embraced this new regime. Only time will tell what will come of the Legionary Junta."
   CSP_events.1.a:0 "Glory to the Caspian Kingdom!"
+  
+  # Ideas
+  CSP_miniscule_army:0 "Miniscule Army"
+  CSP_miniscule_army_desc:0 "Our present 'army' consists of our untrained, small contingent of folllowers, and an even smaller group of trained Legionaries. If we are to retain control, much less expand, the army itself must be expanded."
+  CSP_low_public_trust:0 "Low Public Trust"
+  CSP_low_public_trust_desc:0 "Ever since the Legionary Junta took power, we have been met with opposition by our citizens. We would do well to take care of this, either militarily or by gaining their trust, or face having a revolt on our hands."
+  CSP_lack_of_industrialization:0 "Lack of Industrialization"
+  CSP_lack_of_industrialization_desc:0 "If we are to retain and expand our control over the region, we must kickstart our currently non-existent industry, and fast."
