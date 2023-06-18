@@ -83,6 +83,12 @@ if = {
 }
 
 recruit_character = SKH_stalinkhan
+recruit_character = SKH_zhukov
+
+add_ideas = {
+	SKH_steppe_warriors
+	SKH_rural_communities
+}
 
 set_politics = {
 	ruling_party = communism

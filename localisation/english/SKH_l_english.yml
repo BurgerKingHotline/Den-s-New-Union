@@ -10,14 +10,16 @@
 # Victory Points
 
 # Parties
- SKH_communism_party: "Communist Party"
- SKH_communism_party_long: "Communist Party of the Russian Federation"
+ SKH_communism_party: "KCP"
+ SKH_communism_party_long: "Khanate Communist Party"
 
 
 # Character Descriptions
 
 
 # Ideas
-
+ SKH_steppe_warriors: "Steppe Warriors"
+ SKH_rural_communities: "Largely Rural Communities"
+ SKH_rural_communities_desc: "Our nation has only a handful of major population centers, with the rest being rural villages or nomadic tribes. As such, we lack a stable industrial base or scientific community. Should we hope to expand, this must change."
 
 # Events
