@@ -1,0 +1,54 @@
+characters = {
+	TSR_turar = {
+		name = "Turar Ryskulov" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_turar
+			}
+		}
+		country_leader = {
+			ideology = TSR_turkestan_socialism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_alikhan = {
+		name = "Alikhan Bukeikhanov" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_akb
+			}
+		}
+		country_leader = {
+			ideology = TSR_islamic_conservatism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_rebs = {
+		name = "Rebel Groups" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_akb
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_velih = {
+		name = "Veli Qayyum Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_vkh
+			}
+		}
+		country_leader = {
+			ideology = TSR_pan_turkism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,4 @@
+TSR = "countries/turkestan.txt"
+TJS = "countries/tajikistan.txt"
+AFH = "countries/afghanistan.txt"
+BRB = "countries/bukharans.txt"

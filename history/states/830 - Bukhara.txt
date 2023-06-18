@@ -3,9 +3,14 @@ state = {
 	id = 830
 	name = "STATE_830" #Bukhara
 
+	resources = {
+		steel = 2
+		chromium = 1
+	}
 
 	history = {
-	
+		owner = TSR
+		add_core_of = TSR
 		victory_points = {
 			1573 2 
 		}
@@ -14,19 +19,19 @@ state = {
 		}
 		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
-			air_base = 1
+			arms_factory = 1
+			air_base = 2
 		}
-		
-		}
+	}
 
 	provinces={
 		1573 1623 7639 7775 10205 10470 10671 12161 12239 12722
 	}
 	manpower = 2189596
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = town
 
 	local_supplies = 2.0 
 }

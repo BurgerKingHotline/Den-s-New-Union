@@ -41,3 +41,23 @@ HOA = {
 	color = rgb { 130 200 110 }
 	color_ui = rgb { 130 200 110 }
 }
+
+TSR = {
+	color = rgb { 12 127 109 }
+	color_ui = rgb { 12 127 109 }
+}
+
+AFH = {
+	color = rgb { 18 124 16 }
+	color_ui = rgb { 18 124 16 }
+}
+
+TJS = {
+	color = rgb { 191 255 140 }
+	color_ui = rgb { 191 255 140 }
+}
+
+BRB = {
+	color = rgb { 238 221 10 }
+	color_ui = rgb { 238 221 10 }
+}
