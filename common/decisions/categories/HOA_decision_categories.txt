@@ -1,0 +1,7 @@
+HOA_Resident_Management = {
+    allowed = {
+        original_tag = HOA
+    }
+
+    icon = GFX_decision_category_generic_propaganda
+}

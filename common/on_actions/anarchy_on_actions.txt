@@ -1,0 +1,48 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			log = "on_state_control_changed: [ROOT.GetTag] has taken over [FROM.FROM.GetID] from [FROM.GetTag]"
+			if = {
+				limit = {
+					# Owner is anarchy and controller claims
+					FROM = {
+						has_country_flag = anarchy_tag
+					}
+					FROM.FROM = {
+						is_claimed_by = ROOT
+					}
+					has_war_with = FROM
+				}
+				log = "on_state_control_changed: is claimed anarchy"
+				if = {
+					limit = {
+						FROM = {
+							all_owned_state = {
+								if = {
+									limit = {
+										is_claimed_by = ROOT
+									}
+									is_controlled_by = ROOT
+								}
+							}
+						}
+					}
+					log = "on_state_control_changed: all claimed are controlled"
+					white_peace = FROM
+					FROM = {
+						every_owned_state = {
+							limit = {
+								is_claimed_by = ROOT
+							}
+							transfer_state_to = ROOT
+							remove_claim_by = ROOT
+						}
+					}
+					FROM = { save_event_target_as = loser_anarchy }
+					FROM.FROM = { save_event_target_as = anarchy_state }
+					news_event = anarchy.1
+				}
+			}
+		}
+	}
+}

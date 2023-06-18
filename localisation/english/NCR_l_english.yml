@@ -1,0 +1,36 @@
+﻿l_english:
+# Country Names
+ NCR_democratic: "Tau Ceti V"
+ NCR_democratic_DEF: "Tau Ceti V"
+ NRC_democratic_ADJ: "Tau Cetian"
+ NCR_neutrality: "Body of the Many"
+ NCR_neutrality_DEF: "the Body of the Many"
+ NRC_neutrality_ADJ: "the Many"
+ NCR_fascism: "Dominion of SHODAN"
+ NCR_fascism_DEF: "the Dominion of SHODAN"
+ NRC_fascism_ADJ: "Shodan's"
+ NCR_communism: "Democratic Russia"
+ NCR_communism_DEF: "Democratic Russia"
+ NRC_communism_ADJ: "Democratic"
+
+# Parties
+ NCR_neutrality_party: "The Many"
+ NCR_communism_party: "PCK-Bolshevik"
+ NCR_fascism_party: "Shodan"
+ NCR_democratic_party: "TriOptimum"
+
+# Ideas
+ NCR_shodan: "S.H.O.D.A.N"
+ NCR_shodan_desc: "S.H.O.D.A.N (Sentient Hyper-Optimized Data Access Network) is the AI that inhabits the research station Tau Ceti V."
+# Events
+ NCR_Start.1.title: "TriOptimum"
+ NCR_Start.1.desc: ""
+ NCR_Start.1.a: "Science"
+ 
+ # Focus
+ NCR_the_crash_site: "The Crash Site"
+ NCR_the_crash_site_desc: "In the remote wilderness of Russia, lies the remnants of a crashed space pod. Once a vessel of unknown origin, it now stands as a captivating research site, owned and operated by the esteemed TriOptimum Corporation. Since the discovery, TriOptimum has meticulously studied the enigmatic technology within the crash site, hoping to unlock its secrets and harness its potential for scientific advancement."
+ NCR_anomalous_materials: "Anomalous Activity"
+ NCR_anomalous_materials_desc: "In the crashed pod in Tau Ceti V, the greed of scientists leads to the discovery of the century."
+ NCR_the_struggle: "The Struggle"
+ NCR_the_struggle_desc: "Diego's inner struggle against the Anelids will decide the fate of Tau Ceti V."

@@ -1,0 +1,64 @@
+focus_tree = {
+	id = TOM_Focus_Tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TOM
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+    focus = {
+		id = TOM_Secure_the_State
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		x = 6 y = 0
+
+		available = {
+		}
+		
+		completion_reward = {
+			country_event = TOM_Civil_War.1
+		}
+	}
+
+    focus = {
+		id = TOM_Glory_to_Ukraine
+		icon = GFX_focus_TOM_Go_Ukrainian
+		cost = 5
+		x = -3 y = 1
+		relative_position_id = TOM_Secure_the_State
+
+		prerequisite = { focus = TOM_Secure_the_State }
+		mutually_exclusive = { focus = TOM_Unite_All_Russia }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = TOM_Unite_All_Russia
+		icon = GFX_focus_TOM_Go_Russian
+		cost = 5
+		x = 3 y = 1
+		relative_position_id = TOM_Secure_the_State
+
+		prerequisite = { focus = TOM_Secure_the_State }
+		mutually_exclusive = { focus = TOM_Glory_to_Ukraine }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+}

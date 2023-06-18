@@ -1,0 +1,33 @@
+characters = {
+	SKH_stalinkhan = {
+		name = "Stalin Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_stalin_khan
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { spirit_of_genghis }
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	SKH_zhukov = {
+		name = "Georgy Zhukov" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_zhukov
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+}

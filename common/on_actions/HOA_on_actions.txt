@@ -1,0 +1,85 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            set_variable = {
+                var = HOA_Anger
+                value = 1
+                tooltip = hoa_anger_level
+            }
+
+            clamp_variable = {
+                var = HOA_Anger
+                max = 101
+            }
+        }
+    }
+
+    on_weekly = {
+        effect = {
+            HOA_anger_rise_daily = yes
+            if = {
+                limit = {
+                    HOA_Residents_Content_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Content
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Unsatisfied_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Unsastified
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Upset_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Upset
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Angry_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Angry
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Plotting_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Plotting
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Revolt_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Revolt
+                }
+            }
+
+            else = {
+                log = "Issue with HOA Resident Anger System. Please Report to greenbueller."
+            }
+        }    
+    }
+}

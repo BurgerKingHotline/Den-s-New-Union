@@ -1,0 +1,52 @@
+HOA_anger_rise_daily = {
+    if = {
+        limit = {
+            check_variable = {
+                HOA_Anger < 100
+            }
+        }
+
+        hidden_effect = {
+            add_to_variable = {
+                var = HOA_Anger
+                value = 1
+            }
+        }
+    }
+}
+
+HOA_anger_appease_soft = {
+    hidden_effect = {
+        subtract_from_variable = {
+            var = HOA_Anger
+            value = -3
+        }
+    }
+}
+
+HOA_anger_appease_medium = {
+    hidden_effect = {
+        subtract_from_variable = {
+            var = HOA_Anger
+            value = -5
+        }
+    }
+}
+
+HOA_anger_appease_hard = {
+    hidden_effect = {
+        subtract_from_variable = {
+            var = HOA_anger
+            value = -10
+        }
+    }
+}
+
+HOA_anger_appease_failure = {
+    hidden_effect = {
+        add_to_variable = {
+            var = HOA_Anger
+            value = 5
+        }
+    }
+}

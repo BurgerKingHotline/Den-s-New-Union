@@ -15,6 +15,11 @@ state = {
 			infrastructure = 1
 
 		}
+		victory_points = {
+			6538 5 
+		}
+		owner = NCR
+		add_core_of = NCR
 		}
 
 	provinces = {

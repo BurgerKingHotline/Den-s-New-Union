@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            CSP = {
+                country_event = CSP_events.1
+            }
+        }
+    }
+}

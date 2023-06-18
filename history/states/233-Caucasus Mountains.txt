@@ -6,12 +6,17 @@ state = {
 	}
 
 	history = {
+		owner = CIR
 		buildings = {
+			air_base = 6
+			industrial_complex = 2
+			arms_factory = 2
 			infrastructure = 2
 
 		}
+		add_core_of = CIR
 		victory_points = {
-			9663 1
+			9663 20
 		}
 	}
 
@@ -20,7 +25,7 @@ state = {
 	}
 	manpower = 387990
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = city
 
 	local_supplies = 0.0 
 }

@@ -1,0 +1,31 @@
+add_namespace = CIR_choose_capial
+
+country_event = {
+	id = CIR_choose_capial.1
+	title = CIR_choose_capial.1.title
+	desc = CIR_choose_capial.1.desc
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+		has_completed_focus = CIR_choosing_our_capital
+	}
+
+	option = {
+		name = CIR_choose_capial.1.a
+		custom_effect_tooltip = CIR_choose_Sochi
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 100
+	}
+	option = {
+		name = CIR_choose_capial.1.b
+		set_capital = {
+			state = 234
+			remember_old_capital = yes
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = 250
+	}
+}

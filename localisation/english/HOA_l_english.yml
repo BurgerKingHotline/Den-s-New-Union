@@ -1,0 +1,28 @@
+﻿l_english:
+ HOA:0 "Home Owners Association"
+ HOA_DEF:0 "The Home Owners Association of Petrograd"
+ HOA_ADJ:0 "Home Owners"
+
+ HOA_neutrality_party:0 "PHOA"
+ HOA_neutrality_party_long:0 "Petrograd Home Owners' Association"
+ HOA_democratic_party:0 "PHO"
+ HOA_democratic_party_long:0 "Petrograd Home Owners"
+
+ hoa_anger_level:0 "Resident Anger Level"
+
+ HOA_Residents_Content:0 "Residents Content"
+ HOA_Residents_Unsastified:0 "Residents Unsatisfied"
+ HOA_Residents_Upset:0 "Residents Upset"
+ HOA_Residents_Angry:0 "Residents Angry"
+ HOA_Residents_Plotting:0 "Residents Plotting"
+ HOA_Residents_Revolt:0 "Residents Revolting"
+
+ HOA_RES_I:0 "§GContent§!"
+ HOA_RES_II:0 "§7Unsatisfied§!"
+ HOA_RES_III:0 "§5Upset§!"
+ HOA_RES_IV:0 "§0Angry§!"
+ HOA_RES_V:0 "§OPlotting§!"
+ HOA_RES_VI:0 "§RRevolting§!"
+
+ HOA_Resident_Management:0 "Resident Management Initiative"
+ HOA_Resident_Management_desc:0 "The Petrograd Home Owners Assocation is one with a contentious background. The Management has not always been well liked among the residents of the region. With this, The Management must cooperate with the residents in order to placate their anger, lest it boil over. Currently, the resident anger level is $pol_violence [HOA_Get_Anger_Level]."

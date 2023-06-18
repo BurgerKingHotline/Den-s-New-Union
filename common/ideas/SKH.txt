@@ -1,0 +1,33 @@
+ideas = {
+    country = {
+        SKH_steppe_warriors = {
+			picture = FRA_motorized_focus
+			allowed = {
+				original_tag = SKH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                army_speed_factor = 0.15
+                conscription_factor = 0.1
+			}
+		}
+	    SKH_rural_communities = {
+			picture = raj_risk_of_famine
+			allowed = {
+				original_tag = SKH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                research_speed_factor = -0.2
+                production_speed_buildings_factor = -0.3 
+				production_factory_max_efficiency_factor = -0.2 
+			}
+		}	
+    }
+}

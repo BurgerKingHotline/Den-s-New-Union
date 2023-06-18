@@ -1,0 +1,163 @@
+﻿capital = 233
+
+add_ideas = {
+	CIR_inal_the_great
+	CIR_berzegs_legacy
+	CIR_circassian_resilience
+	CIR_circassian_pride
+	CIR_horrors_of_the_past
+}
+
+add_opinion_modifier = { 
+	target = TOM 
+	modifier = large_decrease
+}
+
+create_country_leader = {
+	name = "Pshemakho Kotsev"
+	desc = ""
+	picture = GFX_portrait_CIR_pshemakho_kotsev
+	ideology = oligarchism   
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Çerkes Ethem"
+	desc = ""
+	picture = GFX_portrait_CIR_cerkes_ethem
+	ideology = leninism 
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Cemil Cahit Toydemir"
+	desc = ""
+	picture = GFX_portrait_CIR_cemil_cahit_toydemir
+	ideology = gen_nazism    
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ismail Hakkı Berkok"
+	desc = ""
+	picture = GFX_portrait_CIR_ismail_hakki_berkok
+	ideology = conservatism   
+	traits = {
+		#
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 56
+	democratic = 23
+	fascism = 14
+	communism = 7
+}
+
+set_convoys = 140
+
+set_oob = "CIR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	basic_train = 1
+}
+
+#BBA
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "CIR_1936_air_bba"
+	else = {
+		set_air_oob = "CIR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			early_bombs = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	else = {
+		set_air_oob = "CIR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+#NSB
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+
+#MTG
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+	set_naval_oob = "CIR_1936_naval"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+	}
+	set_naval_oob = "CIR_1936_naval_mtg"
+}
+

@@ -16,6 +16,11 @@ state={
 		victory_points = {
 			6181 1
 		}
+		owner = KRE
+		add_core_of = KRE
+		set_state_name = STATE_213_KRE
+		set_province_name = { id = 3134 name = VICTORY_POINTS_3134_KRE }
+		set_province_name = { id = 6181 name = VICTORY_POINTS_6181_KRE }
 		buildings = {
 			infrastructure = 1
 			air_base = 2

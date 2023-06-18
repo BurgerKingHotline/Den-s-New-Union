@@ -1,0 +1,22 @@
+﻿KRE_INF_01 = 
+{
+	name = "Infantry Divisions" 
+	for_countries = { KRE } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d. Karjalan Suojeluskunta"
+	ordered = {
+		1 = { "%d. Karjalan Suojeluskunta" } # The first division.
+	}
+}
+KRE_MNT_01 = 
+{
+	name = "Mountaineer Divisions" 
+	for_countries = { KRE } 
+	can_use = { always = yes } 
+	division_types = { "mountaineers" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d. Jääkäriprikaatti"
+	ordered = {
+		1 = { "%d. Jääkäriprikaatti" } # The first division.
+	}
+}

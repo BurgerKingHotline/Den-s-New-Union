@@ -1,0 +1,13 @@
+add_namespace = CSP_events
+
+country_event = {
+    id = CSP_events.1
+    title = CSP_events.1.title
+    desc = CSP_events.1.desc
+    picture = GFX_report_event_CSP_opening
+    fire_only_once = yes
+
+    option = {
+		name = CSP_events.1.a
+	}
+}
