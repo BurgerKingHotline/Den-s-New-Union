@@ -271,6 +271,26 @@ focus_tree = {
 
 
 
+	focus = {
+		id = SIB_army_focus_1
+		icon = GFX_goal_generic_propaganda
+
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		x = 6
+		y = 0
+		relative_position_id = SIB_infra_one
+
+		cost = 5
+		available = {
+			#has_army_manpower = {
+			#	size > 100000
+			#}
+		}
+		completion_reward = {
+			#add_political_power = 50
+		}
+	}
 
 
 
@@ -286,7 +306,7 @@ focus_tree = {
 		#mutually_exclusive = { focus =  }
 		x = 6
 		y = 0
-		relative_position_id = SIB_infra_one
+		relative_position_id = SIB_army_focus_1
 
 		cost = 5
 		available = {
@@ -475,4 +495,35 @@ focus_tree = {
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
