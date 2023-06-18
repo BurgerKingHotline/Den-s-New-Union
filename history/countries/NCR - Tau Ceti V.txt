@@ -165,6 +165,7 @@ if = {
 set_convoys = 15
 
 add_ideas = {
+NCR_shodan
 }
 
 recruit_character = NCR_diego

@@ -20,8 +20,8 @@
  NCR_democratic_party: "TriOptimum"
 
 # Ideas
- NCR_Shodan: "Shodan"
-
+ NCR_shodan: "S.H.O.D.A.N"
+ NCR_shodan_desc: "S.H.O.D.A.N (Sentient Hyper-Optimized Data Access Network) is the AI that inhabits the research station Tau Ceti V."
 # Events
  NCR_Start.1.title: "TriOptimum"
  NCR_Start.1.desc: ""
