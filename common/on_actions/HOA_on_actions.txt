@@ -15,69 +15,71 @@ on_actions = {
     }
 
     on_weekly = {
-        HOA_anger_rise_daily = yes
-        if = {
-            limit = {
-                HOA_Residents_Content_Trigger = yes
+        effect = {
+            HOA_anger_rise_daily = yes
+            if = {
+                limit = {
+                    HOA_Residents_Content_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Content
+                }
             }
 
-            HOA = {
-                add_ideas = HOA_Residents_Content
-            }
-        }
+            else_if = {
+                limit = {
+                    HOA_Residents_Unsatisfied_Trigger = yes
+                }
 
-        else_if = {
-            limit = {
-                HOA_Residents_Unsatisfied_Trigger = yes
-            }
-
-            HOA = {
-                add_ideas = HOA_Residents_Unsastified
-            }
-        }
-
-        else_if = {
-            limit = {
-                HOA_Residents_Upset_Trigger = yes
+                HOA = {
+                    add_ideas = HOA_Residents_Unsastified
+                }
             }
 
-            HOA = {
-                add_ideas = HOA_Residents_Upset
-            }
-        }
+            else_if = {
+                limit = {
+                    HOA_Residents_Upset_Trigger = yes
+                }
 
-        else_if = {
-            limit = {
-                HOA_Residents_Angry_Trigger = yes
-            }
-
-            HOA = {
-                add_ideas = HOA_Residents_Angry
-            }
-        }
-
-        else_if = {
-            limit = {
-                HOA_Residents_Plotting_Trigger = yes
+                HOA = {
+                    add_ideas = HOA_Residents_Upset
+                }
             }
 
-            HOA = {
-                add_ideas = HOA_Residents_Plotting
-            }
-        }
+            else_if = {
+                limit = {
+                    HOA_Residents_Angry_Trigger = yes
+                }
 
-        else_if = {
-            limit = {
-                HOA_Residents_Revolt_Trigger = yes
+                HOA = {
+                    add_ideas = HOA_Residents_Angry
+                }
             }
 
-            HOA = {
-                add_ideas = HOA_Residents_Revolt
-            }
-        }
+            else_if = {
+                limit = {
+                    HOA_Residents_Plotting_Trigger = yes
+                }
 
-        else = {
-            log = "Issue with HOA Resident Anger System. Please Report to greenbueller."
-        }
+                HOA = {
+                    add_ideas = HOA_Residents_Plotting
+                }
+            }
+
+            else_if = {
+                limit = {
+                    HOA_Residents_Revolt_Trigger = yes
+                }
+
+                HOA = {
+                    add_ideas = HOA_Residents_Revolt
+                }
+            }
+
+            else = {
+                log = "Issue with HOA Resident Anger System. Please Report to greenbueller."
+            }
+        }    
     }
 }
