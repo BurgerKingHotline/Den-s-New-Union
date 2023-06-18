@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_KRE_minority_rule"
+		texturefile = "gfx/interface/ideas/KRE_minority_rule.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KRE_karhunpesasuunnitelma"
+		texturefile = "gfx/interface/ideas/KRE_karhunpesasuunnitelma.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KRE_finnish_client_state"
+		texturefile = "gfx/interface/ideas/KRE_finnish_client_state.dds"
+	}
+}

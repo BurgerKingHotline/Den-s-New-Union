@@ -45,7 +45,11 @@ recruit_character = KRE_ragnar_nordstrom #also a minister unlocked by switching 
 
 
 
-
+add_ideas = {
+	KRE_minority_rule
+	KRE_karhunpesasuunnitelma
+	KRE_finnish_client_state
+}
 
 set_politics = {
 	ruling_party = neutrality
