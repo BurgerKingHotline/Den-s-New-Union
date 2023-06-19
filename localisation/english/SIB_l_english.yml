@@ -9,6 +9,8 @@
  SIB_communism_DEF:0 "Soviet Sibir"
 
  #focuses
+ SIB_army_focus_1:0 "Army Effort I"
+ SIB_army_focus_1_desc:0 ""
  SIB_mine_urals:0 "Mine The Urals"
  SIB_mine_urals_desc:0 ""
  SIB_infra_one:0 "Railways To The Coast"
@@ -29,6 +31,8 @@
  SIB_fortify_urals_desc:0 "Sibir is not meant to go west, for we would be no better than the Kossacks who once destroyed us."
 
  #ideas
+ SIB_soviet_army_remnant:0 "Remnants Of The Red Army"
+ SIB_soviet_army_remnant_desc:0 "Our defense force consist of nothing more than the rifles we scraped together and a bunch of unemployed former red army soldiers, this is not a proper army nor will it function as one unless we make drastic changes."
  SIB_balanced_spending_1:0 "Nearing Bankruptcy"
  SIB_balanced_spending_2:0 "Massive Overspending"
  SIB_balanced_spending_3:0 "Large Overspending"

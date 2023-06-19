@@ -7,7 +7,7 @@ defined_text = {
                 has_idea = HOA_Residents_Content
             }
         }
-        localisation_key = HOA_RES_I
+        localization_key = HOA_RES_I
     }
 
     text = {
@@ -17,7 +17,7 @@ defined_text = {
                 has_idea = HOA_Residents_Unsastified
             }
         }
-        localisation_key = HOA_RES_II
+        localization_key = HOA_RES_II
     }
 
     text = {
@@ -27,7 +27,7 @@ defined_text = {
                 has_idea = HOA_Residents_Upset
             }
         }
-        localisation_key = HOA_RES_III
+        localization_key = HOA_RES_III
     }
 
     text = {
@@ -37,7 +37,7 @@ defined_text = {
                 has_idea = HOA_Residents_Angry
             }
         }
-        localisation_key = HOA_RES_IV
+        localization_key = HOA_RES_IV
     }
 
     text = {
@@ -47,7 +47,7 @@ defined_text = {
                 has_idea = HOA_Residents_Plotting
             }
         }
-        localisation_key = HOA_RES_V
+        localization_key = HOA_RES_V
     }
 
     text = {
@@ -57,6 +57,6 @@ defined_text = {
                 has_idea = HOA_Residents_Revolt
             }
         }
-        localisation_key = HOA_RES_VI
+        localization_key = HOA_RES_VI
     }
 }

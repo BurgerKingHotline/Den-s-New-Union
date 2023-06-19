@@ -13,13 +13,13 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
-
+	
 	focus = {
-		id = CIR_choosing_our_capital
-		icon = GFX_CIR_choosing_our_capital
+		id = CIR_WIP_will_add_more_and_focueses_wont_be_separate_like_rn
+		icon = GFX_CIR_WIP_will_add_more_and_focueses_wont_be_separate_like_rn
 		cost = 10
 		
-		x = 25
+		x = 17
 		y = 0
 		relative_position_id = #CIR_
 		
@@ -34,7 +34,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = { set_country_flag = choose_capital }
 		}
 		
 		bypass = {
@@ -42,6 +41,511 @@ focus_tree = {
 		
 		ai_will_do = {
 		}
+	}
+	
+	focus = {
+		id = CIR_choosing_our_capital
+		icon = GFX_CIR_choosing_our_capital
+		cost = 10
+		
+		x = 20
+		y = 0
+		relative_position_id = #CIR_
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+		}
+	
+		available = {	
+		}
 
+		completion_reward = {
+			custom_effect_tooltip = CIR_capital_tt
+			hidden_effect = { 
+				CIR = { 
+					country_event = CIR_choose_capial.1 
+				}
+				set_country_flag = choose_capital
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_protect_our_national_identity
+		icon = GFX_CIR_protect_our_national_identity
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_choosing_our_capital
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_choosing_our_capital
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_teach_adyghe_in_schools
+		icon = GFX_CIR_teach_adyghe_in_schools
+		cost = 10
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_protect_our_national_identity
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_protect_our_national_identity
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_caucasian_expansion
+		icon = GFX_CIR_caucasian_expansion
+		cost = 10
+		
+		x = 10
+		y = 1
+		relative_position_id = CIR_
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			#focus = CIR_
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_south_caucasian_expansion
+		icon = GFX_CIR_south_caucasian_expansion
+		cost = 10
+		
+		x = -3
+		y = 1
+		relative_position_id = CIR_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_georgia
+		icon = GFX_CIR_claim_georgia
+		cost = 4
+		
+		x = -2
+		y = 1
+		relative_position_id = CIR_south_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_south_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 231
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_armenia
+		icon = GFX_CIR_claim_armenia
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_south_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_south_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 230
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_azrabejan
+		icon = GFX_CIR_claim_azrabejan
+		cost = 4
+		
+		x = 2
+		y = 1
+		relative_position_id = CIR_south_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_south_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 229
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_take_the_south
+		icon = GFX_CIR_take_the_south
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_claim_armenia
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_georgia
+		}
+		prerequisite = {
+			focus = CIR_claim_armenia
+		}
+		prerequisite = {
+			focus = CIR_claim_azrabejan
+		}
+		
+		available = {	
+		}
+
+		completion_reward = {
+		custom_effect_tooltip = CIR_take_the_south_tt
+			hidden_effect = {
+				231 = {
+					owner = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								generator = { 231 }
+							}
+						}
+					}
+				}
+				229 = {
+					owner = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								generator = { 229 }
+							}
+						}
+					}
+				}
+				230 = {
+					owner = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								generator = { 230 }
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_east_caucasian_expansion
+		icon = GFX_CIR_east_caucasian_expansion
+		cost = 4
+		
+		x = 3
+		y = 1
+		relative_position_id = CIR_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_caucasian_expansion
+		}
+	
+		available = {
+		}
+
+		completion_reward = {
+			add_state_claim = 229
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_chechnya
+		icon = GFX_CIR_claim_chechnya
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_east_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_east_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 821
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_dagestan
+		icon = GFX_CIR_claim_dagestan
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_east_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_east_caucasian_expansion
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 232
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+
+	focus = {
+		id = CIR_take_the_east
+		icon = GFX_CIR_take_the_east
+		cost = 4
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_east_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_chechnya
+		}
+		prerequisite = {
+			focus = CIR_claim_dagestan
+		}
+
+		
+		available = {	
+		}
+
+		completion_reward = {
+		custom_effect_tooltip = CIR_take_the_east_tt
+			hidden_effect = {
+				821 = {
+					owner = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								generator = { 821 }
+							}
+						}
+					}
+				}
+				232 = {
+					owner = {
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_state_focus
+								generator = { 232 }
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_caucasia_secured
+		icon = GFX_CIR_caucasia_secured
+		cost = 4
+		
+		x = 0
+		y = 4
+		relative_position_id = CIR_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_take_the_south
+		}
+		prerequisite = {
+			focus = CIR_take_the_east
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
 	}
 }

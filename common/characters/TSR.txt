@@ -1,0 +1,133 @@
+characters = {
+#leaders
+	TSR_turar = {
+		name = "Turar Ryskulov" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_turar
+			}
+		}
+		country_leader = {
+			ideology = TSR_turkestan_socialism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_alikhan = {
+		name = "Alikhan Bukeikhanov" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_akb
+			}
+		}
+		country_leader = {
+			ideology = TSR_islamic_conservatism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_rebs = {
+		name = "Rebel Groups" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_akb
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	TSR_velih = {
+		name = "Veli Qayyum Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_vkh
+			}
+		}
+		country_leader = {
+			ideology = TSR_pan_turkism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+#generals
+	TSR_abj_khan={
+		name="Äbdiğapar Janbosynūly" #any ideology
+		portraits={
+			army={
+				large="GFX_Portrait_abja"
+				small="GFX_Portrait_abja_idea"
+			}
+		}
+		corps_commander={
+			traits={ trickster hill_fighter TSR_khazakh_khan }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	TSR_taimk1={
+		name="Taimbet Komekbaev" #any ideology
+		portraits={
+			army={
+				large="GFX_Portrait_taimk"
+				small="GFX_Portrait_taimk_idea"
+			}
+		}
+		corps_commander={
+			traits={ reckless infantry_officer ranger }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TSR_sobirr1={
+		name="Sabir Rakhimov" #any ideology
+		portraits={
+			army={
+				large="GFX_Portrait_sobirr"
+				small="GFX_Portrait_sobirr_idea"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist infantry_officer career_officer }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	#air advisors
+	TSR_nurka1={
+		name="Nurken Abdirov" #any ideology
+		portraits={
+			army={
+				small="GFX_Portrait_nurka"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = TSR_nurka1
+			allowed = {
+				original_tag = TSR
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+}

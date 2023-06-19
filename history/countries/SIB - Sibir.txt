@@ -168,6 +168,7 @@ set_convoys = 50
 
 add_ideas = {
 	SIB_balanced_spending_6
+	SIB_soviet_army_remnant
 }
 
 #recruit_character = hmmm

@@ -16,7 +16,16 @@ characters = {
 		portraits = {
 			civilian = {
 				large = gfx\leaders\KRE\paavo_talvela.dds
+				small=gfx\leaders\KRE\paavo_talvela_small.dds
 			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
 		}
 		country_leader = {
 			ideology = fascism_ideology
@@ -36,6 +45,280 @@ characters = {
 			traits = { staunch_stalinist }
 			expire = "3000.1.1.1"
 			id = -1
+		}
+	}
+	KRE_aarne_uimonen={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_aarne_uimonen
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits  = {
+				retired_officer
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_aarne_uimonen
+		portraits={
+			army={
+				small=gfx\leaders\KRE\aarne_uimonen_small.dds
+			}
+		}
+	}
+	KRE_astrid_reponen_juvas={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_astrid_reponen_juvas
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits  = {
+				editor
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_astrid_reponen_juvas
+		portraits={
+			army={
+				small=gfx\leaders\KRE\astrid_reponen_juvas_small.dds
+			}
+		}
+	}
+	KRE_bobi_siven={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_bobi_siven
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits  = {
+				ideological_crusader
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_bobi_siven
+		portraits={
+			army={
+				small=gfx\leaders\KRE\bobi_siven_small.dds
+			}
+		}
+	}
+	KRE_elmo_kaila={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_elmo_kaila
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits  = {
+				war_profiteer
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_elmo_kaila
+		portraits={
+			army={
+				small=gfx\leaders\KRE\elmo_kaila_small.dds
+			}
+		}
+	}
+	KRE_santeri_haapanen={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_santeri_haapanen
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			traits  = {
+				smooth_talking_charmer
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_santeri_haapanen
+		portraits={
+			army={
+				small=gfx\leaders\KRE\santeri_haapanen_small.dds
+			}
+		}
+	}
+	KRE_ukki_vainamoinen={
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_ukki_vainamoinen
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits  = {
+				veteran_minister
+				popular_figurehead
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		name=KRE_ukki_vainamoinen
+		portraits={
+			army={
+				small=gfx\leaders\KRE\ukki_vainamoinen_small.dds
+			}
+		}
+	}
+	KRE_aarne_sihvo={	
+		name=KRE_aarne_sihvo
+		portraits={
+			army={
+				large=gfx\leaders\KRE\aarne_sihvo.dds
+				small=gfx\leaders\KRE\aarne_sihvo_small.dds
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = KRE
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			slot = high_command
+			idea_token = KRE_aarne_sihvo
+			ledger = army
+			traits = { army_infantry_2 }
+		}
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	KRE_kalle_mata={	
+		name=KRE_kalle_mata
+		portraits={
+			army={
+				large=gfx\leaders\KRE\kalle_mata.dds
+				small=gfx\leaders\KRE\kalle_mata_small.dds
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = KRE
+			}
+			slot = army_chief
+			idea_token = KRE_kalle_mata
+			traits = { army_chief_drill_2 }
+		}
+		corps_commander ={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	KRE_ragnar_nordstrom={	
+		name=KRE_ragnar_nordstrom
+		portraits={
+			army={
+				large=gfx\leaders\KRE\ragnar_nordstrom.dds
+				small=gfx\leaders\KRE\ragnar_nordstrom_small.dds
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KRE_ragnar_nordstrom
+			allowed  = {
+				original_tag = KRE
+			}
+			available = {
+				has_government = fascism
+			}
+			traits  = {
+				war_industrialist
+				finance_graduate
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		corps_commander ={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	KRE_aaro_pajari={	
+		name=KRE_aaro_pajari
+		portraits={
+			army={
+				large=gfx\leaders\KRE\aaro_pajari.dds
+				small=gfx\leaders\KRE\aaro_pajari_small.dds
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = KRE
+			}
+			slot = army_chief
+			idea_token = KRE_aaro_pajari
+			traits = { army_chief_offensive_1 }
+		}
+		corps_commander ={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
 }

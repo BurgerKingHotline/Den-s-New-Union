@@ -7,20 +7,24 @@ state={
 	state_category = rural
 
 	history={
+		owner = AFH
+		add_core_of = AFH
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		victory_points = {
-			4893 1 
+			4893 2
 		}
 		victory_points = {
-			5064 1 
+			5064 2
 		}
-		}
+	}
 
 	provinces={
 		1948 1995 2017 2062 2078 2101 4893 4949 5020 5064 8053 8090 10789 12788 12871 
 	}
 
-	local_supplies=0.0 
+	local_supplies=1.0 
 }

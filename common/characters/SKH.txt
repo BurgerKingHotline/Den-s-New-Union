@@ -13,4 +13,21 @@ characters = {
 			id = -1
 		}
 	}
+	SKH_zhukov = {
+		name = "Georgy Zhukov" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_zhukov
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
 }

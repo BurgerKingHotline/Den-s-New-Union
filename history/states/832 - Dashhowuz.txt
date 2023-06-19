@@ -2,27 +2,32 @@ state = {
 	id = 832
 	name = "STATE_832"
 
+	resources = {
+		oil = 1
+		steel = 1
+	}
+
 	history = {
-	
+		owner = TSR
+		add_core_of = BRB
+		
 		victory_points = {
 			1493 1
 		}
 		
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
-
+			arms_factory = 1
 		}
-		
-		}
+	}
 
 	provinces = {
 		1493 1649 7618 10485
 	}
 	manpower = 133065
 	buildings_max_level_factor = 1.000
-	state_category = pastoral
+	state_category = rural
 
-	local_supplies = 4.0 
+	local_supplies = 3.0 
 	
 }

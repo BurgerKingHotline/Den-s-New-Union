@@ -1,0 +1,9 @@
+ideas = {
+	country = {
+		NCR_shodan = {
+			allowed = {
+				tag = NCR
+			}
+		}
+	}
+}

@@ -7,6 +7,10 @@ ideologies = {
 			conservatism = {
 			}
 
+			TSR_islamic_conservatism = {
+				can_be_randomly_selected = no
+			}
+
 			liberalism = {
 			}
 
@@ -76,7 +80,11 @@ ideologies = {
 
 			stalinism = {
 			}
-
+			
+			TSR_turkestan_socialism = {
+				can_be_randomly_selected = no
+			}
+			
 			anti_revisionism = {
 			}
 
@@ -138,6 +146,10 @@ ideologies = {
 			}
 
 			falangism = {
+			}
+
+			TSR_pan_turkism = {
+				can_be_randomly_selected = no
 			}
 
 			rexism = {

@@ -23,7 +23,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CIR_inal_the_great.dds"
 	}
 	
-	# Leaders
+	# Characters
 	
 	spriteType = {
 		name = "GFX_portrait_CIR_pshemakho_kotsev"
@@ -32,7 +32,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_portrait_CIR_ismail_hakki_berkok"
-		texturefile = "gfx/leaders/CIR/portrait_CIR_ ismail_hakki_berkok.dds"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_ismail_hakki_berkok.dds"
 	}
 	
 	spriteType = {
@@ -43,6 +43,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_CIR_cerkes_ethem"
 		texturefile = "gfx/leaders/CIR/portrait_CIR_cerkes_ethem.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_yusuf_izzet"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_yusuf_izzet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_aziz_ali_al_misri"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_aziz_ali_al_misri.dds"
 	}
 	
 }

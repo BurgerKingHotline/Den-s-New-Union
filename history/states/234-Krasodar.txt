@@ -13,10 +13,10 @@ state={
 	history={
 		owner = CIR
 		victory_points = {
-			3720 1 
+			3720 10
 		}
 		victory_points = {
-			719 3
+			719 5
 		}
 		victory_points = {
 			3734 25
