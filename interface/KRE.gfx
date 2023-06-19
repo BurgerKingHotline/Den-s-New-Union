@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_idea_KRE_finnish_client_state"
 		texturefile = "gfx/interface/ideas/KRE_finnish_client_state.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_KRE_1"
+		texturefile = "gfx/event_pictures/report_event_KRE_1.dds"
+	}
 }

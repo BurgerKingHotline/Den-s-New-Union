@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			KRE = {
+				country_event = KRE_events.1
+			}
+		}
+	}
+}
