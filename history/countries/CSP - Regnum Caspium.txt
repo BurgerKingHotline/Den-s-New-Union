@@ -3,8 +3,15 @@ capital = 236
 set_research_slots = 3
 set_stability = 0.40
 set_war_support = 0.35
+set_convoys
 
 oob = "CSP"
+
+add_ideas = {
+	CSP_miniscule_army
+	CSP_low_public_trust
+	CSP_lack_of_industrialization
+}
 
 set_technology = {
     infantry_weapons = 1
