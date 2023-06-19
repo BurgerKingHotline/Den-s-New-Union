@@ -26,3 +26,6 @@
 
  HOA_Resident_Management:0 "Resident Management Initiative"
  HOA_Resident_Management_desc:0 "The Petrograd Home Owners Assocation is one with a contentious background. The Management has not always been well liked among the residents of the region. With this, The Management must cooperate with the residents in order to placate their anger, lest it boil over. Currently, the resident anger level is $pol_violence [HOA_Get_Anger_Level]."
+
+ HOA_dictator:0 "The Resident's Dictator"
+ HOA_dictator_desc:0 "The President of the HOA has been proclaimed a dictator by those who live under his jurisdiction. As long as he remains in power, the anger of the residents will continually increase."
