@@ -1,5 +1,5 @@
 spriteTypes = {
-
+	#subids
 	spriteType = {
 		name = "GFX_ideology_TSR_islamic_conservatism"
 		texturefile = "gfx/interface/TSR/TSR_islamic_conservatism.dds"
@@ -14,7 +14,7 @@ spriteTypes = {
 		name = "GFX_ideology_TSR_turkestan_socialism"
 		texturefile = "gfx/interface/TSR/TSR_turkestan_socialism.dds"
 	}
-
+	#leaders
 	spriteType = {
 		name = "GFX_Portrait_turar"
 		texturefile = "gfx/leaders/TSR/TSR/turar_ry.dds"
@@ -22,6 +22,49 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_akb"
 		texturefile = "gfx/leaders/TSR/TSR/alikhan_b.dds"
+	}
+	#generals
+
+	spriteType = {
+		name = "GFX_Portrait_abja"
+		texturefile = "gfx/leaders/TSR/TSR/mil/abd_j.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_abja_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/abd_j_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_taimk"
+		texturefile = "gfx/leaders/TSR/TSR/mil/taim_k.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_taimk_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/taim_k_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_sobirr"
+		texturefile = "gfx/leaders/TSR/TSR/mil/sobir_r.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_sobirr_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/sobir_r_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_nurka"
+		texturefile = "gfx/leaders/TSR/TSR/ideas/nurk_a.dds"
+	}
+
+	#traits
+
+	spriteType = {
+		name = "GFX_trait_TSR_khazakh_khan"
+		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_khkhan.dds"
 	}
 
 	spriteType = {
