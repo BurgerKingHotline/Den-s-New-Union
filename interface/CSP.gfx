@@ -3,4 +3,8 @@ spriteTypes = {
         name = "GFX_report_event_CSP_opening"
         texturefile = "gfx/event_pictures/report_event_CSP_opening.dds"
     }
+    spriteType = {
+        name = "GFX_idea_CSP_low_public_trust"
+        texturefile = "gfx/interface/ideas/CSP_low_public_trust.dds"
+    }
 }
