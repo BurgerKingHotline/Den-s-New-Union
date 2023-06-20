@@ -16,32 +16,30 @@ focus_tree = {
 
     focus = {
 		id = DEN_first_cabinet
-
 		icon = GFX_focus_generic_improve_the_administration
 		x = 0
 		y = 0
 		cost = 1
-
-		available = {
-
-		}
-		
 		completion_reward = {
 			hidden_effect={
 				remove_ideas = {
 					blank1
+					blank2
+					blank3
 					blank4
-					blank5
-					blank6
+				}
+				add_ideas = {
+					DNN_killeritch_advisor
+					DNN_flimsypike_advisor
+					DNN_muller_advisor
+					DNN_miah_advisor
 				}
 			}
-			add_ideas = {
-				DNN_killeritch_advisor
-				DNN_flimsypike_advisor
-				DNN_muller_advisor
-			}
-			add_ideas = {
-				DNN_miah_advisor
+			custom_effect_tooltip = DEN_first_cabinet_tt
+			add_stability = -0.15
+			add_timed_idea = {
+				idea = DEN_new_cabinet
+				days = 60
 			}
 		}
 	}

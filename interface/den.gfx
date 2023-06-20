@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/DEN/ideas/reddit.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_DEN_muller_gone"
+		texturefile = "gfx/DEN/ideas/mullergone.dds"
+	}
+	spriteType = {
 		name = "GFX_advisor_DEN_chefjones"
 		texturefile = "gfx/DEN/characters/advisors/chef.dds"
 	}

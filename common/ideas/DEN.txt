@@ -24,5 +24,27 @@ ideas = {
 			modifier = {
 			}
 		}
+		DEN_new_cabinet = {	
+			allowed = {
+				original_tag = DNN 
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1		
+			picture = generic_army_war_college
+			modifier = {
+				political_power_gain = -0.05
+				stability_weekly = 0.05
+				custom_modifier_tooltip = cabinet_on_remove
+			}
+			on_remove = {
+				add_political_power = 50
+				add_autonomy_score = {
+					value = 1000
+					localization = DEN_more_gov
+				}
+			}
+		}
     }
 }

@@ -1,12 +1,22 @@
 ﻿l_english:
+# COUNTRIES #
 DNN: "Hoi4 Modding Den"
 DNN_DEF: "the Hoi4 Modding Den"
 DNN_ADJ: "Denizen"
-
 HFM: "r/hoi4modding"
 HFM_DEF: "r/hoi4modding"
 HFM_ADJ: "Modder"
 
+# FOCUSES #
+DEN_first_cabinet: "Establish the First Cabinet"
 
+# IDEAS #
+DEN_reddit: "Division of the Reddit"
+DEN_muller_gone: "Mysterious Departure of Muller"
+DEN_new_cabinet: "New Cabinet Established"
+
+# OTHER #
 VICTORY_POINTS_1860: "chat-chat-chat-chat-chat-chat-chat-chat"
 VICTORY_POINTS_12606: "admin-channel"
+DEN_first_cabinet_tt: "The first cabinet will consist of: Muller, Miah, Killeritch, and FlimsyPike\n\n"
+cabinet_on_remove: "On removal we will gain 50 Political Power and 1000 Autonomy"
