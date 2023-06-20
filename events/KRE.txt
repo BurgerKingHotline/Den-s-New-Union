@@ -9,5 +9,19 @@ country_event = {
 
 	option = {
 		name = KRE_events.1.a
+		hidden_effect = {
+			add_manpower = 18000
+		}
+	}
+}
+country_event = {
+	id = KRE_events.2
+	title = KRE_events.2.title
+	desc = KRE_events.2.desc
+	picture = GFX_report_event_KRE_1
+	fire_only_once = yes
+
+	option = {
+		name = KRE_events.2.a
 	}
 }
