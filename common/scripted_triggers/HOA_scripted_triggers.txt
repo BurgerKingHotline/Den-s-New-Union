@@ -1,12 +1,10 @@
 HOA_Residents_Content_Trigger = {
-    AND = {
-        check_variable = {
-            HOA_Anger < 1
-        }
+    check_variable = {
+        HOA_Anger < 1
+    }
 
-        check_variable = {
-            HOA_Anger > 15
-        }
+    check_variable = {
+        HOA_Anger > 15
     }
 }
 
