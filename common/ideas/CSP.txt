@@ -37,6 +37,9 @@ ideas = {
                 stability_factor = -0.2
                 war_support_factor = -0.2
                 political_advisor_cost_factor = 0.25
+                mobilization_laws_cost_factor = 0.25
+                trade_laws_cost_factor = 0.25
+                economy_cost_factor = 0.25
             }
         }
         CSP_low_public_trust_2 = {
@@ -58,6 +61,9 @@ ideas = {
                 stability_factor = -0.1
                 war_support_factor = -0.1
                 political_advisor_cost_factor = 0.2
+                mobilization_laws_cost_factor = 0.2
+                trade_laws_cost_factor = 0.2
+                economy_cost_factor = 0.2
             }
         }
         CSP_low_public_trust_3 = {
@@ -79,6 +85,9 @@ ideas = {
                 stability_factor = -0.05
                 war_support_factor = -0.05
                 political_advisor_cost_factor = 0.1
+                mobilization_laws_cost_factor = 0.1
+                trade_laws_cost_factor = 0.1
+                economy_cost_factor = 0.1
             }
         }
         CSP_lack_of_industrialization = {
