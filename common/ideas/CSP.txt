@@ -27,7 +27,7 @@ ideas = {
                 original_tag = CSP
             }
 
-            allowed_civil_war {
+            allowed_civil_war = {
                 always = yes
             }
 
@@ -36,7 +36,7 @@ ideas = {
             modifier = {
                 stability_factor = -0.2
                 war_support_factor = -0.2
-                civilian_advisor_cost_factor = 0.25
+                political_advisor_cost_factor = 0.25
             }
         }
         CSP_low_public_trust_2 = {
@@ -48,16 +48,16 @@ ideas = {
                 original_tag = CSP
             }
 
-            allowed_civil_war {
+            allowed_civil_war = {
                 always = yes
             }
 
             removal_cost = -1
 
             modifier = {
-                stability_factor = -0.10
-                war_support_factor = -0.10
-                civilian_advisor_cost_factor = 0.20
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                political_advisor_cost_factor = 0.2
             }
         }
         CSP_low_public_trust_3 = {
@@ -69,7 +69,7 @@ ideas = {
                 original_tag = CSP
             }
 
-            allowed_civil_war {
+            allowed_civil_war = {
                 always = yes
             }
 
@@ -78,7 +78,7 @@ ideas = {
             modifier = {
                 stability_factor = -0.05
                 war_support_factor = -0.05
-                civilian_advisor_cost_factor = 0.10
+                political_advisor_cost_factor = 0.1
             }
         }
         CSP_lack_of_industrialization = {
@@ -88,15 +88,15 @@ ideas = {
                 original_tag = CSP
             }
 
-            allowed_civil_war {
+            allowed_civil_war = {
                 always = yes
             }
 
             removal_cost = -1
 
             modifier = {
-                production_speed_buildings_factor = 0.25
-                industry_capacity_factory = -0.25
+                production_speed_buildings_factor = -0.25
+                industrial_capacity_factory = -0.25
                 consumer_goods_factor = 0.1
             }
         }

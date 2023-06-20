@@ -1,0 +1,7 @@
+CSP_INF_01 = { # DIVISIONS_NAME_GROUP, set in your units folder
+	name = "Infantry Divisions"
+	for_countries = { CSP }
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	fallback_name = "%s Legionary Guard"
+}

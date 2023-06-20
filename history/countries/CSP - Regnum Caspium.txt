@@ -3,7 +3,6 @@ capital = 236
 set_research_slots = 3
 set_stability = 0.40
 set_war_support = 0.35
-set_convoys
 
 oob = "CSP"
 
