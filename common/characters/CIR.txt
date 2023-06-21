@@ -8,11 +8,11 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ trickster guerilla_fighter urban_assault_specialist  }
+			traits={ brilliant_strategist trickster guerilla_fighter urban_assault_specialist  }
 			skill=3
-			attack_skill=4
+			attack_skill=3
 			defense_skill=3
-			planning_skill=4
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -25,7 +25,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ commando skirmisher infantry_leader }
+			traits={ infantry_officer commando skirmisher infantry_leader }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -42,7 +42,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ organizer defensive_doctrine }
+			traits={ media_personality organizer defensive_doctrine }
 			skill=3
 			attack_skill=1
 			defense_skill=4
@@ -59,7 +59,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader trait_engineer trickster winter_specialist }
+			traits={ armor_officer panzer_leader trait_engineer trickster }
 			skill=3
 			attack_skill=4
 			defense_skill=1
@@ -67,5 +67,56 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
+	}
+	
+	CIR_ismail_gasprinsky = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_ismail_gasprinsky.dds
+			}
+		}
+		navy_leader={
+			traits={ spotter superior_tactician }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
 	}	
+	
+	CIR_bekir_sami_kunduh = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_bekir_sami_kunduh.dds
+			}
+		}
+		navy_leader={
+			traits={ seawolf silent_hunter torpedo_expert }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	CIR_aslan_Temirbekov_adnanov = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_bekir_sami_kunduh.dds
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer cavalry_leader cavalry_expert }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }
