@@ -48,7 +48,7 @@ focus_tree = {
 		icon = GFX_CIR_choosing_our_capital
 		cost = 10
 		
-		x = 25
+		x = 20
 		y = 0
 		relative_position_id = #CIR_
 		
@@ -63,7 +63,73 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = { set_country_flag = choose_capital }
+			custom_effect_tooltip = CIR_capital_tt
+			hidden_effect = { 
+				CIR = { 
+					country_event = CIR_choose_capial.1 
+				}
+				set_country_flag = choose_capital
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_protect_our_national_identity
+		icon = GFX_CIR_protect_our_national_identity
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_choosing_our_capital
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_choosing_our_capital
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_teach_adyghe_in_schools
+		icon = GFX_CIR_teach_adyghe_in_schools
+		cost = 10
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_protect_our_national_identity
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_protect_our_national_identity
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
 		}
 		
 		bypass = {
@@ -474,7 +540,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_claim = 232
 		}
 		
 		bypass = {

@@ -1,10 +1,113 @@
 ideas = {
     country = {
         CSP_miniscule_army = {
+            picture = "generic_army_problems"
+
+            allowed = {
+				original_tag = CSP
+            }
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+                army_speed_factor = -0.1
+                army_org_factor = -0.05
+			}
         }
         CSP_low_public_trust = {
+            picture = "CSP_low_public_trust"
+
+            allowed = {
+                original_tag = CSP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.2
+                war_support_factor = -0.2
+                political_advisor_cost_factor = 0.25
+                mobilization_laws_cost_factor = 0.25
+                trade_laws_cost_factor = 0.25
+                economy_cost_factor = 0.25
+            }
+        }
+        CSP_low_public_trust_2 = {
+            name = CSP_low_public_trust
+
+            picture = "CSP_low_public_trust"
+
+            allowed = {
+                original_tag = CSP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                political_advisor_cost_factor = 0.2
+                mobilization_laws_cost_factor = 0.2
+                trade_laws_cost_factor = 0.2
+                economy_cost_factor = 0.2
+            }
+        }
+        CSP_low_public_trust_3 = {
+            name = CSP_low_public_trust
+
+            picture = "CSP_low_public_trust"
+
+            allowed = {
+                original_tag = CSP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.05
+                political_advisor_cost_factor = 0.1
+                mobilization_laws_cost_factor = 0.1
+                trade_laws_cost_factor = 0.1
+                economy_cost_factor = 0.1
+            }
         }
         CSP_lack_of_industrialization = {
+            picture = "POL_disjointed_industry"
+
+            allowed = {
+                original_tag = CSP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = -0.25
+                industrial_capacity_factory = -0.25
+                consumer_goods_factor = 0.1
+            }
         }
     }
 }

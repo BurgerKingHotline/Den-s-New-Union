@@ -1,0 +1,71 @@
+characters = {
+
+	CIR_ismail_hakki_berkok={	
+		name=CIR_ismail_hakki_berkok
+		portraits={
+			army={
+				large=gfx\leaders\CIR\portrait_CIR_ismail_hakki_berkok.dds
+			}
+		}
+		field_marshal={
+			traits={ trickster guerilla_fighter urban_assault_specialist  }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	CIR_cerkes_ethem = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_cerkes_ethem.dds
+			}
+		}
+		corps_commander={
+			traits={ commando skirmisher infantry_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	CIR_yusuf_izzet = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_yusuf_izzet.dds
+			}
+		}
+		corps_commander={
+			traits={ organizer defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+	
+	CIR_aziz_ali_al_misri = {
+		portraits = {
+			civilian = {
+				large = gfx\leaders\CIR\portrait_CIR_aziz_ali_al_misri.dds
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader trait_engineer trickster winter_specialist }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+}

@@ -26,3 +26,26 @@
 
  HOA_Resident_Management:0 "Resident Management Initiative"
  HOA_Resident_Management_desc:0 "The Petrograd Home Owners Assocation is one with a contentious background. The Management has not always been well liked among the residents of the region. With this, The Management must cooperate with the residents in order to placate their anger, lest it boil over. Currently, the resident anger level is $pol_violence [HOA_Get_Anger_Level]."
+
+ HOA_Perform_Basic_Maintenence:0 "Perform Basic Maintenence"
+ HOA_Perform_Basic_Maintenence_desc:0 "\"In order to maintain the quality of the neighborhood, Management has invested in cleaning up the area. If you have any questions, please contact your local representative.\" - Management"
+ HOA_Develop_Local_Economy:0 "Develop Local Economy"
+ HOA_Develop_Local_Economy_desc:0 ""
+ HOA_Support_Local_Students:0 "Support Local Students"
+ HOA_Support_Local_Students_desc:0 ""
+ HOA_Release_Financial_Records:0 "Release HOA Billing Records"
+ HOA_Release_Financial_Records_desc:0 ""
+ HOA_Institute_Smoking_Ban:0 "Institute Smoking Ban"
+ HOA_Institute_Smoking_Ban_desc:0 ""
+ HOA_Fund_Enforcement_Units:0 "Fund Code Enforcement Units"
+ HOA_Fund_Enforcement_Units_desc:0 ""
+ HOA_Political_Campaigning:0 "Political Campaigning"
+ HOA_Political_Campaigning_desc:0 ""
+ 
+
+ HOA_Likely_Reduce:0 "This will likely §Greduce§! resident anger."
+ HOA_Unknown:0 "This may increase resident anger."
+ HOA_Likely_Increase:0 "This will likely §Rincrease§! resident anger."
+
+ HOA_dictator:0 "The Resident's Dictator"
+ HOA_dictator_desc:0 "The President of the HOA has been proclaimed a dictator by those who live under his jurisdiction. As long as he remains in power, the anger of the residents will continually increase."

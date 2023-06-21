@@ -1,0 +1,16 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_home_owners_board"
+        texturefile = "gfx/leaders/HOA/Portrait_Home_Owners_Board.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_Ivan_Kodatsky"
+        texturefile = "gfx/leaders/HOA/Portrait_Ivan Kodatsky.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_Portrait_Nikolai_Nekrasov"
+        texturefile = "gfx/leaders/HOA/Portrait_Nikolai_Nekrasov.dds"
+    }
+}

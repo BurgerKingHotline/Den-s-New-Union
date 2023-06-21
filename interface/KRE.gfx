@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "GFX_report_event_KRE_1"
 		texturefile = "gfx/event_pictures/report_event_KRE_1.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_karelia_initial"
+		texturefile = "gfx/interface/goals/KRE_karelia_initial.dds"
+	}
 }

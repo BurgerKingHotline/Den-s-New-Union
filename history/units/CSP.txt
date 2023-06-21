@@ -1,0 +1,32 @@
+division_template = {
+    name = "Legionary Guard"
+    division_names_group = CSP_INF_01
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+}
+
+units = {
+	division = {
+		division_template = "Legionary Guard"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+        start_manpower_factor = 0.5
+		location = 9753
+		name = "Astrakhan Patrol"
+	}
+    division = {
+		division_template = "Legionary Guard"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+        start_manpower_factor = 0.5
+		location = 9753
+		name = "Marching Band"
+	}
+}

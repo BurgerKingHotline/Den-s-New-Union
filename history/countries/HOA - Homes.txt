@@ -86,3 +86,7 @@ set_popularities = {
     neutrality = 98
     democratic = 2
 }
+
+recruit_character = HOA_Ivan_Kodatsky
+recruit_character = HOA_Nikolai_Nekrasov
+recruit_character = HOA_Home_Owners_Board

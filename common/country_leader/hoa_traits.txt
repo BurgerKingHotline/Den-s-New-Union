@@ -1,0 +1,6 @@
+leader_traits = {
+    HOA_dictator = {
+        random = no
+        political_power_factor = 0.1
+    }
+}

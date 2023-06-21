@@ -1,5 +1,7 @@
 ﻿l_english:
- #names
+ 
+ #country names
+ 
  CIR_fascism:0 "Circassian Imamate"
  CIR_fascism_DEF:0 "the Circassian Imamate"
  CIR_democratic:0 "Republic of Adyga"
@@ -19,17 +21,31 @@
  CIR:0 "Circassia"
  CIR_DEF:0 "Circassia"
  CIR_ADJ:0 "Adyga"
+ 
+ #character names
+ 
+ CIR_ismail_hakki_berkok:0 "Ismail Hakkı Berkok"
+ CIR_cerkes_ethem:0 "Çerkes Ethem"
+ CIR_yusuf_izzet:0 "Yusuf Izzet"
+ CIR_aziz_ali_al_misri:0 "Aziz Ali al-Misri"
+ 
  #custom effect tooltips
+ 
  CIR_choose_Sochi:0 "Keeps capital in §YSochi§!"
  CIR_decrease_relations_tom:0 "Decreases relations with the §YRussian Federation§! by §R-50§!"
  CIR_take_the_south_tt:0 "Gains §YConquer (Focus)§! war goal agains nations in the south Caucasus"
  CIR_take_the_east_tt:0 "Gains §YConquer (Focus)§! war goal agains nations in the east Caucasus"
+ CIR_capital_tt:0 "You will choose Circassias §YCapital City§!."
+ 
  #events
+ 
  CIR_choose_capial.1.title:0 "Choosing Our Capital City"
  CIR_choose_capial.1.desc:0 ""
- CIR_choose_capial.1.a:0 "Sochi, Our Historical Capital!"
- CIR_choose_capial.1.b:0 "Krasodar, Our New and Better Capital!"
+ CIR_choose_capial.1.a:0 "Sochi, Our Historical Capital City!"
+ CIR_choose_capial.1.b:0 "Krasodar, Our New and Better Capital City!"
+ 
  #ideas
+ 
  #CIR_:0 ""
  #CIR_ _desc:0 ""
  CIR_circassian_resilience:0 "Circassian Resilience"

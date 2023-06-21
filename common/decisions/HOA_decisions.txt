@@ -3,7 +3,7 @@ HOA_Resident_Management = {
         icon = generic_ignite_civil_war
 
         allowed = {
-            always = yes
+            is_debug = yes
         }
 
         cost = 500
@@ -19,6 +19,380 @@ HOA_Resident_Management = {
 
         ai_will_do = {
             factor = 0
+        }
+    }
+
+    # LOW RISK
+
+    HOA_Perform_Basic_Maintenence = {
+        icon = decision_generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger < 50
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Likely_Reduce
+            hidden_effect = {
+                random_list = {
+                    85 = {
+                        HOA_anger_appease_soft = yes
+                    }
+                    10 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    5 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                }
+            }
+        }
+    }
+
+    HOA_Develop_Local_Economy = {
+        icon = decision_generic_wreckers
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger < 50
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 60
+
+        complete_effect = {
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                }
+            }
+
+            custom_effect_tooltip = HOA_Likely_Reduce
+            hidden_effect = {
+                random_list = {
+                    85 = {
+                        HOA_anger_appease_soft = yes
+                    }
+                    10 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    5 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                }
+            }
+        }
+    }
+
+    HOA_Support_Local_Students = {
+        icon = decision_generic_research
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger < 50
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Likely_Reduce
+            hidden_effect = {
+                random_list = {
+                    85 = {
+                        HOA_anger_appease_soft = yes
+                    }
+                    10 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    5 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                }
+
+                random_list = {
+                    70 = {
+                        add_tech_bonus = {
+                            bonus = 0.5
+                            uses = 1
+                        }
+                    }
+
+                    10 = {
+                        add_tech_bonus = {
+                            bonus = 0.5
+                            uses = 2
+                        }
+                    }
+
+                    20 =  {
+
+                    }
+                }
+            }
+        }
+    }
+
+    # MIDDLE RISK
+
+    HOA_Release_Financial_Records = {
+        icon = decision_generic_wreckers
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 150
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger < 80
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Unknown
+            hidden_effect = {
+                random_list = {
+                    45 = {
+                        HOA_anger_appease_soft = yes
+                    }
+                    40 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    15 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                }
+            }
+        }
+    }
+
+    HOA_Institute_Smoking_Ban = {
+        icon = decision_generic_political_rally
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 150
+        fire_only_once = yes
+
+        available = {
+            check_variable = {
+                HOA_Anger < 80
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Unknown
+            hidden_effect = {
+                random_list = {
+                    32 = {
+                        HOA_anger_appease_soft = yes
+                    }
+                    48 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    20 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                }
+            }
+        }
+    }
+
+    # HIGH RISK
+
+    HOA_Fund_Enforcement_Units = {
+        icon = decision_generic_reorganize_irregulars
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 200
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger > 5
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Likely_Increase
+            hidden_effect = {
+
+                division_template = {
+                    name = "Code Enforcement"
+                    is_locked = yes
+                    division_cap = 3 
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 0 y = 3 }
+                    }
+                    support = {
+                        military_police = { x = 0 y = 0 }
+                        recon = { x = 0 y = 1 }
+                    }
+                }
+                random_list = {
+                    30 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                    60 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    10 = {
+                        HOA_anger_appease_hard = yes
+                    }
+                }
+
+                random_list = {
+                    70 = {
+                        random_owned_controlled_state = {
+                            create_unit = {
+                                division = "name =\Code Enforcement\" division_template=\"Code Enforcement\" start_equipment_factor = 0.6" owner = HOA
+                            }
+                        }
+                    }
+
+                    30 = {
+
+                    }
+                }
+            }
+        }
+    }
+
+    HOA_Political_Campaigning = {
+        icon = decision_generic_political_discourse
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 200
+        fire_only_once = no
+
+        available = {
+            check_variable = {
+                HOA_Anger > 10
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        days_re_enable = 30
+
+        complete_effect = {
+            custom_effect_tooltip = HOA_Likely_Increase
+            hidden_effect = {
+                random_list = {
+                    30 = {
+                        HOA_anger_appease_medium = yes
+                    }
+                    60 = {
+                        HOA_anger_appease_failure = yes
+                    }
+                    10 = {
+                        HOA_anger_appease_hard = yes
+                    }
+                }
+
+                random_list = {
+                    60 = {
+                        add_popularity = {
+                            ideology = @highest_party_ideology
+                            popularity = 0.05
+                        } 
+                    }
+
+                    20 = {
+                        add_popularity = {
+                            ideology = @highest_party_ideology
+                            popularity = 0.1
+                        } 
+                    }
+
+                    10 = {
+                        add_popularity = {
+                            ideology = @highest_party_ideology
+                            popularity = -0.05
+                        }
+                    }
+
+                    10 = {
+                        add_popularity = {
+                            ideology = @highest_party_ideology
+                            popularity = -0.05
+                        }
+
+                        add_stability = -0.05
+                    }
+                }
+            }
         }
     }
 }
