@@ -6,6 +6,8 @@ set_war_support = 0.35
 
 oob = "CSP"
 
+recruit_character = CSP_junta
+
 add_ideas = {
 	CSP_miniscule_army
 	CSP_low_public_trust

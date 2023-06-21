@@ -7,4 +7,12 @@ spriteTypes = {
         name = "GFX_idea_CSP_low_public_trust"
         texturefile = "gfx/interface/ideas/CSP_low_public_trust.dds"
     }
+    spriteType = {
+        name = "GFX_portrait_CSP_junta"
+        texturefile = "gfx/leaders/CSP/portrait_CSP_junta.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_CSP_choosing_a_king"
+        textureFile = "gfx/interface/goals/focus_csp_choosing_a_king.dds"
+    }
 }

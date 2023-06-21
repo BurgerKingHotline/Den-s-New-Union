@@ -1,0 +1,14 @@
+characters = {
+    CSP_junta = {
+        name = "CSP_junta"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_CSP_junta
+            }
+        }
+        country_leader = {
+            ideology = oligarchism
+            desc = CSP_junta_desc
+        }
+    }
+}
