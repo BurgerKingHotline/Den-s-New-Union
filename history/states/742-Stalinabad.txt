@@ -11,7 +11,10 @@ state = {
 		owner = TSR
 		add_core_of = TJS
 		victory_points = {
-			1384 1
+			1384 10
+		}
+		victory_points = {
+			10187 4
 		}
 		buildings = {
 			infrastructure = 1

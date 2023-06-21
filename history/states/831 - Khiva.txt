@@ -10,7 +10,7 @@ state = {
 		owner = TSR
 		add_core_of = BRB
 		victory_points = {
-			12465 1
+			12465 3
 		}
 		buildings = {
 			infrastructure = 2

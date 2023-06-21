@@ -10,7 +10,16 @@ state={
 		owner = TSR
 		add_core_of = TSR
 		victory_points = {
-			12583 1
+			12583 10
+		}
+		victory_points = {
+			2058 5
+		}
+		victory_points = {
+			10530 3
+		}
+		victory_points = {
+			12581 2
 		}
 		buildings = {
 			infrastructure = 1
