@@ -1,0 +1,174 @@
+division_template = {
+	name = "Mountain Division"
+
+	division_names_group = TSR_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Standard Infantry Division"
+
+	division_names_group = TSR_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Local Infantry Division"
+
+	division_names_group = TSR_INF_03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"
+
+	division_names_group = TSR_INF_04
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Camel Division"
+
+	division_names_group = TSR_INF_05
+
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+
+	division_names_group = TSR_INF_06
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		division_template = "Mountain Division"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.7
+		location = 12250
+	}
+	division = {
+		division_template = "Standard Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.35
+        start_manpower_factor = 0.5
+		location = 1483
+	}
+	division = {
+		division_template = "Local Infantry Division"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.7
+		location = 12491
+	}
+	division = {
+		division_template = "Local Infantry Division"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.7
+		location = 12511
+	}
+	division = {
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.3
+        start_manpower_factor = 0.6
+		location = 1614
+	}
+	division = {
+		division_template = "Armored Division"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.7
+        start_manpower_factor = 0.8
+		location = 7639
+	}
+}
+
+	instant_effect = {
+		add_equipment_production = {
+			equipment = {
+			type = infantry_equipment_1
+			creator = "TSR"
+		}
+		requested_factories = 2
+		progress = 0.19
+		efficiency = 95
+		}
+	}
+	instant_effect = {
+		add_equipment_production = {
+			equipment = {
+			type = support_equipment_1
+			creator = "TSR"
+		}
+		requested_factories = 1
+		progress = 0.19
+		efficiency = 80
+		}
+	}

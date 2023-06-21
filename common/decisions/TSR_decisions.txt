@@ -1,0 +1,32 @@
+TSR_revolts_cat = {
+    loosen_conscription_d = {
+        icon = generic_disband_irregulars
+
+        allowed = {
+			has_global_flag = revolts_visible
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        available = {
+			controls_state = 742
+			has_army_experience > 10
+        }
+
+        complete_effect = {
+            add_manpower = -10000
+			army_experience = -10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -80
+			}
+			add_stability = -0.05
+			add_to_variable = { tjh_anger = -16 }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

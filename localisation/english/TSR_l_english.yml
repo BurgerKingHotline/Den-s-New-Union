@@ -62,3 +62,15 @@ VICTORY_POINTS_10530: "Namangan"
 VICTORY_POINTS_12581: "Ferghana"
 VICTORY_POINTS_12722: "Qarshi"
 VICTORY_POINTS_1614: "Turtkul"
+#guis
+TJK_anger: "§WTajik Anger: [?tjh_anger]%§!"
+BRB_anger: "§GRebel Anger: [?brb_anger]%§!"
+taj_tt_1: "The Tajiks have never fully accepted themselves as part of the Turkestan project, and have consistently opposed any attempts to accept our rule. To secure control over our domain, this must change."
+brb_tt_1: "Ever since the establishment of our nation, many of the overthrown lords and tyrants began to organize armed resistance to our rule. These bandits must be wiped out before we start our other business."
+#events
+TSR_hello.t: "The Turkestani Socialist Republic"
+TSR_hello.desc: "Welcome to Turkestan. Long situated at the crossroads between East and West on the Silk Road, Turkestan was overrun by invaders since time immemorial. \nNow, however Turkestan stands proudly united unter its one banner- its own. \nThat's not to say that everything runs smoothly here. Turkestan is deeply divided along ethnic lines, with riots a daily occurence. Our politicians, once firmly united, now bicker amongst themselves over the most trivial matters. There's certainly much to be improved here, before we can even think of retaking the rest of Central Asia."
+TSR_hello.a: "Onwards!"
+#decisions
+TSR_revolts_cat: "Securing Control"
+loosen_conscription_d: "Tajik conscription exemptions"

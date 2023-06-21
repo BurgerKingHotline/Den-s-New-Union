@@ -1,0 +1,77 @@
+TSR_INF_01 = 
+{
+	name = "Mountaineer"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Mountaineer Division"
+}
+
+TSR_INF_02 = 
+{
+	name = "Standard Infantry"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Standard Infantry Division"
+}
+
+TSR_INF_03 = 
+{
+	name = "Local Infantry"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Local Infantry Division"
+}
+
+TSR_INF_04 = 
+{
+	name = "Cavalry"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Cavalry Division"
+}
+
+TSR_INF_05 = 
+{
+	name = "Camelry"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Camelry Division"
+}
+
+TSR_INF_06 = 
+{
+	name = "Armored"
+
+	for_countries = { TSR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Armored Division"
+}

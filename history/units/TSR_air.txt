@@ -1,0 +1,9 @@
+air_wings = {
+	830 = { 
+		small_plane_airframe_0 = {
+			owner = "TSR" 
+			amount = 25
+			version_name = "Fighter I"
+		}
+	}
+}
