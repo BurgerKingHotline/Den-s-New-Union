@@ -6,12 +6,19 @@
 
   # Parties
   CSP_neutrality_party: "Legionary Junta"
+  CSP_neutrality_party_king_chosen: "RCLG"
+  CSP_neutrality_party_king_chosen_long: "Regnum Caspium Legionary Guard"
   CSP_democratic_party: "Opposition"
 
   # Events
   CSP_events.1.title: "A Roman Kingdom?"
   CSP_events.1.desc: "Residents of Astrakhan, on the Caspian Sea, awoke to a strange reality. During the otherwise quiet night, anarchy had befallen upon the city, and indeed, the rest of the world. In this power vacuum, an armed organization claiming to be the successor to the great Roman Empire seized control over the northern Caspian coast. Though many are wary of their new impromptu rulers, others have readily embraced this new regime. Only time will tell what will come of the Legionary Junta."
   CSP_events.1.a: "Glory to the Caspian Kingdom!"
+
+  CSP_events.2.title: "Choosing a King"
+  CSP_events.2.desc: "The Junta has served us well, but it is plauged by ineffectiveness and instability. The time has come to choose a proper king. Among the council, there are two members that stand out. Antonius II pledges to lead our young nation to economic prosperity by kick-starting our industry. The other promising candidate, Augustus I, promises to expand the miltary and grow the country."
+  CSP_events.2.a: "The industrial leader!"
+  CSP_events.2.b: "The military leader!"
   
   # Ideas
   CSP_miniscule_army: "Miniscule Army"
