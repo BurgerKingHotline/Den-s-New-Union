@@ -23,6 +23,12 @@ spriteTypes = {
 		name = "GFX_Portrait_akb"
 		texturefile = "gfx/leaders/TSR/TSR/alikhan_b.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_vkh"
+		texturefile = "gfx/leaders/TSR/TSR/bad_veli_han.dds"
+	}
+
 	#generals
 
 	spriteType = {
@@ -56,6 +62,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_Portrait_alib_z"
+		texturefile = "gfx/leaders/TSR/TSR/mil/alibiz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_alib_z_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/alibiz_idea.dds"
+	}
+
+	#mil adv
+
+	spriteType = {
 		name = "GFX_Portrait_nurka"
 		texturefile = "gfx/leaders/TSR/TSR/ideas/nurk_a.dds"
 	}
@@ -67,11 +85,25 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_khkhan.dds"
 	}
 
+	#GUI - 1
 	spriteType = {
-		name = "GFX_Portrait_vkh"
-		texturefile = "gfx/leaders/TSR/TSR/bad_veli_han.dds"
+		name = "GFX_tjk_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_tajiks.dds"
 	}
 
+	spriteType = {
+		name = "GFX_brb_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_bandits.dds"
+	}
+	
+	#events
+
+	spriteType = {
+		name = "GFX_TSR_1"
+		texturefile = "gfx/event_pictures/TSR_one.dds"
+	}
+
+	#misc
 	spriteType = {
 		name = "GFX_Portrait_mzs"
 		texturefile = "gfx/leaders/TSR/oth/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"

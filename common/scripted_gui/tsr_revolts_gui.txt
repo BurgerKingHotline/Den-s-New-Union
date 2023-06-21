@@ -1,0 +1,8 @@
+scripted_gui = {
+	tsr_revolts_gui = {
+		context_type = decision_category
+		window_name = "tsr_revolts_gui1"
+	}
+	
+}
+

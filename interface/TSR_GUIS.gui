@@ -1,0 +1,39 @@
+@ICON_X = 40
+@TEXT_X = 60
+
+guiTypes = {
+	containerWindowType = {
+		name = "tsr_revolts_gui1"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 2000 }
+
+		instantTextBoxType = {
+			name ="TJK_anger_score"
+			position = { x = @TEXT_X y = 30 }
+			font = "hoi_18mbs"
+			text = "TJK_anger"
+			format = left
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="BRB_anger_score"
+			position = { x = @TEXT_X y = 50 }
+			font = "hoi_18mbs"
+			text = "BRB_anger"
+			format = left
+			maxHeight = 24
+		}
+		iconType = {
+			name ="tjk_icon"
+			spriteType = "GFX_tjk_icon"
+			position = { x = @ICON_X y = 30 }
+			pdx_tooltip = taj_tt_1
+		}
+		iconType = {
+			name ="brb_icon"
+			spriteType = "GFX_brb_icon"
+			position = { x = @ICON_X y = 50 }
+			pdx_tooltip = brb_tt_1
+		}
+	}
+}

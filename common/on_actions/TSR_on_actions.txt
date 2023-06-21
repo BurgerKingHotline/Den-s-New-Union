@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			TSR = {
+				country_event = TSR_events.1
+			}
+		}
+	}
+}

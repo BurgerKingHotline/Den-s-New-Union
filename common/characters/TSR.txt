@@ -107,6 +107,24 @@ characters = {
 			legacy_id=-1
 		}
 	}
+	TSR_alibizhag={
+		name="Alibi Dzhangildin" #commie/dem
+		portraits={
+			army={
+				large="GFX_Portrait_alib_z"
+				small="GFX_Portrait_alib_z_idea"
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected harsh_leader }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 	#air advisors
 	TSR_nurka1={
 		name="Nurken Abdirov" #any ideology

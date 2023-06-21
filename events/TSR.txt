@@ -1,0 +1,17 @@
+﻿add_namespace = TSR_events
+
+#Opening event
+country_event = {
+	id = TSR_events.1
+	title = TSR_hello.t
+	desc = TSR_hello.desc
+	picture = GFX_TSR_1
+	fire_only_once = yes
+
+	option = {
+		name = TSR_hello.a
+		set_global_flag = revolts_visible
+		set_variable = { tjh_anger = 70 }
+		set_variable = { brb_anger = 70 }
+	}
+}
