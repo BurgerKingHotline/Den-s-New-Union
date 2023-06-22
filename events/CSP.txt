@@ -22,6 +22,16 @@ country_event = {
   # Industrial leader
   option = {
     name = CSP_events.2.a
+    retire_ideology_leader = fascism
+    add_country_leader_role = {
+      character = CSP_antonius_ii
+      promote_leader =  yes
+      country_leader = {
+        ideology = despotism
+        desc = CSP_antonius_ii_desc
+        traits = { CSP_industrial_king }
+      }
+    }
     set_party_name = { 
       ideology = neutrality
       name = CSP_neutrality_party_king_chosen
@@ -31,6 +41,16 @@ country_event = {
   # Military leader
   option = {
     name = CSP_events.2.b
+    retire_ideology_leader = fascism
+    add_country_leader_role = {
+      character = CSP_augustus_i
+      promote_leader = yes
+      country_leader = {
+        ideology = despotism
+        desc = CSP_augustus_i_desc
+        traits = { CSP_militaristic_king }
+      }
+    }
     set_party_name = { 
       ideology = neutrality 
       name = CSP_neutrality_party_king_chosen

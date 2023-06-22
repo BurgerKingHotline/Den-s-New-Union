@@ -11,4 +11,20 @@ characters = {
             desc = CSP_junta_desc
         }
     }
+    CSP_antonius_ii = {
+        name = "CSP_antonius_ii"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_CSP_antonius_ii
+            }
+        }
+    }
+    CSP_augustus_i = {
+        name = "CSP_augustus_i"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_CSP_augustus_i
+            }
+        }
+    }
 }

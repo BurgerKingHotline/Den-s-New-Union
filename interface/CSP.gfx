@@ -4,12 +4,24 @@ spriteTypes = {
         texturefile = "gfx/event_pictures/report_event_CSP_opening.dds"
     }
     spriteType = {
+        name = "GFX_report_event_CSP_choosing_a_king"
+        texturefile = "gfx/event_pictures/report_event_CSP_choosing_a_king.dds"
+    }
+    spriteType = {
         name = "GFX_idea_CSP_low_public_trust"
         texturefile = "gfx/interface/ideas/CSP_low_public_trust.dds"
     }
     spriteType = {
         name = "GFX_portrait_CSP_junta"
         texturefile = "gfx/leaders/CSP/portrait_CSP_junta.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_CSP_antonius_ii"
+        texturefile = "gfx/leaders/CSP/portrait_CSP_antonius_ii.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_CSP_augustus_i"
+        texturefile = "gfx/leaders/CSP/portrait_CSP_augustus_i.dds"
     }
     spriteType = {
         name = "GFX_focus_CSP_choosing_a_king"

@@ -6,8 +6,10 @@
 
   # Parties
   CSP_neutrality_party: "Legionary Junta"
+
   CSP_neutrality_party_king_chosen: "RCLG"
   CSP_neutrality_party_king_chosen_long: "Regnum Caspium Legionary Guard"
+
   CSP_democratic_party: "Opposition"
 
   # Events
@@ -23,11 +25,23 @@
   # Ideas
   CSP_miniscule_army: "Miniscule Army"
   CSP_miniscule_army_desc: "Our present 'army' consists of our untrained, small contingent of folllowers, and an even smaller group of trained Legionaries. If we are to retain control, much less expand, the army itself must be expanded."
+
   CSP_low_public_trust: "Low Public Trust"
   CSP_low_public_trust_desc: "Ever since the Legionary Junta took power, we have been met with opposition by our citizens. We would do well to take care of this, either militarily or by gaining their trust, or face having a revolt on our hands."
   CSP_lack_of_industrialization: "Lack of Industrialization"
+
   CSP_lack_of_industrialization_desc: "If we are to retain and expand our dominion over the region, we must kickstart our almost non-existent industry, and fast."
 
   # Characters
   CSP_junta: "Legionary Junta"
   CSP_junta_desc: "In the absence of a proper monarch, the top members of the Regnum Caspium Legionary Guard have formed a council. However, this group is prone to instability and an official ruler is desperately needed."
+  
+  CSP_antonius_ii: "King Antonius II"
+  CSP_antonius_ii_desc: "Young and promising, Antonius II was chosen by the Legionary Junta as its new monarch. He promises to bring the new nation to economic prosperity."
+
+  CSP_augustus_i: "King Antonius I"
+  CSP_augustus_i_desc: "Young and promising, Augustus I was chosen by the Legionary Junta as its new monarch. He promises to grow the new naton's borders."
+
+  # Focuses
+  CSP_choosing_a_king: "Choosing a King"
+  CSP_choosing_a_king_desc: "The time has come for us to choose a proper monarch, as the council lacks decisiveness and speed. A monarch will surely rally the nation more than the Legionary Junta can."

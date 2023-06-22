@@ -7,6 +7,8 @@ set_war_support = 0.35
 oob = "CSP"
 
 recruit_character = CSP_junta
+recruit_character = CSP_antonius_ii
+recruit_character = CSP_augustus_i
 
 add_ideas = {
 	CSP_miniscule_army
