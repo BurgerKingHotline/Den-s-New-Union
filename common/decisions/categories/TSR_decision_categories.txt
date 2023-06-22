@@ -1,8 +1,13 @@
 TSR_revolts_cat = {
-    allowed = {
-        original_tag = TSR
-		has_country_flag = revolts_visible
-    }
-    icon = saf_anti_colonialist_crusade
+	priority = 100
 	scripted_gui = tsr_revolts_gui
+	visible = {
+		original_tag = TSR
+		NOT = { has_country_flag = revolts_over }
+	}	
+	available = {
+		original_tag = TSR
+		NOT = { has_country_flag = revolts_over }
+	}
+    icon = saf_anti_colonialist_crusade
 }

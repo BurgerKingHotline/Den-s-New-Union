@@ -117,10 +117,28 @@ characters = {
 		}
 		field_marshal={
 			traits={ old_guard politically_connected harsh_leader }
-			skill=5
+			skill=3
 			attack_skill=1
 			defense_skill=3
 			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	TSR_nisar_m={
+		name="Nisar Muhammad" #commie only
+		portraits={
+			army={
+				large="GFX_Portrait_nis_my"
+				small="GFX_Portrait_nis_my_idea"
+			}
+		}
+		corps_commander={
+			traits={ TSR_afghan_exile politically_connected war_hero }
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}

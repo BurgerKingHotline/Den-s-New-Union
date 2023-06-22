@@ -71,6 +71,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/mil/alibiz_idea.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_nis_my"
+		texturefile = "gfx/leaders/TSR/TSR/mil/nis_my.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_nis_my_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/nis_my_idea.dds"
+	}
+
 	#mil adv
 
 	spriteType = {
@@ -85,15 +95,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_khkhan.dds"
 	}
 
+	spriteType = {
+		name = "GFX_trait_TSR_afghan_exile"
+		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_afghanl.dds"
+	}
+
 	#GUI - 1
 	spriteType = {
 		name = "GFX_tjk_icon"
-		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_tajiks.dds"
+		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_tajiks.dds"
 	}
 
 	spriteType = {
 		name = "GFX_brb_icon"
-		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_bandits.dds"
+		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_bandits.dds"
 	}
 	
 	#events
