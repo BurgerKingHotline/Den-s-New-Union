@@ -1,0 +1,28 @@
+focus_tree = {
+    id = CSP_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = CSP
+        }
+    }
+
+    focus = {
+        id = CSP_choosing_a_king
+        icon = GFX_focus_CSP_choosing_a_king
+
+        cost = 5
+        x = 1
+		y = 0
+
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.05
+            CSP = { country_event = CSP_events.2 }
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+    }
+}

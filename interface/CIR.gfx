@@ -55,4 +55,19 @@ spriteTypes = {
 		texturefile = "gfx/leaders/CIR/portrait_CIR_aziz_ali_al_misri.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_portrait_CIR_aslan_Temirbekov_adnanov"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_aslan_Temirbekov_adnanov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_ismail_gasprinsky"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_ismail_gasprinsky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CIR_bekir_sami_kunduh"
+		texturefile = "gfx/leaders/CIR/portrait_CIR_bekir_sami_kunduh.dds"
+	}
+	
 }
