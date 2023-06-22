@@ -6,6 +6,7 @@ country_event = {
   title = CSP_events.1.title
   desc = CSP_events.1.desc
   picture = GFX_report_event_CSP_opening
+  fire_only_once = yes
 
   option = {
 		name = CSP_events.1.a
@@ -18,6 +19,7 @@ country_event = {
   title = CSP_events.2.title
   desc = CSP_events.2.title
   picture = GFX_report_event_CSP_choosing_a_king
+  fire_only_once = yes
 
   # Industrial leader
   option = {
