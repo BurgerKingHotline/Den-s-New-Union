@@ -9,5 +9,21 @@ TSR_revolts_cat = {
 		original_tag = TSR
 		NOT = { has_country_flag = revolts_over }
 	}
+	visible_when_empty = yes
     icon = saf_anti_colonialist_crusade
+}
+
+TSR_politics_cat = {
+	priority = 95
+	scripted_gui = tsr_power_gui
+	visible = {
+		original_tag = TSR
+		NOT = { has_country_flag = power_secured }
+	}	
+	available = {
+		original_tag = TSR
+		NOT = { has_country_flag = power_secured }
+	}
+	visible_when_empty = yes
+    icon = tsr_one
 }

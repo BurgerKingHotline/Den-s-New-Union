@@ -12,5 +12,12 @@ country_event = {
 		name = TSR_hello.a
 		set_variable = { tjh_anger = 60 }
 		set_variable = { brb_anger = 60 }
+		#gui2
+		set_variable = { fash_power = -212 }
+		set_variable = { alash_power = -183 }
+		set_variable = { jadid_power = -177 }
+		set_variable = { erk_power = -179 } #moderate socialists
+		set_variable = { moderate_power = -128 } #middle path socialists
+		set_variable = { ikramovite_power = -208 } #hardline socialists
 	}
 }

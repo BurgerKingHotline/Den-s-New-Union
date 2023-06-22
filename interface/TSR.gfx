@@ -97,7 +97,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_trait_TSR_afghan_exile"
-		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_afghanl.dds"
+		texturefile = "gfx/leaders/TSR/TSR/misc/afghanl.dds"
 	}
 
 	#GUI - 1
@@ -111,6 +111,75 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_bandits.dds"
 	}
 	
+	#GUI - 2 - icons
+
+	spriteType = {
+		name = "GFX_fash_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/fash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jadid_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/jadid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alash_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/alash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_erk_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/erk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_moderate_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/moderate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hardline_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/hardline.dds"
+	}
+	
+	#GUI - 2 - bars
+
+	spriteType = {
+		name = "GFX_fash_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/fash_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jadid_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/jadid_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alash_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/alash_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_erk_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/erk_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_moderate_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/moderate_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hardline_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/hardline_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bottom_bg"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/bg1.dds"
+	}
+
 	#events
 
 	spriteType = {
@@ -119,8 +188,14 @@ spriteTypes = {
 	}
 
 	#misc
+
 	spriteType = {
 		name = "GFX_Portrait_mzs"
 		texturefile = "gfx/leaders/TSR/oth/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_tsr_one"
+		texturefile = "gfx/leaders/TSR/TSR/misc/decision_category_one.dds"
 	}
 }

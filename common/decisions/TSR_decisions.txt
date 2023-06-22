@@ -7,8 +7,7 @@ TSR_revolts_cat = {
 			always = yes
         }
 
-        cost = 100
-        fire_only_once = no
+        cost = 50
 
         available = {
 			controls_state = 742
@@ -17,7 +16,12 @@ TSR_revolts_cat = {
 			}
         }
 
-        complete_effect = {
+		fire_only_once = yes
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.2
+        }
+        remove_effect = {
 			custom_effect_tooltip = TJS_done_tt
 			set_variable = { tjh_anger = 0 }
             add_state_core = 742
@@ -44,21 +48,27 @@ TSR_revolts_cat = {
         }
 
         cost = 100
-        fire_only_once = no
 
         available = {
 			controls_state = 742
 			has_army_experience > 10
-			has_manpower > 10000
+			has_manpower > 12000
+        }
+		
+		fire_only_once = yes
+		days_remove = 45
+		modifier = {
+			training_time_factor = -0.3
+			mobilization_speed = -0.5
         }
 
-        complete_effect = {
+        remove_effect = {
 			custom_effect_tooltip = deduct_tjs_16
-            add_manpower = -10000
+            add_manpower = -12000
 			army_experience = -10
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = -80
+				amount = -100
 			}
 			add_stability = -0.05
 			add_to_variable = { tjh_anger = -16 }
@@ -66,6 +76,34 @@ TSR_revolts_cat = {
 				ideology = communism
 				popularity = 0.005
 			}
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
+
+TSR_politics_cat = {
+    TSR_centralize_power_d = {
+        icon = generic_colonial_administration
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 120
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			#custom_effect_tooltip = TJS_done_tt
+			add_stability = 0.05
+			add_to_variable = { ikramovite_power = 25 }
+			add_to_variable = { fash_power = 10 }
         }
 
         ai_will_do = {

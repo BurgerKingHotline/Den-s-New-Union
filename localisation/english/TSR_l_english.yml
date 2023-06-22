@@ -33,13 +33,13 @@ TSR_communism_party: "HSG/SUK/SUS/SMS/SMK"
 TSR_communism_party_long: "Halklaryn Sosialistik Genesi/Socialistik Ulttar Kenesi/Sotsialisttik Uluttar Soveti/Soveti Millatxoi Socialistj/Sotsialistik Millatlar Kengashi" #yeah
 TSR_fascism_party: "MTBK"
 TSR_fascism_party_long: "Milli Turkistan Birlik Komitesi"
-TSR_democratic_party: "Jadids"
+TSR_democratic_party: "Young Bukharans"
 TSR_neutrality_party: "Rebels"
 TSR_neutrality_party_long: "Rebels"
 #others
 BRB_neutrality_party: "Manghit Dynasty"
-BRB_democratic_party: "Young Bukharans"
-BRB_communism_party: "Young Bukharans"
+BRB_democratic_party: "Jadidists"
+BRB_communism_party: "Jadidists"
 TJS_democratic_party: "Jadidists"
 TJS_communism_party: "HKT"
 TJS_neutrality_party: "Basmachi movement"
@@ -69,15 +69,18 @@ TJK_anger: "§WTajik Opposition: [?tjh_anger]%§!"
 BRB_anger: "§YRebel Opposition: [?brb_anger]%§!"
 taj_tt_1: "The Tajiks have never fully accepted themselves as part of the Turkestani project, and have consistently opposed any attempts to accept our rule. To secure control over our domain, this must change."
 brb_tt_1: "Ever since the establishment of our nation, many of the overthrown lords and tyrants began to organize armed resistance to our rule. These bandits must be wiped out before we start our other business."
+GUI2_EXP: "Controlling Turkestani politics is as important- and as dangerous- as any battle. The government is currently split into six factions, and managing them is no small task."
 #events
 TSR_hello.t: "The Turkestani Socialist Republic"
 TSR_hello.desc: "Welcome to Turkestan. Long situated at the crossroads between East and West on the Silk Road, Turkestan was overrun by invaders since time immemorial. \nNow, however Turkestan stands proudly united unter its one banner- its own. \nThat's not to say that everything runs smoothly here. Turkestan is deeply divided along ethnic lines, with riots a daily occurence. Our politicians, once firmly united, now bicker amongst themselves over the most trivial matters. There's certainly much to be improved here, before we can even think of retaking the rest of Central Asia."
 TSR_hello.a: "Onwards!"
 ##decisions
-#gui1 decisions
+#gui decisions
 TSR_revolts_cat: "Securing Control"
+TSR_politics_cat: "The Establishment"
 loosen_conscription_d: "Tajik Conscription Exemptions"
 reintegrate_t_d: "Integrate Tajikistan"
+TSR_centralize_power_d: "Centralize Power"
 ##tooltips
 #guis
 TJS_done_tt: "§GTajikistan§! will be pacified."
