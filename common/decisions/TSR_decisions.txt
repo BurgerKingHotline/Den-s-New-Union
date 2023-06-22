@@ -1,9 +1,46 @@
 TSR_revolts_cat = {
+
+    reintegrate_t_d = {
+        icon = hol_exchange_intelligence_data
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        available = {
+			controls_state = 742
+			check_variable = {
+				tjh_anger < 15
+			}
+        }
+
+        complete_effect = {
+			custom_effect_tooltip = TJS_done_tt
+			set_variable = { tjh_anger = 0 }
+            add_state_core = 742
+			TJS = {
+				remove_state_core = 742
+			}
+			add_stability = -0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.01
+			}
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
     loosen_conscription_d = {
         icon = generic_disband_irregulars
 
         allowed = {
-			has_global_flag = revolts_visible
+			always = yes
         }
 
         cost = 100
@@ -12,9 +49,11 @@ TSR_revolts_cat = {
         available = {
 			controls_state = 742
 			has_army_experience > 10
+			has_manpower > 10000
         }
 
         complete_effect = {
+			custom_effect_tooltip = deduct_tjs_16
             add_manpower = -10000
 			army_experience = -10
 			add_equipment_to_stockpile = {
@@ -23,6 +62,10 @@ TSR_revolts_cat = {
 			}
 			add_stability = -0.05
 			add_to_variable = { tjh_anger = -16 }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.005
+			}
         }
 
         ai_will_do = {

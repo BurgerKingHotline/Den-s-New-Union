@@ -10,8 +10,7 @@ country_event = {
 
 	option = {
 		name = TSR_hello.a
-		set_global_flag = revolts_visible
-		set_variable = { tjh_anger = 70 }
-		set_variable = { brb_anger = 70 }
+		set_variable = { tjh_anger = 60 }
+		set_variable = { brb_anger = 60 }
 	}
 }

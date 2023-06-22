@@ -84,6 +84,7 @@ recruit_character = TSR_abj_khan
 recruit_character = TSR_taimk1
 recruit_character = TSR_sobirr1
 recruit_character = TSR_alibizhag
+recruit_character = TSR_nisar_m
 #military staff
 recruit_character = TSR_nurka1
 
