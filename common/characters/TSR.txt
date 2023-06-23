@@ -63,7 +63,7 @@ characters = {
 		}
 		corps_commander={
 			traits={ trickster hill_fighter TSR_khazakh_khan }
-			skill=5
+			skill=4
 			attack_skill=3
 			defense_skill=4
 			planning_skill=2
@@ -80,8 +80,8 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ reckless infantry_officer ranger }
-			skill=3
+			traits={ trait_reckless infantry_officer ranger }
+			skill=2
 			attack_skill=3
 			defense_skill=1
 			planning_skill=2
@@ -97,12 +97,12 @@ characters = {
 				small="GFX_Portrait_sobirr_idea"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits={ brilliant_strategist infantry_officer career_officer }
-			skill=5
-			attack_skill=2
+			skill=4
+			attack_skill=3
 			defense_skill=3
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
 		}
@@ -117,7 +117,7 @@ characters = {
 		}
 		field_marshal={
 			traits={ old_guard politically_connected harsh_leader }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=3
 			planning_skill=2
@@ -126,7 +126,7 @@ characters = {
 		}
 	}
 	TSR_nisar_m={
-		name="Nisar Muhammad" #commie only
+		name="Nisar Muhammad" #commie/dem
 		portraits={
 			army={
 				large="GFX_Portrait_nis_my"
@@ -135,14 +135,90 @@ characters = {
 		}
 		corps_commander={
 			traits={ TSR_afghan_exile politically_connected war_hero }
-			skill=4
-			attack_skill=1
+			skill=3
+			attack_skill=2
 			defense_skill=2
-			planning_skill=3
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}
 	}
+	TSR_amank_i = {
+		name="Amankeldi Imanov" #any
+		portraits={
+			army={
+				large="GFX_Portrait_amanki1"
+				small="GFX_Portrait_amanki1_idea"
+			}
+		}
+		corps_commander={
+			traits={ war_hero trickster TSR_khazakh_khan }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	TSR_mull_w ={
+		name="Mullanur Waxitov" #commie/dem
+		portraits={
+			army={
+				large="GFX_Portrait_mw"
+				small="GFX_Portrait_mw_idea"
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected organizer urban_assault_specialist }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	TSR_tagir_kus ={
+		name="Tagir Kusimov" #any ideology
+		portraits={
+			army={
+				large="GFX_Portrait_tgk"
+				small="GFX_Portrait_tgk_idea"
+			}
+		}
+		corps_commander={
+			traits={ career_officer cavalry_officer trait_reckless }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	TSR_kara_a1 ={
+		name="Karakoz Abdaliev" #any ideology
+		portraits={
+			army={
+				large="GFX_Portrait_kar_a"
+				small="GFX_Portrait_kar_a_idea"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	#air advisors
 	TSR_nurka1={
 		name="Nurken Abdirov" #any ideology
@@ -165,5 +241,20 @@ characters = {
 				factor = 1.000
 			}
 		}		
+	}
+	
+	##foreigners
+	AFG_shah = {
+		name = "Mohammed Zahir Shah"
+		portraits = {
+		civilian = {
+			large = GFX_Portrait_mzs
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1
+		}
 	}
 }

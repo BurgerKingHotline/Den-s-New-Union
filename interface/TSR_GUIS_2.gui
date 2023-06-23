@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "TSR_power_ui_window"
 		position = { x = 0 y = 250 }
-		size = { width = 100% height = 300 }
+		size = { width = 100% height = 350 }
 		clipping = yes
 
 		iconType = {

@@ -81,8 +81,6 @@ country_event = {
 		multiply_variable = { mres = var:modp }
 		set_variable = { mdef = 0.15 }
 		multiply_variable = { mdef = var:modp }
-		set_variable = { mcdr = 0.1 }
-		multiply_variable = { mcdr = var:modp }
 
 		set_variable = { hardp = 250 }
 		add_to_variable = { hardp = var:ikramovite_power }

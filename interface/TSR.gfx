@@ -81,6 +81,46 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/mil/nis_my_idea.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_amanki1"
+		texturefile = "gfx/leaders/TSR/TSR/mil/amanki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_amanki1_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/amanki_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_mw"
+		texturefile = "gfx/leaders/TSR/TSR/mil/mulla_w.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_mw_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/mulla_w_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_tgk"
+		texturefile = "gfx/leaders/TSR/TSR/mil/tagirk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_tgk_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/tagirk_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_kar_a"
+		texturefile = "gfx/leaders/TSR/TSR/mil/kara.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_kar_a_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/kara_idea.dds"
+	}
+
 	#mil adv
 
 	spriteType = {

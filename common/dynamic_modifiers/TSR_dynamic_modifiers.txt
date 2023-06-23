@@ -1,7 +1,7 @@
 TSR_factionalism_dynamic_modifier = {
 	enable = { always = yes }
 
-	icon = generic_democratic_opposition
+	icon = GFX_idea_generic_democratic_opposition
 
 	stability_factor = fstab
 	war_support_factor = fwar
@@ -26,7 +26,7 @@ TSR_factionalism_dynamic_modifier = {
 	army_attack_factor = eatt
 	political_power_factor = modpop
 	army_defence_factor = mdef
-	communism_drift = mcdr
+	communism_drift = mdef
 	consumer_goods_factor = mcos
 	local_resources_factor = mres
 	stability_factor = hpopg

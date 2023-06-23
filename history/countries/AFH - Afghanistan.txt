@@ -37,12 +37,12 @@ if = {
 	}
 }
 
-set_convoys = 0
+set_convoys = 2
 
 add_ideas = {
 }
 
-#recruit_character =
+recruit_character = AFG_shah
 
 set_politics = {
 	ruling_party = neutrality

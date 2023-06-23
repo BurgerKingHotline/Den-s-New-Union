@@ -1,7 +1,7 @@
 capital = 830
 set_research_slots = 2
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.4
+set_war_support = 0.3
 
 oob = "TSR"
 set_air_oob = "TSR_air"
@@ -72,6 +72,8 @@ if = {
 set_convoys = 5
 
 add_ideas = {
+	limited_exports
+	limited_conscription
 }
 
 #leaders
@@ -85,6 +87,10 @@ recruit_character = TSR_taimk1
 recruit_character = TSR_sobirr1
 recruit_character = TSR_alibizhag
 recruit_character = TSR_nisar_m
+recruit_character = TSR_amank_i
+recruit_character = TSR_mull_w
+recruit_character = TSR_tagir_kus
+recruit_character = TSR_kara_a1
 #military staff
 recruit_character = TSR_nurka1
 
