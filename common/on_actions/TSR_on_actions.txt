@@ -6,4 +6,148 @@ on_actions = {
 			}
 		}
 	}
+
+	on_weekly_TSR = {
+		effect = {
+			set_variable = { fashp = 250 }
+			add_to_variable = { fashp = var:fash_power }
+			divide_variable = { fashp = 250 }
+			set_variable = { fstab = -0.25 }
+			multiply_variable = { fstab = var:fashp }
+			set_variable = { fwar = 0.25 }
+			multiply_variable = { fwar = var:fashp }
+			set_variable = { fdrift = 0.6 }
+			multiply_variable = { fdrift = var:fashp }
+			set_variable = { fex = 0.2 }
+			multiply_variable = { fex = var:fashp }
+			set_variable = { fmanp = 2000 }
+			multiply_variable = { fmanp = var:fashp }
+			round_variable = fmanp
+
+			set_variable = { alashp = 250 }
+			add_to_variable = { alashp = var:alash_power }
+			divide_variable = { alashp = 250 }
+			set_variable = { astab = 0.3 }
+			multiply_variable = { astab = var:alashp }
+			set_variable = { aconsc = 0.1 }
+			multiply_variable = { aconsc = var:alashp }
+			set_variable = { apolp = 0.35 }
+			multiply_variable = { apolp = var:alashp }
+
+			set_variable = { jadidp = 250 }
+			add_to_variable = { jadidp = var:jadid_power }
+			divide_variable = { jadidp = 250 }
+			set_variable = { jres = 0.1 }
+			multiply_variable = { jres = var:jadidp }
+			set_variable = { jcon = 0.25 }
+			multiply_variable = { jcon = var:jadidp }
+
+			set_variable = { erkp = 250 }
+			add_to_variable = { erkp = var:erk_power }
+			divide_variable = { erkp = 250 }
+			set_variable = { estab = 0.3 }
+			multiply_variable = { estab = var:erkp }
+			set_variable = { epol = -0.4 }
+			multiply_variable = { epol = var:erkp }
+			set_variable = { edr = 0.1 }
+			multiply_variable = { edr = var:erkp }
+			set_variable = { enor = 0.4 }
+			multiply_variable = { enor = var:erkp }
+			set_variable = { econ = 0.2 }
+			multiply_variable = { econ = var:erkp }
+			set_variable = { eatt = -0.2 }
+			multiply_variable = { eatt = var:erkp }
+
+			set_variable = { modp = 250 }
+			add_to_variable = { modp = var:moderate_power }
+			divide_variable = { modp = 250 }
+			set_variable = { mpop = 0.2 }
+			multiply_variable = { mpop = var:modp }
+			set_variable = { mcos = -0.2 }
+			multiply_variable = { mcos = var:modp }
+			set_variable = { mres = 0.4 }
+			multiply_variable = { mres = var:modp }
+			set_variable = { mdef = 0.15 }
+			multiply_variable = { mdef = var:modp }
+			set_variable = { mcdr = 0.1 }
+			multiply_variable = { mcdr = var:modp }
+
+			set_variable = { hardp = 250 }
+			add_to_variable = { hardp = var:ikramovite_power }
+			divide_variable = { hardp = 250 }
+			set_variable = { hpopg = -0.2 }
+			multiply_variable = { hpopg = var:hardp }
+			set_variable = { hcons = 0.2 }
+			multiply_variable = { hcons = var:hardp }
+			set_variable = { hbuild = 0.3 }
+			multiply_variable = { hbuild = var:hardp }
+			
+			if = {
+				limit = {
+					has_variable = tjh_anger
+				}
+				set_variable = { tjkror = 100 }
+				subtract_from_variable = { tjkror = var:tjh_anger }
+				if = {
+					limit = {
+						check_variable = { tjkror < 26 }
+					}
+					multiply_variable = { tjkror = 4 }
+					set_variable = { oth = 100 }
+					subtract_from_variable = { oth = var:tjkror }
+					random_list = {
+						var:tjkror = {
+							release = TJS
+							declare_war_on = {
+								target = TJS
+								type = annex_everything
+							}
+							teleport_armies = {
+							limit = {
+									has_war_with = TJS
+								}
+								to_state_array = owned_controlled_states
+							}
+						}
+						var:oth = {
+							add_stability = 0.001
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_variable = brb_anger
+				}
+				set_variable = { brbror = 100 }
+				subtract_from_variable = { brbror = var:brb_anger }
+				if = {
+					limit = {
+						check_variable = { brbror < 26 }
+					}
+					multiply_variable = { brbror = 4 }
+					set_variable = { oth1 = 100 }
+					subtract_from_variable = { oth1 = var:brbror }
+					random_list = {
+						var:tjkror = {
+							release = BRB
+							declare_war_on = {
+								target = BRB
+								type = annex_everything
+							}
+							teleport_armies = {
+							limit = {
+									has_war_with = BRB
+								}
+								to_state_array = owned_controlled_states
+							}
+						}
+						var:oth1 = {
+							add_stability = 0.001
+						}
+					}
+				}
+			}
+		}
+	}
 }

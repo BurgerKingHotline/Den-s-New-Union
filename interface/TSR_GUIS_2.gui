@@ -13,25 +13,25 @@ guiTypes = {
 			position = { x = 25 y = 0 }
 			quadTextureSprite = "GFX_fash_bar"
 			scale = 1
-			#pdx_tooltip = taj_tt_1
+			pdx_tooltip = gui2_fbar
 		}
 
 		iconType = {
 			name ="jadid_bar1"
 			orientation = LOWER_LEFT
-			position = { x = 105 y = 0 }
+			position = { x = 185 y = 0 }
 			quadTextureSprite = "GFX_jadid_bar"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_jbar
 		}
 
 		iconType = {
 			name ="alash_bar1"
 			orientation = LOWER_LEFT
-			position = { x = 185 y = 0 }
+			position = { x = 105 y = 0 }
 			quadTextureSprite = "GFX_alash_bar"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_abar
 		}
 
 		iconType = {
@@ -40,7 +40,7 @@ guiTypes = {
 			position = { x = 265 y = 0 }
 			quadTextureSprite = "GFX_erk_bar"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_ebar
 		}
 
 		iconType = {
@@ -49,7 +49,7 @@ guiTypes = {
 			position = { x = 345 y = 0 }
 			quadTextureSprite = "GFX_moderate_bar"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_mbar
 		}
 
 		iconType = {
@@ -58,7 +58,7 @@ guiTypes = {
 			position = { x = 425 y = 0 }
 			quadTextureSprite = "GFX_hardline_bar"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_hbar
 		}
 
 		iconType = {
@@ -67,7 +67,6 @@ guiTypes = {
 			position = { x = -10 y = -90 }
 			quadTextureSprite = "GFX_bottom_bg"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
 		}
 
 		iconType = {
@@ -76,25 +75,25 @@ guiTypes = {
 			position = { x = 25 y = @ICON_Y }
 			quadTextureSprite = "GFX_fash_icon"
 			scale = 1
-			#pdx_tooltip = taj_tt_1
+			pdx_tooltip = gui2_fash
 		}
 
 		iconType = {
 			name ="jadid_icon1"
 			orientation = LOWER_LEFT
-			position = { x = 105 y = @ICON_Y }
+			position = { x = 185 y = @ICON_Y }
 			quadTextureSprite = "GFX_jadid_icon"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_jadid
 		}
 
 		iconType = {
 			name ="alash_icon1"
 			orientation = LOWER_LEFT
-			position = { x = 185 y = @ICON_Y }
+			position = { x = 105 y = @ICON_Y }
 			quadTextureSprite = "GFX_alash_icon"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_alash
 		}
 
 		iconType = {
@@ -103,7 +102,7 @@ guiTypes = {
 			position = { x = 265 y = @ICON_Y }
 			quadTextureSprite = "GFX_erk_icon"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_erk
 		}
 
 		iconType = {
@@ -112,7 +111,7 @@ guiTypes = {
 			position = { x = 345 y = @ICON_Y }
 			quadTextureSprite = "GFX_moderate_icon"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_moderates
 		}
 
 		iconType = {
@@ -121,7 +120,7 @@ guiTypes = {
 			position = { x = 425 y = @ICON_Y }
 			quadTextureSprite = "GFX_hardline_icon"
 			scale = 1
-			#pdx_tooltip = brb_tt_1
+			pdx_tooltip = gui2_hardline
 		}
 	}
 }

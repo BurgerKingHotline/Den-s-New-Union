@@ -1,0 +1,39 @@
+TSR_factionalism_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = generic_democratic_opposition
+
+	stability_factor = fstab
+	war_support_factor = fwar
+	fascism_drift = fdrift
+	experience_gain_army_factor = fex
+	army_attack_factor = fex
+	weekly_manpower = fmanp
+	stability_factor = astab
+	democratic_drift = astab
+	conscription_factor = aconsc
+	political_power_factor = apolp
+	research_speed_factor = jres
+	democratic_drift = jres
+	production_speed_buildings_factor = jcon
+	stability_factor = estab
+	political_power_factor = epol
+	communism_drift = edr
+	democratic_drift = edr
+	production_lack_of_resource_penalty_factor = enor
+	conscription_factor = econ
+	training_time_factor = econ
+	army_attack_factor = eatt
+	political_power_factor = modpop
+	army_defence_factor = mdef
+	communism_drift = mcdr
+	consumer_goods_factor = mcos
+	local_resources_factor = mres
+	stability_factor = hpopg
+	political_power_factor = hpopg
+	consumer_goods_factor = hcons
+	production_speed_buildings_factor = hbuild
+	communism_drift = hcons
+	industrial_capacity_factory = hbuild
+	conscription_factor = hpopg
+}
