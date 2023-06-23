@@ -87,7 +87,8 @@ recruit_character = SKH_zhukov
 
 add_ideas = {
 	SKH_steppe_warriors
-	SKH_rural_communities
+	SKH_low_industrialization
+	SKH_cult_of_the_khan
 }
 
 set_politics = {

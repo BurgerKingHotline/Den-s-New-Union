@@ -1,0 +1,7 @@
+SKH_move_capital = {
+    allowed = {
+        original_tag = SKH
+    }
+
+    icon = GFX_decision_category_generic
+}

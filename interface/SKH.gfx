@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_portrait_zhukov"
 		texturefile = "gfx/leaders/SKH/portrait_skh_zhukov.dds"
 	}	
+	spriteType = {
+		name "GFX_SKH_cult_of_stalin"
+		texturefile = "gfx/interface/ideas/SKH_cult_of_stalin.dds"
+	}
 }

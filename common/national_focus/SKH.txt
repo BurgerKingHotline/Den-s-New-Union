@@ -1,0 +1,95 @@
+focus_tree = {
+	id = SKH_focus_tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SKH
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+    focus = {
+		id = SKH_the_rising_horde
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5 y = 0
+
+		available = {
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = SKH_the_khan_rides
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0 y = 1
+		relative_position_id = SKH_the_rising_horde
+
+		prerequisite = { focus = SKH_the_rising_horde }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_one_year_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2 y = 1
+		relative_position_id = SKH_the_khan_rides
+
+		prerequisite = { focus = SKH_the_khan_rides }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_looking_outward
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2 y = 1
+		relative_position_id = SKH_the_khan_rides
+
+		prerequisite = { focus = SKH_the_khan_rides }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_first_strike
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1 y = 1
+		relative_position_id = SKH_looking_outward
+
+		prerequisite = { focus = SKH_looking_outward }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+}
