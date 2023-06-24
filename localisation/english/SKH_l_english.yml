@@ -6,8 +6,8 @@
  SKH_fascism: "Xixian Khanate"
  SKH_fascism_DEF: "the Xixian Khanate"
  SKH_fascism_ADJ: "Xixian"
- SKH_neutrality: "Russian Khanate"
- SKH_neutrality_DEF: "the Russian Khanate"
+ SKH_neutrality: "Russian Khaganate"
+ SKH_neutrality_DEF: "the Russian Khaganate"
  SKH_neutrality_ADJ: "Russian"
  SKH_communism: "Soviet Khanate"
  SKH_communism_DEF: "the Soviet Khanate"
@@ -16,10 +16,13 @@
 # Victory Points
 
 # Parties
+ SKH_democratic_party: "NMP"
+ SKH_democratic_party_long: "New Mongolia Party"
  SKH_communism_party: "KCP"
  SKH_communism_party_long: "Khanate Communist Party"
  SKH_fascism_party: "MPP"
  SKH_fascism_party_long: "Mongol People's Party"
+ SKH_neutrality_party: "Bodg Party"
 
 # Character Descriptions
 

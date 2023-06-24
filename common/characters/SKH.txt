@@ -26,7 +26,35 @@ characters = {
 			expire = "1950.1.1.1"
 			id = -1
 		}
-	}	
+	}
+	SKH_ungern = {
+		name = "Ungern Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ungern
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { headstrong }
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	SKH_genden = {
+		name = "Genden Peljid" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_genden
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { }
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}						
 	SKH_zhukov = {
 		name = "Georgy Zhukov" 
 		portraits = {
