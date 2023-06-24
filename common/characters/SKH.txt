@@ -13,6 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+	SKH_demchug = {
+		name = "De Khan" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_demchug
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}	
 	SKH_zhukov = {
 		name = "Georgy Zhukov" 
 		portraits = {
@@ -21,7 +35,7 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ }
+			traits={ war_hero offensive_doctrine }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -29,5 +43,37 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
-	}	
+	}
+	SKH_konev = {
+		name = "Ivan Konev"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_konev
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SKH_choibalsan = {
+		name = "Khorloogiin Choibalsan"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_choibalsan
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
 }
