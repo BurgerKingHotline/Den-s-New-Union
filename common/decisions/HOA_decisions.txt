@@ -1,26 +1,4 @@
 HOA_Resident_Management = {
-    HOA_Management_Temp = {
-        icon = generic_ignite_civil_war
-
-        allowed = {
-            is_debug = yes
-        }
-
-        cost = 500
-        fire_only_once = no
-
-        available = {
-            always = yes
-        }
-
-        complete_effect = {
-            log = "Temporary Effect"
-        }
-
-        ai_will_do = {
-            factor = 0
-        }
-    }
 
     # LOW RISK
 
@@ -364,28 +342,28 @@ HOA_Resident_Management = {
                 random_list = {
                     60 = {
                         add_popularity = {
-                            ideology = @highest_party_ideology
+                            ideology = neutrality
                             popularity = 0.05
                         } 
                     }
 
                     20 = {
                         add_popularity = {
-                            ideology = @highest_party_ideology
+                            ideology = neutrality
                             popularity = 0.1
                         } 
                     }
 
                     10 = {
                         add_popularity = {
-                            ideology = @highest_party_ideology
+                            ideology = neutrality
                             popularity = -0.05
                         }
                     }
 
                     10 = {
                         add_popularity = {
-                            ideology = @highest_party_ideology
+                            ideology = neutrality
                             popularity = -0.05
                         }
 

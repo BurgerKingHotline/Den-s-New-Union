@@ -87,9 +87,7 @@ HOA_civil_war = {
     random_owned_controlled_state = {
         limit = {
             NOT = {
-                HOA = {
-                    is_capital = yes
-                }
+                is_capital = yes
             }
         }
         set_state_flag = RES_owned
@@ -107,9 +105,7 @@ HOA_civil_war = {
     random_owned_controlled_state = {
         limit = {
             NOT = {
-                HOA = {
-                    is_capital = yes
-                }
+                is_capital = yes
             }
         }
         set_state_flag = RES_owned
@@ -127,9 +123,7 @@ HOA_civil_war = {
     random_owned_controlled_state = {
         limit = {
             NOT = {
-                HOA = {
-                    is_capital = yes
-                }
+                is_capital = yes
             }
         }
         set_state_flag = RES_owned
@@ -147,9 +141,7 @@ HOA_civil_war = {
     random_owned_controlled_state = {
         limit = {
             NOT = {
-                HOA = {
-                    is_capital = yes
-                }
+                is_capital = yes
             }
         }
         set_state_flag = RES_owned

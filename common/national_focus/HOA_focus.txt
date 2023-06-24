@@ -1,0 +1,255 @@
+focus_tree = {
+    id = hoa_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HOA
+		}
+	}
+
+    default = no
+    continuous_focus_position = { x = 50 y = 1500 }
+
+    focus = {
+        id = HOA_Order_Day
+        icon = GFX_focus_generic_improve_the_administration
+		x = 3
+		y = 0
+		cost = 2
+
+        completion_reward = {
+            country_event = HOA_events.3
+        }
+
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = HOA_Old_Business
+        icon = GFX_focus_generic_improve_the_administration
+
+        relative_position_id = HOA_Order_Day
+        x = 0 
+        y = 1
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Order_Day
+        }
+
+        completion_reward = {
+            country_event = HOA_events.4
+        }
+    }
+
+    focus = {
+        id = HOA_Parking_Situation
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = -1 
+        y = 2
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Old_Business
+        }
+
+        completion_reward = {
+            country_event = HOA_events.5
+        }
+    }
+
+    focus = {
+        id = HOA_Local_Business_Fund
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 1 
+        y = 2
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Old_Business
+        }
+
+        completion_reward = {
+            country_event = HOA_events.6
+        }
+    }
+
+    focus = {
+        id = HOA_Budget_Review
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0
+        y = 3
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Local_Business_Fund
+        }
+
+        prerequisite = {
+            focus = HOA_Parking_Situation
+        }
+
+        completion_reward = {
+            country_event = HOA_events.7
+        }
+    }
+
+    focus = {
+        id = HOA_New_Business
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0 
+        y = 4
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Budget_Review
+        }
+
+        completion_reward = {
+            country_event = HOA_events.8
+        }
+    }
+
+    focus = {
+        id = HOA_New_Guy
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0
+        y = 5
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_New_Business
+        }
+
+        completion_reward = {
+            country_event = HOA_events.9
+        }
+    }
+
+    focus = {
+        id = HOA_Neighborhood_Watch
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = -1 
+        y = 6
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_New_Guy
+        }
+
+        completion_reward = {
+            country_event = HOA_events.10
+        }
+    }
+
+    focus = {
+        id = HOA_Fortify_Neighborhood
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 1 
+        y = 6
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_New_Guy
+        }
+
+        completion_reward = {
+            country_event = HOA_events.11
+        }
+    }
+
+    focus = {
+        id = HOA_Gated_Neighborhood
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 3
+        y = 7
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Fortify_Neighborhood
+        }
+
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = HOA_Sub_Committee_Reports
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0 
+        y = 7
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Fortify_Neighborhood
+        }
+
+        prerequisite = {
+            focus = HOA_Neighborhood_Watch
+        }
+
+        completion_reward = {
+            country_event = HOA_events.12
+        }
+    }
+
+    focus = {
+        id = HOA_The_Public
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0
+        y = 8
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_Sub_Committee_Reports
+        }
+
+        completion_reward = {
+            country_event = HOA_events.13
+        }
+    }
+
+    focus = {
+        id = HOA_Adjourn_Meeting
+        icon = GFX_focus_generic_improve_the_administration
+        
+        relative_position_id = HOA_Order_Day
+        x = 0
+        y = 9
+        cost = 2
+
+        prerequisite = {
+            focus = HOA_The_Public
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+}
