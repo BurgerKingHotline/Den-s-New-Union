@@ -1,7 +1,7 @@
 TSR_factionalism_dynamic_modifier = {
 	enable = { always = yes }
 
-	icon = GFX_idea_generic_democratic_opposition
+	icon = GFX_idea_EST_democratic_opposition
 
 	stability_factor = fstab
 	war_support_factor = fwar
@@ -36,4 +36,23 @@ TSR_factionalism_dynamic_modifier = {
 	communism_drift = hcons
 	industrial_capacity_factory = hbuild
 	conscription_factor = hpopg
+}
+
+TSR_econ_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_agrarian_reform
+	
+	civilian_factory_use = econ_fact
+}
+
+TSR_edu_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_jap_supremacy_of_will
+	
+	civilian_factory_use = edu_fact
+	research_speed_factor = edu_rs
+	stability_factor = edu_st
+	production_speed_infrastructure_factor = edu_infra
 }

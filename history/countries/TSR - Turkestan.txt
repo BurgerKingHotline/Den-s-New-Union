@@ -72,6 +72,7 @@ if = {
 set_convoys = 5
 
 add_ideas = {
+	TSR_afg_exiles_i
 	limited_exports
 	limited_conscription
 }

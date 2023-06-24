@@ -11,6 +11,8 @@ country_event = {
 	option = {
 		name = TSR_hello.a
 
+		set_country_flag = nm_loyal
+		
 		set_variable = { tjh_anger = 70 }
 		set_variable = { brb_anger = 70 }
 
@@ -93,6 +95,24 @@ country_event = {
 		multiply_variable = { hbuild = var:hardp }
 		hidden_effect = {
 			add_dynamic_modifier = { modifier = TSR_factionalism_dynamic_modifier }
+		}
+	}
+}
+
+#econ event
+country_event = {
+	id = TSR_events.2
+	title = TSR_2.t
+	desc = TSR_2.d
+	picture = GFX_TSR_2
+	fire_only_once = yes
+
+	option = {
+		name = TSR_2.a
+		
+		set_variable = { econ_fact = 1 }
+		hidden_effect = {
+			add_dynamic_modifier = { modifier = TSR_econ_dynamic_modifier }
 		}
 	}
 }

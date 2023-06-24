@@ -17,7 +17,7 @@ TSR_revolts_cat = {
         }
 
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 21
 		modifier = {
 			political_power_factor = -0.2
         }
@@ -34,10 +34,6 @@ TSR_revolts_cat = {
 				popularity = -0.01
 			}
         }
-
-        ai_will_do = {
-            factor = 0
-        }
     }
 
     loosen_conscription_d = {
@@ -47,12 +43,12 @@ TSR_revolts_cat = {
 			always = yes
         }
 
-        cost = 100
+        cost = 80
 
         available = {
 			controls_state = 742
 			has_army_experience > 10
-			has_manpower > 12000
+			has_manpower > 11000
         }
 		
 		fire_only_once = yes
@@ -64,7 +60,8 @@ TSR_revolts_cat = {
 
         remove_effect = {
 			custom_effect_tooltip = deduct_tjs_16
-            add_manpower = -12000
+			custom_effect_tooltip = TSR_slight_mod_down
+            add_manpower = -11000
 			army_experience = -10
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -77,9 +74,38 @@ TSR_revolts_cat = {
 				popularity = 0.005
 			}
         }
+    }
 
-        ai_will_do = {
-            factor = 0
+    approach_nm = {
+        icon = generic_army_support
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 85
+
+        available = {
+			controls_state = 742
+			command_power > 20
+        }
+		
+		fire_only_once = yes
+
+        complete_effect = {
+			custom_effect_tooltip = deduct_tjs_8
+            add_command_power = -20
+			army_experience = 5
+			add_to_variable = { tjh_anger = -8 }
+			clr_country_flag = nm_loyal
+			add_popularity = {
+				ideology = communism
+				popularity = 0.005
+			}
+			add_trait = {
+				character = TSR_nisar_m
+				trait = media_personality
+			}
         }
     }
 }
@@ -104,10 +130,7 @@ TSR_politics_cat = {
 			add_stability = 0.05
 			add_to_variable = { ikramovite_power = 25 }
 			add_to_variable = { fash_power = 10 }
-        }
-
-        ai_will_do = {
-            factor = 0
+			add_to_variable = { tjh_anger = 10 }
         }
     }
 }

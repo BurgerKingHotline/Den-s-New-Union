@@ -227,6 +227,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/TSR_one.dds"
 	}
 
+	spriteType = {
+		name = "GFX_TSR_2"
+		texturefile = "gfx/event_pictures/TSR_two.dds"
+	}
+	
+	#nat foc
+	
+	spriteType = {
+		name = "GFX_focus_tsr_cong"
+		texturefile = "gfx/interface/TSR/end_congress.dds"
+	}
+
 	#misc
 
 	spriteType = {
@@ -237,5 +249,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_tsr_one"
 		texturefile = "gfx/leaders/TSR/TSR/misc/decision_category_one.dds"
+	}
+	
+	#ideas
+
+	spriteType = {
+		name = "GFX_idea_aexiles"
+		texturefile = "gfx/leaders/TSR/TSR/misc/idea_afgh_exiles.dds"
 	}
 }
