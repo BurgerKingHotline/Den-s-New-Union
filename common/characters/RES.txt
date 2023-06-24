@@ -1,0 +1,83 @@
+characters = {
+    RES_Nikolai_Nekrasov = {
+        name = "Nikolai Nekrasov"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_Portrait_Nikolai_Nekrasov
+            }
+        }
+
+        country_leader = {
+            ideology = liberalism
+            traits = { }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    RES_Koldan_Pavlov = {
+        name = "Koldan Pavlov"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+            }
+        }
+
+
+        country_leader = {
+            ideology = conservatism
+            traits = { }
+            expire = "1965.1.1"
+        }
+    }
+
+    RES_Vikentiy_Sokolo = {
+        name = "Vikentiy Sokolo"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+            }
+        }
+
+        country_leader = {
+            ideology = RES_communalism
+            traits = {}
+            expire = "1965.1.1"
+        }
+    }
+
+    RES_Oriel_Kuznetsov = {
+        name = "Oriel Kuznetsov"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+            }
+        }
+
+        country_leader = {
+            ideology = fascism_ideology
+            traits = {}
+            expire = "1965.1.1"
+        }
+    }
+
+    RES_Fekla_Kuznetsova = {
+        name = "Fekla Kuznetsova"
+        portraits = {
+            army = {
+                large = "gfx/leaders/Asia/Portrait_Asia_Generic_female_1.dds"
+                small = "gfx/interface/ideas/idea_asia_generic_female_1.dds"
+            }
+        }
+
+        corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+    }
+}

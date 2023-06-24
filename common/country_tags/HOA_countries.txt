@@ -1,1 +1,2 @@
 HOA = "countries/Homes.txt"
+RES = "countries/Residents.txt"

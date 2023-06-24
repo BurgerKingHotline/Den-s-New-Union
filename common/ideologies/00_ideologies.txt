@@ -90,6 +90,10 @@ ideologies = {
 
 			anarchist_communism = {
 			}
+
+			RES_communalism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {
