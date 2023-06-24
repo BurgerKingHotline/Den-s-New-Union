@@ -1,13 +1,16 @@
 state = {
 	id = 195
 	name = "STATE_195"
-	manpower = 3750158
+	manpower = 2108616
 	
 	state_category = metropolis
 
 	history={
 		victory_points = {
 			3151 30.0
+		}
+		victory_points = {
+			13257 5
 		}
 		owner = HOA
 		add_core_of = HOA
@@ -25,6 +28,6 @@ state = {
 	}
 
 	provinces={
-		79 149 3151 6174 11068 
+		3151 6174 13257
 	}
 }

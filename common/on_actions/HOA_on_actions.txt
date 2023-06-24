@@ -80,6 +80,40 @@ on_actions = {
             else = {
                 log = "Issue with HOA Resident Anger System. Please Report to greenbueller."
             }
-        }    
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    check_variable = {
+                        var = HOA_Anger
+                        value > 90
+                    }
+                }
+
+                set_variable = {
+                    var = HOA_Revolt_Countdown
+                    value = 20
+                    tooltip = hoa_revolt_countdown
+                }
+
+                country_event = HOA_events.2
+
+                HOA_anger_rise_daily = no
+                HOA_revolt_countdown_effect = yes
+            }
+
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = HOA_Revolt_Countdown
+                        value = 0
+                    }
+                }
+
+                HOA_civil_war = yes
+            }
+        }
     }
 }

@@ -32,6 +32,10 @@ ideas = {
 			picture = SKH_cult_of_stalin
 			allowed = {
 				original_tag = SKH
+				has_country_leader = {
+					character = SKH_stalinkhan
+					ruling_only = yes
+				}
 			}
 			allowed_civil_war = {
 				always = yes

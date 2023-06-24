@@ -22,7 +22,33 @@ SKH_move_capital = {
         }
 
         ai_will_do = {
-            factor = 0
+            factor = 1
+        }
+    }
+    SKH_move_to_moscow = {
+        icon = GFX_decision_SOV_place_hq
+        
+        allowed = {
+            always = yes
+        }
+
+        cost = 50
+        fire_only_once = yes
+
+        available = {
+            controls_state = 219
+        }
+
+        complete_effect = {
+            SKH = {
+                set_capital = {
+                    state = 219
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
         }
     }
 }

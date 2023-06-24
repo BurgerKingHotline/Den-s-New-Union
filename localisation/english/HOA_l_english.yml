@@ -2,6 +2,9 @@
  HOA:0 "Home Owners Association"
  HOA_DEF:0 "The Home Owners Association of Petrograd"
  HOA_ADJ:0 "Home Owners"
+ RES:0 "Petrograd"
+ RES_DEF:0 "The Residents of Petrograd"
+ RES_ADJ:0 "Resident"
 
  HOA_neutrality_party:0 "PHOA"
  HOA_neutrality_party_long:0 "Petrograd Home Owners' Association"
@@ -9,6 +12,7 @@
  HOA_democratic_party_long:0 "Petrograd Home Owners"
 
  hoa_anger_level:0 "Resident Anger Level"
+ hoa_revolt_countdown:0 "Revolt Countdown"
 
  HOA_Residents_Content:0 "Residents Content"
  HOA_Residents_Unsastified:0 "Residents Unsatisfied"
@@ -42,10 +46,21 @@
  HOA_Political_Campaigning:0 "Political Campaigning"
  HOA_Political_Campaigning_desc:0 ""
  
+ HOA_events.1.t:0 "The Petrograd Civil War"
+ HOA_events.1.d:0 "Rumors spiral... And this rumor is about to get real. The residents in the Home Owners Association of Petrograd, or the HOA for short, have started an open revolt against the President of the HOA. The President heads the group that call themselves The Management who oversee the daily needs of the HOA. Residents have claimed the president has been dictatorial in his power and demand a change in leadership. Only time will tell who comes out on top."
+ HOA_events.1.a:0 "Down with the President!"
+ HOA_events.1.b:0 "They will learn their place."
+ HOA_events.2.t:0 "Insider Report: Residents Preparing For War"
+ HOA_events.2.d:0 "We just received word from one of our inside reporters in the PHO that they have begun to prepare for an open rebellion against The Management. They claim their requests have been ignored and their desires trampled for far too long."
+ HOA_events.2.a:0 "We must prepare."
 
  HOA_Likely_Reduce:0 "This will likely §Greduce§! resident anger."
  HOA_Unknown:0 "This may increase resident anger."
  HOA_Likely_Increase:0 "This will likely §Rincrease§! resident anger."
+ HOA_side_residents:0 "You will join the residents in their fight."
+ HOA_side_management:0 "You will join The Management in their fight."
 
  HOA_dictator:0 "The Resident's Dictator"
  HOA_dictator_desc:0 "The President of the HOA has been proclaimed a dictator by those who live under his jurisdiction. As long as he remains in power, the anger of the residents will continually increase."
+ RES_communalism:0 "Communalism"
+ RES_communalism_desc:0 ""
