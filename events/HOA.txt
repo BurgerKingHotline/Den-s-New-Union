@@ -10,18 +10,6 @@ country_event = {
 
     immediate = {
         log = "HOA Civil War has begun."
-        HOA = {
-            retire_character = HOA_Ivan_Kodatsky
-            add_country_leader_role = {
-                character = HOA_Home_Owners_Board
-                promote_leader = yes
-                country_leader = {
-                    ideology = oligarchism
-                    expire = "1965.1.1.1"
-                    traits = { }
-                }
-            }
-        }
     }
 
     option = {
@@ -38,6 +26,19 @@ country_event = {
                     change_tag_from = HOA
                 }
             }
+
+            HOA = {
+                retire_character = HOA_Ivan_Kodatsky
+                add_country_leader_role = {
+                    character = HOA_Home_Owners_Board
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = oligarchism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+            }
         }
 
         custom_effect_tooltip = HOA_side_residents
@@ -46,6 +47,20 @@ country_event = {
     option = {
         name = HOA_events.1.b
         custom_effect_tooltip = HOA_side_management
+        hidden_effect = {
+            HOA = {
+                retire_character = HOA_Ivan_Kodatsky
+                add_country_leader_role = {
+                    character = HOA_Home_Owners_Board
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = oligarchism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+            }
+        }
     }
 }
 

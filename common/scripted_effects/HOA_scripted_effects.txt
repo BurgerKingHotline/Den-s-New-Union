@@ -2,13 +2,13 @@ HOA_anger_rise_daily = {
     if = {
         limit = {
             check_variable = {
-                HOA_Anger < 100
+                HOA.HOA_Anger < 100
             }
         }
 
         hidden_effect = {
             add_to_variable = {
-                var = HOA_Anger
+                var = HOA.HOA_Anger
                 value = 1
             }
         }
@@ -18,7 +18,7 @@ HOA_anger_rise_daily = {
 HOA_revolt_countdown_effect = {
     hidden_effect = {
         subtract_from_variable = {
-            var = HOA_Revolt_Countdown
+            var = HOA.HOA_Revolt_Countdown
             value = 1
         }
     }
@@ -27,7 +27,7 @@ HOA_revolt_countdown_effect = {
 HOA_anger_appease_soft = {
     hidden_effect = {
         subtract_from_variable = {
-            var = HOA_Anger
+            var = HOA.HOA_Anger
             value = -3
         }
     }
@@ -36,7 +36,7 @@ HOA_anger_appease_soft = {
 HOA_anger_appease_medium = {
     hidden_effect = {
         subtract_from_variable = {
-            var = HOA_Anger
+            var = HOA.HOA_Anger
             value = -5
         }
     }
@@ -45,7 +45,7 @@ HOA_anger_appease_medium = {
 HOA_anger_appease_hard = {
     hidden_effect = {
         subtract_from_variable = {
-            var = HOA_anger
+            var = HOA.HOA_anger
             value = -10
         }
     }
@@ -54,14 +54,16 @@ HOA_anger_appease_hard = {
 HOA_anger_appease_failure = {
     hidden_effect = {
         add_to_variable = {
-            var = HOA_Anger
+            var = HOA.HOA_Anger
             value = 5
         }
     }
 }
 
 HOA_civil_war = {
-    country_event = HOA_events.1
+    HOA = {
+        country_event = HOA_events.1
+    }
 
     set_division_template_lock = {
         division_template = "Neighborhood Watch"
@@ -83,108 +85,109 @@ HOA_civil_war = {
 
         add_core_of = RES
     }
+    
+    HOA = {
+        913 = {
+            set_state_flag = RES_owned
+            transfer_state_to = RES
 
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                is_capital = yes
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
             }
         }
-        set_state_flag = RES_owned
-        transfer_state_to = RES
 
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+        random_owned_controlled_state = {
+            limit = {
+                NOT = {
+                    is_capital = yes
+                }
+            }
+            set_state_flag = RES_owned
+            transfer_state_to = RES
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
         }
 
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+        random_owned_controlled_state = {
+            limit = {
+                NOT = {
+                    is_capital = yes
+                }
+            }
+            set_state_flag = RES_owned
+            transfer_state_to = RES
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+        }
+
+        random_owned_controlled_state = {
+            limit = {
+                NOT = {
+                    is_capital = yes
+                }
+            }
+            set_state_flag = RES_owned
+            transfer_state_to = RES
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+
+            create_unit = {
+                division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
+            }
+        }
+
+        random_owned_controlled_state = {
+            limit = {
+                NOT = {
+                    has_state_flag = RES_owned
+                }
+            }
+
+            create_unit = {
+                division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
+            }
+
+            create_unit = {
+                division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
+            }
+        }
+
+        random_owned_controlled_state = {
+            limit = {
+                NOT = {
+                    has_state_flag = RES_owned
+                }
+            }
+
+            create_unit = {
+                ivision = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
+            }
+
+            create_unit = {
+                division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
+            }
         }
     }
 
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                is_capital = yes
-            }
-        }
-        set_state_flag = RES_owned
-        transfer_state_to = RES
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-    }
-
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                is_capital = yes
-            }
-        }
-        set_state_flag = RES_owned
-        transfer_state_to = RES
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-    }
-
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                is_capital = yes
-            }
-        }
-        set_state_flag = RES_owned
-        transfer_state_to = RES
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-
-        create_unit = {
-            division = "name = \"Residential Guard\" division_template = \"Residential Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.5" owner = RES
-        }
-    }
-
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                has_state_flag = RES_owned
-            }
-        }
-
-        create_unit = {
-            division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
-        }
-
-        create_unit = {
-            division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
-        }
-    }
-
-    random_owned_controlled_state = {
-        limit = {
-            NOT = {
-                has_state_flag = RES_owned
-            }
-        }
-
-        create_unit = {
-            division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
-        }
-
-        create_unit = {
-            division = "name = \"Home Owners' Protection Unit\" division_template = \"Neighborhood Watch\" start_experience_factor = 0.3 start_equipment_factor = 0.4" owner = HOA
-        }
+    RES = {
+        set_capital = 913
     }
 }

@@ -14,7 +14,7 @@
 
 # DECISIONS
  HOA_Resident_Management:0 "Resident Management Initiative"
- HOA_Resident_Management_desc:0 "The Petrograd Home Owners Assocation is one with a contentious background. The Management has not always been well liked among the residents of the region. With this, The Management must cooperate with the residents in order to placate their anger, lest it boil over. Currently, the resident anger level is $pol_violence [HOA_Get_Anger_Level]."
+ HOA_Resident_Management_desc:0 "The Petrograd Home Owners Assocation is one with a contentious background. The Management has not always been well liked among the residents of the region. With this, The Management must cooperate with the residents in order to placate their anger, lest it boil over. Currently, the resident anger level is $pol_violence [HOA.HOA_Get_Anger_Level]."
 
  HOA_Perform_Basic_Maintenence:0 "Perform Basic Maintenence"
  HOA_Perform_Basic_Maintenence_desc:0 "\"In order to maintain the quality of the neighborhood, Management has invested in cleaning up the area. If you have any questions, please contact your local representative.\" - Management"
