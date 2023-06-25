@@ -87,6 +87,8 @@ recruit_character = SKH_demchug
 recruit_character = SKH_zhukov
 recruit_character = SKH_choibalsan
 recruit_character = SKH_konev
+recruit_character = SKH_genden
+recruit_character = SKH_ungern
 
 add_ideas = {
 	SKH_steppe_warriors
