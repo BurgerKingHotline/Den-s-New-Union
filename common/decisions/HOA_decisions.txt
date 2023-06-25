@@ -289,7 +289,7 @@ HOA_Resident_Management = {
                     70 = {
                         random_owned_controlled_state = {
                             create_unit = {
-                                division = "name =\Code Enforcement\" division_template=\"Code Enforcement\" start_equipment_factor = 0.6" owner = HOA
+                                division = "name =\"Code Enforcement\" division_template=\"Code Enforcement\" start_equipment_factor = 0.6" owner = HOA
                             }
                         }
                     }
