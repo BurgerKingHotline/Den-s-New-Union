@@ -239,6 +239,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/TSR/end_congress.dds"
 	}
 
+	spriteType = {
+		name = "GFX_focus_tsr_islamed"
+		texturefile = "gfx/interface/TSR/TSR_islamic_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_seced"
+		texturefile = "gfx/interface/TSR/TSR_sec_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_ideoed"
+		texturefile = "gfx/interface/TSR/TSR_ideo_education.dds"
+	}
+
 	#misc
 
 	spriteType = {
