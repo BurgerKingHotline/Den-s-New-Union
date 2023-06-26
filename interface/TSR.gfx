@@ -232,7 +232,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/TSR_two.dds"
 	}
 	
-	#nat foc
+	#goals
 	
 	spriteType = {
 		name = "GFX_focus_tsr_cong"
@@ -252,6 +252,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_tsr_ideoed"
 		texturefile = "gfx/interface/TSR/TSR_ideo_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_min1"
+		texturefile = "gfx/interface/TSR/TSR_mining1.dds"
 	}
 
 	#misc

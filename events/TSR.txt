@@ -16,25 +16,23 @@ country_event = {
 		set_variable = { tjh_anger = 70 }
 		set_variable = { brb_anger = 70 }
 
-		set_variable = { fash_power = -212 }
-		set_variable = { alash_power = -183 }
-		set_variable = { jadid_power = -177 }
-		set_variable = { erk_power = -179 } #moderate socialists
-		set_variable = { moderate_power = -128 } #middle path socialists
-		set_variable = { ikramovite_power = -208 } #hardline socialists
+		set_variable = { fash_power = -210 }
+		set_variable = { alash_power = -185 }
+		set_variable = { jadid_power = -180 }
+		set_variable = { erk_power = -185 } #moderate socialists
+		set_variable = { moderate_power = -130 } #middle path socialists
+		set_variable = { ikramovite_power = -205 } #hardline socialists
 
 		set_variable = { fashp = 250 }
 		add_to_variable = { fashp = var:fash_power }
 		divide_variable = { fashp = 250 }
 		set_variable = { fstab = -0.25 }
 		multiply_variable = { fstab = var:fashp }
-		set_variable = { fwar = 0.25 }
-		multiply_variable = { fwar = var:fashp }
-		set_variable = { fdrift = 0.6 }
+		set_variable = { fdrift = 0.55 }
 		multiply_variable = { fdrift = var:fashp }
 		set_variable = { fex = 0.2 }
 		multiply_variable = { fex = var:fashp }
-		set_variable = { fmanp = 800 }
+		set_variable = { fmanp = 750 }
 		multiply_variable = { fmanp = var:fashp }
 		round_variable = fmanp
 
@@ -65,8 +63,6 @@ country_event = {
 		multiply_variable = { epol = var:erkp }
 		set_variable = { edr = 0.1 }
 		multiply_variable = { edr = var:erkp }
-		set_variable = { enor = 0.4 }
-		multiply_variable = { enor = var:erkp }
 		set_variable = { econ = 0.2 }
 		multiply_variable = { econ = var:erkp }
 		set_variable = { eatt = -0.2 }
@@ -79,9 +75,7 @@ country_event = {
 		multiply_variable = { mpop = var:modp }
 		set_variable = { mcos = -0.2 }
 		multiply_variable = { mcos = var:modp }
-		set_variable = { mres = 0.35 }
-		multiply_variable = { mres = var:modp }
-		set_variable = { mdef = 0.15 }
+		set_variable = { mdef = 0.1 }
 		multiply_variable = { mdef = var:modp }
 
 		set_variable = { hardp = 250 }
@@ -106,13 +100,84 @@ country_event = {
 	desc = TSR_2.d
 	picture = GFX_TSR_2
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = TSR_2.a
 		
 		set_variable = { econ_fact = 1 }
+		set_variable = { econ_res = 0 }
+		set_variable = { econ_rch = 0 }
+		set_variable = { econ_csg = 0 }
+		set_variable = { econ_stb = 0 }
+		set_variable = { econ_fop = 0 }
 		hidden_effect = {
 			add_dynamic_modifier = { modifier = TSR_econ_dynamic_modifier }
 		}
+	}
+}
+
+#win
+country_event = {
+	id = TSR_events.3
+	title = TSR_3.t
+	desc = TSR_3.d
+	picture = GFX_report_event_latvian_soldiers
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TSR_3.a
+
+		custom_effect_tooltip = deduct_tjs_16
+		custom_effect_tooltip = TSR_mod_up
+		add_to_variable = { tjh_anger = -16 }
+		add_to_variable = { moderate_power = 15 }
+		add_political_power = 50
+		add_stability = 0.05
+		army_experience = 17
+		set_country_flag = afg_def
+	}
+}
+
+#draw
+country_event = {
+	id = TSR_events.4
+	title = TSR_4.t
+	desc = TSR_4.d
+	picture = GFX_report_event_latvian_legion
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TSR_4.a
+
+		custom_effect_tooltip = deduct_tjs_4
+		add_to_variable = { tjh_anger = -4 }
+		add_political_power = -15
+		add_stability = -0.02
+		army_experience = 10
+	}
+}
+
+#lose
+country_event = {
+	id = TSR_events.5
+	title = TSR_5.t
+	desc = TSR_5.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TSR_5.a
+
+		custom_effect_tooltip = add_tjs_16
+		custom_effect_tooltip = TSR_mod_down
+		add_to_variable = { tjh_anger = 16 }
+		add_to_variable = { moderate_power = -15 }
+		add_political_power = -50
+		add_stability = -0.1
+		army_experience = 5
 	}
 }

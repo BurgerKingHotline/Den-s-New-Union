@@ -7,6 +7,10 @@ reintegrate_t_d = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 50
 
 	available = {
@@ -22,6 +26,7 @@ reintegrate_t_d = {
 		political_power_factor = -0.2
 	}
 	remove_effect = {
+		set_country_flag = tjh_done_yay
 		custom_effect_tooltip = TJS_done_tt
 		set_variable = { tjh_anger = 0 }
 		add_state_core = 742
@@ -41,6 +46,10 @@ loosen_conscription_d = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 80
@@ -83,6 +92,10 @@ approach_nm = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 85
 
 	available = {
@@ -106,6 +119,7 @@ approach_nm = {
 			character = TSR_nisar_m
 			trait = media_personality
 		}
+		742 = { add_compliance = 5 }
 	}
 }
 
@@ -116,6 +130,10 @@ reintegrate_t_prop = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 25
 
 	available = {
@@ -123,7 +141,8 @@ reintegrate_t_prop = {
 	}
 	
 	fire_only_once = no
-	days_remove = 60
+	days_remove = 40
+	days_re_enable = 30
 	modifier = {
 		political_power_factor = -0.3
 	}
@@ -136,14 +155,161 @@ reintegrate_t_prop = {
 			ideology = communism
 			popularity = 0.01
 		}
+		742 = { add_compliance = 3 }
 	}
 }
+
+approach_leaders_t = {
+	icon = hol_attract_foreign_investors
+	
+	days_re_enable = 100
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
+	cost = 60
+
+	available = {
+		controls_state = 742
+	}
+	
+	fire_only_once = no
+	days_remove = 30
+
+	modifier = {
+		industrial_capacity_factory = -0.1
+	}
+
+	remove_effect = {
+			custom_effect_tooltip = deduct_tjs_10
+			custom_effect_tooltip = TSR_big_erk_up
+			custom_effect_tooltip = TSR_big_jad_up
+			custom_effect_tooltip = TSR_some_alash_up
+			custom_effect_tooltip = TSR_slight_fash_down
+			custom_effect_tooltip = TSR_some_hardli_down
+			add_to_variable = { tjh_anger = -10 }
+			add_to_variable = { erk_power = 20 }
+			add_to_variable = { jadid_power = 20 }
+			add_to_variable = { alash_power = 10 }
+			add_to_variable = { fash_power = -5 }
+			add_to_variable = { ikramovite_power = -10 }
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			742 = { add_compliance = 3 }
+		}
+	}
+
+amnesty_t = {
+	icon = SWI_support_humanitarian_efforts
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
+	cost = 50
+
+	available = {
+		controls_state = 742
+	}
+	
+	fire_only_once = yes
+	days_remove = 30
+
+	modifier = {
+		political_power_factor = -0.1
+		stability_weekly = -0.01
+		industrial_capacity_factory = -0.25
+	}
+
+	remove_effect = {
+			custom_effect_tooltip = deduct_tjs_16
+			custom_effect_tooltip = TSR_big_jad_up
+			custom_effect_tooltip = TSR_alash_up
+			custom_effect_tooltip = TSR_big_fash_up
+			add_to_variable = { tjh_anger = -16 }
+			add_to_variable = { jadid_power = 20 }
+			add_to_variable = { alash_power = 15 }
+			add_to_variable = { fash_power = 20 }
+			add_manpower = 3500
+			army_experience = 5
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.025
+			}
+			742 = { add_resistance = -7 }
+		}
+	}
+
+modernize_t = {
+	icon = generic_factory
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
+	cost = 50
+
+	available = {
+		controls_state = 742
+	}
+	
+	fire_only_once = yes
+	days_remove = 40
+
+	modifier = {
+		production_speed_buildings_factor = -0.5
+	}
+
+	remove_effect = {
+			custom_effect_tooltip = deduct_tjs_10
+			custom_effect_tooltip = TSR_big_mod_up
+			custom_effect_tooltip = TSR_some_jad_up
+			custom_effect_tooltip = TSR_slight_hardli_down
+			add_to_variable = { tjh_anger = -10 }
+			add_to_variable = { moderate_power = 20 }
+			add_to_variable = { jadid_power = 10 }
+			add_to_variable = { ikramovite_power = -5 }
+			742 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = aluminium
+				amount = 1
+				state = 742
+			}
+			742 = { add_resistance = -3 }
+		}
+	}
 
 local_autonomy_t = {
 	icon = POL_looming_peasants_strike
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 100
@@ -169,6 +335,7 @@ local_autonomy_t = {
 		add_to_variable = { ikramovite_power = -20 }
 		add_to_variable = { erk_power = 20 }
 		add_to_variable = { jadid_power = 20 }
+		742 = { add_resistance = -4 }
 	}
 }
 
@@ -177,6 +344,10 @@ infiltrate_movements = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 20
@@ -205,6 +376,7 @@ infiltrate_movements = {
 					type = support_equipment
 					amount = -25
 				}
+				742 = { add_resistance = -5 }
 			}
 			30 = {
 				add_equipment_to_stockpile = {
@@ -221,6 +393,10 @@ enf_laws_t = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 90
@@ -244,6 +420,7 @@ enf_laws_t = {
 				add_to_variable = { ikramovite_power = 15 }
 				add_to_variable = { erk_power = -15 }
 				add_to_variable = { jadid_power = -10 }
+				742 = { add_compliance = 1 }
 			}
 			50 = {
 				custom_effect_tooltip = add_tjs_10
@@ -256,6 +433,11 @@ enf_laws_t = {
 				add_to_variable = { ikramovite_power = -15 }
 				add_to_variable = { erk_power = 15 }
 				add_to_variable = { jadid_power = 10 }
+				add_popularity = {
+					ideology = communism
+					popularity = -0.02
+				}
+				742 = { add_resistance = 5 }
 			}
 		}
 	}
@@ -268,6 +450,10 @@ limit_mosques = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 40
 
 	available = {
@@ -278,7 +464,7 @@ limit_mosques = {
 	days_remove = 40
 
 	modifier = {
-		weekly_stability = -0.01
+		stability_weekly = -0.01
 		industrial_capacity_factory = 0.05
 	}
 
@@ -293,6 +479,7 @@ limit_mosques = {
 					ideology = neutrality
 					popularity = -0.01
 				}
+				742 = { add_compliance = 1 }
 			}
 			55 = {
 				custom_effect_tooltip = add_tjs_16
@@ -305,6 +492,7 @@ limit_mosques = {
 					ideology = neutrality
 					popularity = 0.05
 				}
+				742 = { add_resistance = 5 }
 			}
 		}
 	}
@@ -315,6 +503,10 @@ persecute_leaders = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 70
@@ -352,6 +544,7 @@ persecute_leaders = {
 					ideology = neutrality
 					popularity = 0.05
 				}
+				742 = { add_resistance = 5 }
 			}
 		}
 	}
@@ -364,6 +557,10 @@ force_industrial = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 30
 
 	available = {
@@ -374,7 +571,7 @@ force_industrial = {
 	days_remove = 30
 
 	modifier = {
-		weekly_stability = -0.0025
+		stability_weekly = -0.0025
 	}
 
 	remove_effect = {
@@ -386,6 +583,7 @@ force_industrial = {
 				custom_effect_tooltip = TSR_big_erk_down
 				add_to_variable = { erk_power = -20 }
 				add_to_variable = { ikramovite_power = 20 }
+				742 = { add_resistance = 2 }
 			}
 			50 = {
 				custom_effect_tooltip = add_tjs_16
@@ -394,6 +592,7 @@ force_industrial = {
 				custom_effect_tooltip = TSR_big_erk_up
 				add_to_variable = { ikramovite_power = -20 }
 				add_to_variable = { erk_power = 20 }
+				742 = { add_resistance = 6 }
 			}
 		}
 			742 = {
@@ -417,6 +616,10 @@ force_mining = {
 
 	allowed = {
 		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
 	}
 
 	cost = 30
@@ -449,10 +652,11 @@ force_mining = {
 				custom_effect_tooltip = TSR_big_erk_up
 				add_to_variable = { ikramovite_power = -20 }
 				add_to_variable = { erk_power = 20 }
+				742 = { add_resistance = 5 }
 			}
 		}
 			742 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -489,6 +693,10 @@ ban_t_nat = {
 		always = yes
 	}
 
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+	}
+
 	cost = 70
 
 	available = {
@@ -514,24 +722,154 @@ ban_t_nat = {
 					ideology = neutrality
 					popularity = -0.01
 				}
+				742 = { add_resistance = -10 }
 			}
 			70 = {
 				custom_effect_tooltip = add_tjs_20
 				custom_effect_tooltip = TSR_big_hardli_down
 				custom_effect_tooltip = TSR_fash_down
 				custom_effect_tooltip = TSR_some_jad_up
-				add_to_variable = { tjh_anger = 16 }
+				add_to_variable = { tjh_anger = 20 }
 				add_to_variable = { ikramovite_power = -20 }
 				add_to_variable = { fash_power = -15 }
 				add_to_variable = { jadid_power = 10 }
 				add_popularity = {
 					ideology = neutrality
-					popularity = 0.05
+					popularity = 0.06
 				}
+				742 = { add_resistance = 8 }
 			}
 		}
 	}
 }
+
+wipe_out_g = {
+	icon = eng_blackshirt_march
+	
+	days_re_enable = 60
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+		NOT = { has_country_flag = afg_def }
+	}
+
+	cost = 10
+
+	available = {
+		controls_state = 742
+		command_power > 30
+	}
+	
+	fire_only_once = yes
+	days_remove = 15
+
+	modifier = {
+		army_speed_factor = 0.2
+		weekly_manpower = -2000
+	}
+
+	remove_effect = {
+			add_command_power = -30
+			start_border_war = {
+				attacker = {
+					state = 742
+					num_provinces = 2
+					on_win = TSR_events.3
+					on_lose = TSR_events.4
+					on_cancel = TSR_events.5
+				}	
+				defender = {
+					state = 267
+					num_provinces = 2
+				}
+			}
+		}
+	}
+
+wipe_out_partis = {
+	icon = hol_draw_up_staff_plans
+	
+	days_re_enable = 65
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = tjh_done_yay }
+		has_country_flag = afg_def
+		NOT = { has_country_flag = par_def }
+	}
+
+	cost = 10
+
+	available = {
+		controls_state = 742
+		command_power > 30
+		divisions_in_state = {
+			size > 4
+			state = 742
+		}
+	}
+	
+	fire_only_once = no
+	days_remove = 31
+
+	modifier = {
+		army_speed_factor = 0.2
+		weekly_manpower = -1000
+	}
+
+	remove_effect = {
+			add_command_power = -30
+			random_list = {
+				50 = {
+					custom_effect_tooltip = deduct_tjs_16
+					custom_effect_tooltip = TSR_mod_up
+					add_to_variable = { tjh_anger = -16 }
+					add_to_variable = { moderate_power = 15 }
+					add_popularity = {
+						ideology = neutrality
+						popularity = -0.015
+					}
+					742 = { add_resistance = -10 }
+					set_country_flag = par_def
+					army_experience = 5
+					add_stability = 0.05
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -50
+					}
+					742 = { add_resistance = -8 }
+				}
+				50 = {
+					custom_effect_tooltip = add_tjs_16
+					custom_effect_tooltip = TSR_big_mod_down
+					custom_effect_tooltip = TSR_slight_fash_up
+					custom_effect_tooltip = TSR_slight_jad_up
+					add_to_variable = { tjh_anger = 16 }
+					add_to_variable = { moderate_power = -20 }
+					add_to_variable = { fash_power = 5 }
+					add_to_variable = { jadid_power = 5 }
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.04
+					}
+					add_stability = -0.02
+					add_war_support = -0.02
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -370
+					}
+					742 = { add_resistance = 2 }
+				}
+			}
+		}
+	}
 }
 
 TSR_politics_cat = {
@@ -550,11 +888,9 @@ TSR_politics_cat = {
         }
 
         complete_effect = {
-			#custom_effect_tooltip = TJS_done_tt
 			add_stability = 0.05
 			add_to_variable = { ikramovite_power = 25 }
 			add_to_variable = { fash_power = 10 }
-			add_to_variable = { tjh_anger = 10 }
         }
     }
 }

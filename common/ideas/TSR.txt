@@ -11,7 +11,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = 40
+				weekly_manpower = 30
 				stability_factor = -0.05
 				war_support_factor = 0.03
 				experience_gain_army_factor = 0.05

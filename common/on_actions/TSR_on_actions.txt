@@ -14,13 +14,11 @@ on_actions = {
 			divide_variable = { fashp = 250 }
 			set_variable = { fstab = -0.25 }
 			multiply_variable = { fstab = var:fashp }
-			set_variable = { fwar = 0.25 }
-			multiply_variable = { fwar = var:fashp }
-			set_variable = { fdrift = 0.6 }
+			set_variable = { fdrift = 0.55 }
 			multiply_variable = { fdrift = var:fashp }
 			set_variable = { fex = 0.2 }
 			multiply_variable = { fex = var:fashp }
-			set_variable = { fmanp = 2000 }
+			set_variable = { fmanp = 750 }
 			multiply_variable = { fmanp = var:fashp }
 			round_variable = fmanp
 
@@ -29,7 +27,7 @@ on_actions = {
 			divide_variable = { alashp = 250 }
 			set_variable = { astab = 0.3 }
 			multiply_variable = { astab = var:alashp }
-			set_variable = { aconsc = 0.1 }
+			set_variable = { aconsc = 0.2 }
 			multiply_variable = { aconsc = var:alashp }
 			set_variable = { apolp = 0.35 }
 			multiply_variable = { apolp = var:alashp }
@@ -47,12 +45,10 @@ on_actions = {
 			divide_variable = { erkp = 250 }
 			set_variable = { estab = 0.3 }
 			multiply_variable = { estab = var:erkp }
-			set_variable = { epol = -0.4 }
+			set_variable = { epol = 0.35 }
 			multiply_variable = { epol = var:erkp }
 			set_variable = { edr = 0.1 }
 			multiply_variable = { edr = var:erkp }
-			set_variable = { enor = 0.4 }
-			multiply_variable = { enor = var:erkp }
 			set_variable = { econ = 0.2 }
 			multiply_variable = { econ = var:erkp }
 			set_variable = { eatt = -0.2 }
@@ -65,12 +61,8 @@ on_actions = {
 			multiply_variable = { mpop = var:modp }
 			set_variable = { mcos = -0.2 }
 			multiply_variable = { mcos = var:modp }
-			set_variable = { mres = 0.4 }
-			multiply_variable = { mres = var:modp }
-			set_variable = { mdef = 0.15 }
+			set_variable = { mdef = 0.1 }
 			multiply_variable = { mdef = var:modp }
-			set_variable = { mcdr = 0.1 }
-			multiply_variable = { mcdr = var:modp }
 
 			set_variable = { hardp = 250 }
 			add_to_variable = { hardp = var:ikramovite_power }
@@ -113,6 +105,19 @@ on_actions = {
 							add_stability = 0.001
 						}
 					}
+				}
+				if = {
+					limit = {
+						check_variable = { tjh_anger > 2 }
+					}
+					set_variable = { tjk_res = var:tjh_anger }
+					set_variable = { tjk_com = var:tjh_anger }
+					divide_variable = { tjk_res = 5 }
+					divide_variable = { tjk_com = 12 }
+					round_variable = tjk_res
+					round_variable = tjk_com
+					742 = { add_resistance = var:tjk_res }
+					742 = { add_resistance = var:tjk_com }
 				}
 			}
 			if = {

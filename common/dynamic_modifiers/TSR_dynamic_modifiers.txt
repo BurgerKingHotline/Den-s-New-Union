@@ -4,7 +4,7 @@ TSR_factionalism_dynamic_modifier = {
 	icon = GFX_idea_EST_democratic_opposition
 
 	stability_factor = fstab
-	war_support_factor = fwar
+	war_support_factor = fex
 	fascism_drift = fdrift
 	experience_gain_army_factor = fex
 	army_attack_factor = fex
@@ -20,19 +20,15 @@ TSR_factionalism_dynamic_modifier = {
 	political_power_factor = epol
 	communism_drift = edr
 	democratic_drift = edr
-	production_lack_of_resource_penalty_factor = enor
 	conscription_factor = econ
-	training_time_factor = econ
 	army_attack_factor = eatt
 	political_power_factor = modpop
 	army_defence_factor = mdef
 	communism_drift = mdef
 	consumer_goods_factor = mcos
-	local_resources_factor = mres
 	stability_factor = hpopg
-	political_power_factor = hpopg
 	consumer_goods_factor = hcons
-	production_speed_buildings_factor = hbuild
+	production_speed_buildings_factor = hcons
 	communism_drift = hcons
 	industrial_capacity_factory = hbuild
 	conscription_factor = hpopg
@@ -44,6 +40,8 @@ TSR_econ_dynamic_modifier = {
 	icon = GFX_idea_generic_agrarian_reform
 	
 	civilian_factory_use = econ_fact
+	local_resources_factor = econ_res
+	research_speed_factor = econ_rch
 }
 
 TSR_edu_dynamic_modifier = {
@@ -55,4 +53,7 @@ TSR_edu_dynamic_modifier = {
 	research_speed_factor = edu_rs
 	stability_factor = edu_st
 	production_speed_infrastructure_factor = edu_infra
+	political_power_factor = edu_pp
+	democratic_drift = edu_dem
+	fascism_drift = edu_fas
 }
