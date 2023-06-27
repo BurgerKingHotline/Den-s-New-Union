@@ -274,6 +274,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/TSR/TSR_mining3.dds"
 	}
 
+	spriteType = {
+		name = "GFX_focus_TSR_women1"
+		texturefile = "gfx/interface/TSR/TSR_women1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TSR_women2"
+		texturefile = "gfx/interface/TSR/TSR_women2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TSR_get_gold"
+		texturefile = "gfx/interface/TSR/TSR_get_gold.dds"
+	}
+
 	#misc
 
 	spriteType = {

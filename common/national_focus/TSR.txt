@@ -34,11 +34,15 @@ focus_tree = {
 		}
 	}
 
+#economy
+#economy
+#economy
+
 	focus = {
 		id = TSR_econ_program
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = TSR_end_cong1 }
-		x = 10
+		x = 15
 		y = 1
 		relative_position_id = TSR_end_cong1
 
@@ -283,25 +287,104 @@ focus_tree = {
 		cost = 6
 
 		completion_reward = {
-			add_manpower = -1500
-			custom_effect_tooltip = eco_3
+			add_manpower = -500
+			custom_effect_tooltip = eco_10
 			custom_effect_tooltip = TSR_some_fash_up
-			custom_effect_tooltip = TSR_some_hardli_down
+			custom_effect_tooltip = TSR_slight_hardli_down
 			custom_effect_tooltip = finish_then_strt
 			add_to_variable = { econ_csg = -0.05 }
-			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_stb = -0.1 }
 			add_to_variable = { econ_res = -0.05 }
+			add_to_variable = { econ_ppg = -0.05 }
 			add_to_variable = { ikramovite_power = -5 }
 			add_to_variable = { fash_power = 10 }
 			set_country_flag = started_mining
 		}
+	}	
+	
+	focus = {
+		id = TSR_full_speed_gold
+		icon = GFX_focus_TSR_get_gold
+		prerequisite = { focus = TSR_gold_dep }
+		mutually_exclusive = { focus = TSR_restraint_gold }
+		x = -1
+		y = 1
+		relative_position_id = TSR_gold_dep
+
+		cost = 5
+
+		completion_reward = {
+			add_manpower = -3000
+			add_political_power = -40
+			custom_effect_tooltip = eco_11
+			custom_effect_tooltip = TSR_m_fash_up
+			custom_effect_tooltip = TSR_slight_hardli_down
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_ppg = -0.05 }
+			add_to_variable = { econ_res = -0.1 }
+			add_to_variable = { ikramovite_power = -5 }
+			add_to_variable = { fash_power = 25 }
+		}
 	}
-#literacy
+
+	focus = {
+		id = TSR_gold_buyers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TSR_full_speed_gold }
+		x = -1
+		y = 1
+		relative_position_id = TSR_full_speed_gold
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = eco_13
+			custom_effect_tooltip = TSR_slight_alash_up
+			custom_effect_tooltip = TSR_slight_hardli_down
+			add_to_variable = { edu_fact = -1 }
+			add_to_variable = { ikramovite_power = -5 }
+			add_to_variable = { alash_power = 5 }
+			hidden_effect = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+	}	
+	
+	focus = {
+		id = TSR_restraint_gold
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		prerequisite = { focus = TSR_gold_dep }
+		mutually_exclusive = { focus = TSR_full_speed_gold }
+		x = 1
+		y = 1
+		relative_position_id = TSR_gold_dep
+
+		cost = 4
+
+		completion_reward = {
+			add_manpower = -1000
+			custom_effect_tooltip = eco_12
+			custom_effect_tooltip = TSR_fash_down
+			custom_effect_tooltip = TSR_slight_erk_up
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_res = -0.05 }
+			add_to_variable = { econ_ppg = 0.05 }
+			add_to_variable = { erk_power = 5 }
+			add_to_variable = { fash_power = -15 }
+		}
+	}
+
+#reform
+#reform
+#reform
+
 	focus = {
 		id = TSR_social_reform
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = { focus = TSR_end_cong1 }
-		x = -15
+		x = -10
 		y = 1
 		relative_position_id = TSR_end_cong1
 
@@ -313,6 +396,103 @@ focus_tree = {
 		}
 	}
 
+#women
+	focus = {
+		id = TSR_women1
+		icon = GFX_focus_TSR_women1
+		prerequisite = { focus = TSR_social_reform }
+		x = 6
+		y = 1
+		relative_position_id = TSR_social_reform
+
+		cost = 2
+
+		completion_reward = {
+			set_variable = { w_stb = -0.05 }
+			set_variable = { w_rcp = 0 }
+			set_variable = { w_rss = 0 }
+			custom_effect_tooltip = TSR_slight_jad_up
+			custom_effect_tooltip = TSR_slight_mod_up
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { jadid_power = 5 }
+			add_to_variable = { moderate_power = 5 }
+			add_to_variable = { fash_power = -10 }
+			add_dynamic_modifier = { modifier = TSR_women_dynamic_modifier }
+		}
+	}
+
+	focus = {
+		id = TSR_women_rights
+		icon = GFX_focus_TSR_women2
+		prerequisite = { focus = TSR_women1 }
+		x = -2
+		y = 1
+		relative_position_id = TSR_women1
+
+		cost = 2
+
+		completion_reward = {
+			add_to_variable = { w_stb = -0.05 }
+			add_to_variable = { w_rcp = 0.02 }
+			custom_effect_tooltip = TSR_slight_mod_up
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { moderate_power = 5 }
+			add_to_variable = { fash_power = -10 }
+		}
+	}
+	focus = {
+		id = TSR_women_university
+		icon = GFX_focus_generic_improve_the_administration
+		prerequisite = { focus = TSR_women_rights }
+		prerequisite = { focus = TSR_universities }
+		mutually_exclusive = { focus = TSR_women_school }
+		x = -4
+		y = 1
+		relative_position_id = TSR_women_rights
+
+		cost = 2
+
+		completion_reward = {
+			add_to_variable = { w_rss = 0.03 }
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { fash_power = -10 }
+		}
+	}
+	focus = {
+		id = TSR_women_scholar
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = TSR_women_university }
+		x = -1
+		y = 1
+		relative_position_id = TSR_women_university
+
+		cost = 2
+
+		completion_reward = {
+			add_to_variable = { w_rss = 0.03 }
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { fash_power = -10 }
+		}
+	}
+	focus = {
+		id = TSR_women_school
+		icon = GFX_focus_tsr_seced
+		prerequisite = { focus = TSR_women_rights }
+		mutually_exclusive = { focus = TSR_women_university }
+		x = -2
+		y = 1
+		relative_position_id = TSR_women_rights
+
+		cost = 3
+
+		completion_reward = {
+			add_to_variable = { w_rss = 0.005 }
+			add_to_variable = { w_stb = 0.01 }
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { fash_power = -10 }
+		}
+	}
+#literacy
 	focus = {
 		id = TSR_educate_program
 		icon = GFX_focus_generic_military_academy

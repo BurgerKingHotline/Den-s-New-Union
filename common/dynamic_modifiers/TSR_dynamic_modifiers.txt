@@ -61,3 +61,13 @@ TSR_edu_dynamic_modifier = {
 	democratic_drift = edu_dem
 	fascism_drift = edu_fas
 }
+
+TSR_women_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = generic_constitutional_guarantees
+	
+	stability_factor = w_stb
+	conscription_factor = w_rcp
+	research_speed_factor = w_rss
+}

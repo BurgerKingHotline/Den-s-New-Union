@@ -11,11 +11,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = 30
-				stability_factor = -0.05
-				war_support_factor = 0.03
+				weekly_manpower = 20
+				stability_factor = -0.075
+				war_support_factor = 0.04
 				experience_gain_army_factor = 0.05
-				research_speed_factor = 0.02
+				research_speed_factor = 0.01
+				training_time_factor = -0.04
 				communism_drift = 0.02
 				democratic_drift = 0.04
 				neutrality_drift = 0.01
