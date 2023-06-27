@@ -39,9 +39,13 @@
   CSP_antonius_ii: "King Antonius II"
   CSP_antonius_ii_desc: "Young and promising, Antonius II was chosen by the Legionary Junta as its new monarch. He promises to bring the new nation to economic prosperity."
 
-  CSP_augustus_i: "King Antonius I"
+  CSP_augustus_i: "King Augustus I"
   CSP_augustus_i_desc: "Young and promising, Augustus I was chosen by the Legionary Junta as its new monarch. He promises to grow the new naton's borders."
 
   # Focuses
   CSP_choosing_a_king: "Choosing a King"
   CSP_choosing_a_king_desc: "The time has come for us to choose a proper monarch, as the council lacks decisiveness and speed. A monarch will surely rally the nation more than the Legionary Junta can."
+
+  # Traits
+  CSP_industrial_king: "Industrial King"
+  CSP_militaristic_king: "Militaristic King"
