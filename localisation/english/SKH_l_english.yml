@@ -1,8 +1,14 @@
 ﻿l_english:
 # Country Names
- SKH: "Russian Khanate"
- SKH_DEF: "Russian Khanate"
- SKH_ADJ: "Russian"
+ SKH: "Novomongoliya"
+ SKH_DEF: "Novomongoliya"
+ SKH_ADJ: "Novomongoliyan"
+ SKH_fascism: "Xixian Khanate"
+ SKH_fascism_DEF: "the Xixian Khanate"
+ SKH_fascism_ADJ: "Xixian"
+ SKH_neutrality: "Russian Khaganate"
+ SKH_neutrality_DEF: "the Russian Khaganate"
+ SKH_neutrality_ADJ: "Russian"
  SKH_communism: "Soviet Khanate"
  SKH_communism_DEF: "the Soviet Khanate"
  SKH_communism_ADJ: "Soviet"
@@ -10,16 +16,22 @@
 # Victory Points
 
 # Parties
+ SKH_democratic_party: "NMP"
+ SKH_democratic_party_long: "New Mongolia Party"
  SKH_communism_party: "KCP"
  SKH_communism_party_long: "Khanate Communist Party"
-
+ SKH_fascism_party: "MPP"
+ SKH_fascism_party_long: "Mongol People's Party"
+ SKH_neutrality_party: "Bodg Party"
 
 # Character Descriptions
 
 
 # Ideas
  SKH_steppe_warriors: "Steppe Warriors"
- SKH_rural_communities: "Largely Rural Communities"
- SKH_rural_communities_desc: "Our nation has only a handful of major population centers, with the rest being rural villages or nomadic tribes. As such, we lack a stable industrial base or scientific community. Should we hope to expand, this must change."
+ SKH_low_industrialization: "Low Industrialization"
+ SKH_cult_of_the_khan: "Cult of the Khan"
 
 # Events
+
+# Decisions

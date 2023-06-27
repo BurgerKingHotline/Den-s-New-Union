@@ -61,3 +61,8 @@ BRB = {
 	color = rgb { 238 221 10 }
 	color_ui = rgb { 238 221 10 }
 }
+
+RES = {
+	color = rgb { 50 135 165 }
+	color_ui = rgb { 50 135 165 }
+}

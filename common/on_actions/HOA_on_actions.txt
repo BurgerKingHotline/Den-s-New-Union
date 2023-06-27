@@ -1,20 +1,17 @@
 on_actions = {
-    on_startup = {
+    on_startup_HOA = {
         effect = {
-            set_variable = {
-                var = HOA_Anger
-                value = 1
-                tooltip = hoa_anger_level
-            }
-
-            clamp_variable = {
-                var = HOA_Anger
-                max = 101
+            HOA = {
+                set_variable = {
+                    var = HOA.HOA_Anger
+                    value = 1
+                    tooltip = hoa_anger_level
+                }
             }
         }
     }
 
-    on_weekly = {
+    on_weekly_HOA = {
         effect = {
             HOA_anger_rise_daily = yes
             if = {
@@ -22,9 +19,7 @@ on_actions = {
                     HOA_Residents_Content_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Content
-                }
+                add_ideas = HOA_Residents_Content
             }
 
             else_if = {
@@ -32,9 +27,7 @@ on_actions = {
                     HOA_Residents_Unsatisfied_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Unsastified
-                }
+                add_ideas = HOA_Residents_Unsastified
             }
 
             else_if = {
@@ -42,9 +35,7 @@ on_actions = {
                     HOA_Residents_Upset_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Upset
-                }
+                add_ideas = HOA_Residents_Upset
             }
 
             else_if = {
@@ -52,9 +43,7 @@ on_actions = {
                     HOA_Residents_Angry_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Angry
-                }
+                add_ideas = HOA_Residents_Angry
             }
 
             else_if = {
@@ -62,9 +51,7 @@ on_actions = {
                     HOA_Residents_Plotting_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Plotting
-                }
+                add_ideas = HOA_Residents_Plotting
             }
 
             else_if = {
@@ -72,14 +59,56 @@ on_actions = {
                     HOA_Residents_Revolt_Trigger = yes
                 }
 
-                HOA = {
-                    add_ideas = HOA_Residents_Revolt
-                }
+                add_ideas = HOA_Residents_Revolt
             }
 
             else = {
                 log = "Issue with HOA Resident Anger System. Please Report to greenbueller."
             }
-        }    
+        }
+
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = HOA_Revolt_Started
+                }
+
+            }
+
+            else_if = {
+                limit = {
+                    check_variable = {
+                        var = HOA.HOA_Anger
+                        value > 90
+                    }
+                }
+
+                HOA = {
+                    set_variable = {
+                        var = HOA.HOA_Revolt_Countdown
+                        value = 21
+                        tooltip = hoa_revolt_countdown
+                    }
+                }
+
+                country_event = HOA_events.2
+
+                HOA_anger_rise_daily = no
+                HOA_revolt_countdown_effect = yes
+                set_country_flag = HOA_Revolt_Started
+            }
+
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = HOA.HOA_Revolt_Countdown
+                        value = 1
+                    }
+                }
+
+                HOA_civil_war = yes
+            }
+        }
     }
 }

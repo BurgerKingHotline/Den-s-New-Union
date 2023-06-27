@@ -71,6 +71,56 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/mil/alibiz_idea.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_nis_my"
+		texturefile = "gfx/leaders/TSR/TSR/mil/nis_my.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_nis_my_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/nis_my_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_amanki1"
+		texturefile = "gfx/leaders/TSR/TSR/mil/amanki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_amanki1_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/amanki_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_mw"
+		texturefile = "gfx/leaders/TSR/TSR/mil/mulla_w.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_mw_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/mulla_w_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_tgk"
+		texturefile = "gfx/leaders/TSR/TSR/mil/tagirk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_tgk_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/tagirk_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_kar_a"
+		texturefile = "gfx/leaders/TSR/TSR/mil/kara.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_kar_a_idea"
+		texturefile = "gfx/leaders/TSR/TSR/mil/kara_idea.dds"
+	}
+
 	#mil adv
 
 	spriteType = {
@@ -85,17 +135,91 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_khkhan.dds"
 	}
 
+	spriteType = {
+		name = "GFX_trait_TSR_afghan_exile"
+		texturefile = "gfx/leaders/TSR/TSR/misc/afghanl.dds"
+	}
+
 	#GUI - 1
 	spriteType = {
 		name = "GFX_tjk_icon"
-		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_tajiks.dds"
+		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_tajiks.dds"
 	}
 
 	spriteType = {
 		name = "GFX_brb_icon"
-		texturefile = "gfx/leaders/TSR/TSR/misc/TSR_bandits.dds"
+		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_bandits.dds"
 	}
 	
+	#GUI - 2 - icons
+
+	spriteType = {
+		name = "GFX_fash_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/fash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jadid_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/jadid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alash_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/alash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_erk_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/erk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_moderate_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/moderate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hardline_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/hardline.dds"
+	}
+	
+	#GUI - 2 - bars
+
+	spriteType = {
+		name = "GFX_fash_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/fash_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jadid_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/jadid_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alash_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/alash_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_erk_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/erk_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_moderate_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/moderate_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hardline_bar"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/hardline_bar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bottom_bg"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/bg1.dds"
+	}
+
 	#events
 
 	spriteType = {
@@ -103,9 +227,54 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/TSR_one.dds"
 	}
 
+	spriteType = {
+		name = "GFX_TSR_2"
+		texturefile = "gfx/event_pictures/TSR_two.dds"
+	}
+	
+	#goals
+	
+	spriteType = {
+		name = "GFX_focus_tsr_cong"
+		texturefile = "gfx/interface/TSR/end_congress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_islamed"
+		texturefile = "gfx/interface/TSR/TSR_islamic_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_seced"
+		texturefile = "gfx/interface/TSR/TSR_sec_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_ideoed"
+		texturefile = "gfx/interface/TSR/TSR_ideo_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_min1"
+		texturefile = "gfx/interface/TSR/TSR_mining1.dds"
+	}
+
 	#misc
+
 	spriteType = {
 		name = "GFX_Portrait_mzs"
 		texturefile = "gfx/leaders/TSR/oth/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_tsr_one"
+		texturefile = "gfx/leaders/TSR/TSR/misc/decision_category_one.dds"
+	}
+	
+	#ideas
+
+	spriteType = {
+		name = "GFX_idea_aexiles"
+		texturefile = "gfx/leaders/TSR/TSR/misc/idea_afgh_exiles.dds"
 	}
 }

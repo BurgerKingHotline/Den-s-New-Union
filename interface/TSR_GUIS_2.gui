@@ -1,0 +1,126 @@
+@ICON_Y = -80
+
+guiTypes = {
+	containerWindowType = {
+		name = "TSR_power_ui_window"
+		position = { x = 0 y = 250 }
+		size = { width = 100% height = 350 }
+		clipping = yes
+
+		iconType = {
+			name ="fash_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 25 y = 0 }
+			quadTextureSprite = "GFX_fash_bar"
+			scale = 1
+			pdx_tooltip = gui2_fbar
+		}
+
+		iconType = {
+			name ="jadid_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 185 y = 0 }
+			quadTextureSprite = "GFX_jadid_bar"
+			scale = 1
+			pdx_tooltip = gui2_jbar
+		}
+
+		iconType = {
+			name ="alash_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 105 y = 0 }
+			quadTextureSprite = "GFX_alash_bar"
+			scale = 1
+			pdx_tooltip = gui2_abar
+		}
+
+		iconType = {
+			name ="erk_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 265 y = 0 }
+			quadTextureSprite = "GFX_erk_bar"
+			scale = 1
+			pdx_tooltip = gui2_ebar
+		}
+
+		iconType = {
+			name ="moderate_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 345 y = 0 }
+			quadTextureSprite = "GFX_moderate_bar"
+			scale = 1
+			pdx_tooltip = gui2_mbar
+		}
+
+		iconType = {
+			name ="hardline_bar1"
+			orientation = LOWER_LEFT
+			position = { x = 425 y = 0 }
+			quadTextureSprite = "GFX_hardline_bar"
+			scale = 1
+			pdx_tooltip = gui2_hbar
+		}
+
+		iconType = {
+			name ="backgr"
+			orientation = LOWER_LEFT
+			position = { x = -10 y = -90 }
+			quadTextureSprite = "GFX_bottom_bg"
+			scale = 1
+		}
+
+		iconType = {
+			name ="fash_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 25 y = @ICON_Y }
+			quadTextureSprite = "GFX_fash_icon"
+			scale = 1
+			pdx_tooltip = gui2_fash
+		}
+
+		iconType = {
+			name ="jadid_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 185 y = @ICON_Y }
+			quadTextureSprite = "GFX_jadid_icon"
+			scale = 1
+			pdx_tooltip = gui2_jadid
+		}
+
+		iconType = {
+			name ="alash_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 105 y = @ICON_Y }
+			quadTextureSprite = "GFX_alash_icon"
+			scale = 1
+			pdx_tooltip = gui2_alash
+		}
+
+		iconType = {
+			name ="erk_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 265 y = @ICON_Y }
+			quadTextureSprite = "GFX_erk_icon"
+			scale = 1
+			pdx_tooltip = gui2_erk
+		}
+
+		iconType = {
+			name ="moderate_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 345 y = @ICON_Y }
+			quadTextureSprite = "GFX_moderate_icon"
+			scale = 1
+			pdx_tooltip = gui2_moderates
+		}
+
+		iconType = {
+			name ="hardline_icon1"
+			orientation = LOWER_LEFT
+			position = { x = 425 y = @ICON_Y }
+			quadTextureSprite = "GFX_hardline_icon"
+			scale = 1
+			pdx_tooltip = gui2_hardline
+		}
+	}
+}

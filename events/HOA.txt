@@ -1,0 +1,78 @@
+add_namespace = HOA_events
+
+country_event = {
+    id = HOA_events.1
+    title = HOA_events.1.t
+    desc = HOA_events.1.d
+    picture = GFX_report_event_ger_civil_war
+
+    is_triggered_only = yes
+
+    immediate = {
+        log = "HOA Civil War has begun."
+    }
+
+    option = {
+        name = HOA_events.1.a
+        hidden_effect = {
+            if = {
+                limit = {
+                    HOA = {
+                        is_ai = no
+                    }
+                }
+
+                RES = {
+                    change_tag_from = HOA
+                }
+            }
+
+            HOA = {
+                retire_character = HOA_Ivan_Kodatsky
+                add_country_leader_role = {
+                    character = HOA_Home_Owners_Board
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = oligarchism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+            }
+        }
+
+        custom_effect_tooltip = HOA_side_residents
+    }
+
+    option = {
+        name = HOA_events.1.b
+        custom_effect_tooltip = HOA_side_management
+        hidden_effect = {
+            HOA = {
+                retire_character = HOA_Ivan_Kodatsky
+                add_country_leader_role = {
+                    character = HOA_Home_Owners_Board
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = oligarchism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = HOA_events.2
+    title = HOA_events.2.t
+    desc = HOA_events.2.d
+    picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+
+    option = {
+        name = HOA_events.2.a
+    }
+}

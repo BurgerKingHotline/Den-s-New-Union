@@ -83,23 +83,27 @@ if = {
 }
 
 recruit_character = SKH_stalinkhan
+recruit_character = SKH_demchug
 recruit_character = SKH_zhukov
+recruit_character = SKH_choibalsan
+recruit_character = SKH_konev
+recruit_character = SKH_genden
+recruit_character = SKH_ungern
 
 add_ideas = {
 	SKH_steppe_warriors
-	SKH_rural_communities
+	SKH_low_industrialization
+	SKH_cult_of_the_khan
 }
 
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 90
-	neutrality = 10
+	communism = 85
+	fascism = 15
 }

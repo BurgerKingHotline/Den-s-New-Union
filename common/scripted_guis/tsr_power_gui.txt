@@ -1,0 +1,33 @@
+scripted_gui = {
+	tsr_power_gui = {
+		context_type = decision_category
+		window_name = "TSR_power_ui_window"
+	visible = {
+		ROOT = { original_tag = TSR }
+		TSR = {
+			NOT = { has_country_flag = power_secured }
+			}
+		}
+
+		properties = {
+			fash_bar1 = {
+				y = var:fash_power
+			}
+			jadid_bar1 = {
+				y = var:jadid_power
+			}
+			alash_bar1 = {
+				y = var:alash_power
+			}
+			erk_bar1 = {
+				y = var:erk_power
+			}
+			moderate_bar1 = {
+				y = var:moderate_power
+			}
+			hardline_bar1 = {
+				y = var:ikramovite_power
+			}
+		}
+	}
+}

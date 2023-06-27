@@ -1,38 +1,59 @@
 @ICON_X = 40
-@TEXT_X = 60
+@TEXT_X = 100
 
 guiTypes = {
 	containerWindowType = {
-		name = "tsr_revolts_gui1"
+		name = "TSR_revolts_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 2000 }
+		size = { width = 100% height = 220 }
 
 		instantTextBoxType = {
-			name ="TJK_anger_score"
-			position = { x = @TEXT_X y = 30 }
+			name = "Explain_1"
+			orientation = UPPER_LEFT
+			position = { x = 20 y = 0 }
+			text = "GUI1_EXP"
 			font = "hoi_18mbs"
-			text = "TJK_anger"
 			format = left
-			maxHeight = 24
+			maxWidth = 470%
 		}
+
 		instantTextBoxType = {
-			name ="BRB_anger_score"
-			position = { x = @TEXT_X y = 50 }
+			name = "TJK_anger_score"
+			orientation = UPPER_LEFT
+			position = { x = @TEXT_X y = 100 }
+			text = "TJK_anger"
 			font = "hoi_18mbs"
-			text = "BRB_anger"
 			format = left
 			maxHeight = 24
+			#pdx_tooltip = "C_exp"
 		}
+
+		instantTextBoxType = {
+			name = "BRB_anger_score"
+			orientation = UPPER_LEFT
+			position = { x = @TEXT_X y = 160 }
+			text = "BRB_anger"
+			font = "hoi_18mbs"
+			format = left
+			maxHeight = 24
+			#pdx_tooltip = "C_exp"
+		}
+
 		iconType = {
 			name ="tjk_icon"
-			spriteType = "GFX_tjk_icon"
-			position = { x = @ICON_X y = 30 }
+			orientation = UPPER_LEFT
+			position = { x = @ICON_X y = 90 }
+			quadTextureSprite = "GFX_tjk_icon"
+			scale = 1
 			pdx_tooltip = taj_tt_1
 		}
+
 		iconType = {
 			name ="brb_icon"
-			spriteType = "GFX_brb_icon"
-			position = { x = @ICON_X y = 50 }
+			orientation = UPPER_LEFT
+			position = { x = @ICON_X y = 150 }
+			quadTextureSprite = "GFX_brb_icon"
+			scale = 1
 			pdx_tooltip = brb_tt_1
 		}
 	}

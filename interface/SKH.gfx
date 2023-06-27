@@ -6,5 +6,29 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_zhukov"
 		texturefile = "gfx/leaders/SKH/portrait_skh_zhukov.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_portrait_demchug"
+		texturefile = "gfx/leaders/SKH/portrait_skh_demchug.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_choibalsan"
+		texturefile = "gfx/leaders/SKH/portrait_SKH_choibalsan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_konev"
+		texturefile = "gfx/leaders/SKH/portrait_skh_konev.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_genden"
+		texturefile = "gfx/leaders/SKH/portrait_skh_genden.dds"
+	}							
+	spriteType = {
+		name = "GFX_portrait_ungern"
+		texturefile = "gfx/leaders/SKH/portrait_skh_ungern.dds"
+	}																
+	spriteType = {
+		name = "GFX_idea_SKH_cult_of_stalin"
+		texturefile = "gfx/interface/ideas/SKH_cult_of_stalin.dds"
+	}
 }

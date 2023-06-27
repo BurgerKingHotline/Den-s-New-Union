@@ -1,0 +1,59 @@
+TSR_factionalism_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_EST_democratic_opposition
+
+	stability_factor = fstab
+	war_support_factor = fex
+	fascism_drift = fdrift
+	experience_gain_army_factor = fex
+	army_attack_factor = fex
+	weekly_manpower = fmanp
+	stability_factor = astab
+	democratic_drift = astab
+	conscription_factor = aconsc
+	political_power_factor = apolp
+	research_speed_factor = jres
+	democratic_drift = jres
+	production_speed_buildings_factor = jcon
+	stability_factor = estab
+	political_power_factor = epol
+	communism_drift = edr
+	democratic_drift = edr
+	conscription_factor = econ
+	army_attack_factor = eatt
+	political_power_factor = modpop
+	army_defence_factor = mdef
+	communism_drift = mdef
+	consumer_goods_factor = mcos
+	stability_factor = hpopg
+	consumer_goods_factor = hcons
+	production_speed_buildings_factor = hcons
+	communism_drift = hcons
+	industrial_capacity_factory = hbuild
+	conscription_factor = hpopg
+}
+
+TSR_econ_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_agrarian_reform
+	
+	civilian_factory_use = econ_fact
+	local_resources_factor = econ_res
+	research_speed_factor = econ_rch
+}
+
+TSR_edu_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_jap_supremacy_of_will
+	
+	civilian_factory_use = edu_fact
+	research_speed_factor = edu_rs
+	stability_factor = edu_st
+	production_speed_infrastructure_factor = edu_infra
+	political_power_factor = edu_pp
+	democratic_drift = edu_dem
+	fascism_drift = edu_fas
+}

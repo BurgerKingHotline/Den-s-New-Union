@@ -1,0 +1,21 @@
+state = {
+    id=912
+	name="STATE_912" # Luga
+	manpower = 204341
+	
+	state_category = rural
+
+	history={
+		buildings = {
+			infrastructure = 2 #was: 5
+		}
+		owner = HOA
+		add_core_of = HOA
+	}
+
+	provinces={
+		13258 13259 13260
+	}
+
+	local_supplies=0.0 
+}

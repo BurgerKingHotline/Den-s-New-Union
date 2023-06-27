@@ -1,5 +1,5 @@
 leader_traits = {
-		TSR_khazakh_khan = {
+	TSR_khazakh_khan = {
 		type = all
 		trait_type = personality_trait
 
@@ -11,6 +11,22 @@ leader_traits = {
 			army_morale_factor = 0.09
 			army_core_attack_factor = 0.1
 			planning_speed = 0.12
+		}
+
+		allowed = {
+			FROM = { original_tag = TSR }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	TSR_afghan_exile = {
+		type = all
+		trait_type = personality_trait
+
+		modifier = {
+			terrain_penalty_reduction = 0.1
 		}
 
 		allowed = {

@@ -1,0 +1,236 @@
+focus_tree = {
+	id = TSR_Focus_Tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TSR
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = TSR_end_cong1
+		icon = GFX_focus_tsr_cong
+		x = 30
+		y = 0
+
+		cost = 2
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			custom_effect_tooltip = TSR_slight_mod_up
+			add_to_variable = { moderate_power = 5 }
+		}
+	}
+
+	focus = {
+		id = TSR_econ_program
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = TSR_end_cong1 }
+		x = 10
+		y = 1
+		relative_position_id = TSR_end_cong1
+
+		cost = 2
+
+		completion_reward = {
+			country_event = {
+				id = TSR_events.2
+				hours = 2
+				random_hours = 3
+			}
+		}
+	}
+#resources
+	focus = {
+		id = TSR_mining_p
+		icon = GFX_focus_tsr_min1
+		prerequisite = { focus = TSR_econ_program }
+		x = -15
+		y = 1
+		relative_position_id = TSR_econ_program
+
+		cost = 2
+
+		completion_reward = {
+			custom_effect_tooltip = eco_1
+			custom_effect_tooltip = TSR_slight_mod_up
+			add_to_variable = { econ_res = 0.05 }
+			add_to_variable = { moderate_power = 5 }
+		}
+	}	
+	focus = {
+		id = TSR_find_dep
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = TSR_mining_p }
+		x = 0
+		y = 1
+		relative_position_id = TSR_mining_p
+
+		cost = 7
+
+		completion_reward = {
+			custom_effect_tooltip = eco_2
+			add_to_variable = { econ_res = 0.05 }
+			add_to_variable = { econ_rch = 0.01 }
+		}
+	}
+	focus = {
+		id = TSR_gold_dep
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = TSR_find_dep }
+		x = 5
+		y = 1
+		relative_position_id = TSR_find_dep
+
+		cost = 7
+
+		completion_reward = {
+			custom_effect_tooltip = eco_3
+			custom_effect_tooltip = TSR_some_fash_up
+			custom_effect_tooltip = TSR_some_hardli_down
+			custom_effect_tooltip = finish_then_strt
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_res = -0.05 }
+			add_to_variable = { ikramovite_power = -5 }
+			add_to_variable = { fash_power = 10 }
+			set_country_flag = started_mining
+		}
+	}
+#literacy
+	focus = {
+		id = TSR_social_reform
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = TSR_end_cong1 }
+		x = -15
+		y = 1
+		relative_position_id = TSR_end_cong1
+
+		cost = 2
+
+		completion_reward = {
+			custom_effect_tooltip = TSR_some_jad_up
+			add_to_variable = { jadid_power = 10 }
+		}
+	}
+
+	focus = {
+		id = TSR_educate_program
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = TSR_social_reform }
+		x = -10
+		y = 1
+		relative_position_id = TSR_social_reform
+
+		cost = 3
+
+		completion_reward = {
+			set_variable = { edu_fact = 1 }
+			set_variable = { edu_rs = 0 }
+			set_variable = { edu_st = 0 }
+			set_variable = { edu_infra = 0 }
+			set_variable = { edu_pp = 0 }
+			set_variable = { edu_dem = 0 }
+			set_variable = { edu_fas = 0 }
+			custom_effect_tooltip = TSR_some_jad_up
+			add_dynamic_modifier = { modifier = TSR_edu_dynamic_modifier }
+			add_to_variable = { jadid_power = 10 }
+		}
+	}
+
+	focus = {
+		id = TSR_rural_schools
+		icon = GFX_focus_ITA_peasants_rise
+		prerequisite = { focus = TSR_educate_program }
+		mutually_exclusive = { focus = TSR_universities }
+		x = -3
+		y = 1
+		relative_position_id = TSR_educate_program
+
+		cost = 10
+
+		completion_reward = {
+			add_to_variable = { edu_rs = -0.12 }
+			add_to_variable = { edu_infra = 0.075 }
+			custom_effect_tooltip = edu_1
+			add_to_variable = { erk_power = 20 }
+			add_to_variable = { ikramovite_power = -20 }
+			custom_effect_tooltip = TSR_big_erk_up
+			custom_effect_tooltip = TSR_big_hardli_down
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = TSR_universities
+		icon = GFX_focus_research2
+		prerequisite = { focus = TSR_educate_program }
+		mutually_exclusive = { focus = TSR_rural_schools }
+		x = 3
+		y = 1
+		relative_position_id = TSR_educate_program
+
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = TSR_big_erk_down
+		custom_effect_tooltip = TSR_big_hardli_up
+		custom_effect_tooltip = edu_2
+		add_to_variable = { edu_stab = -0.075 }
+			add_victory_points = {
+				province = 12583
+				value = 2
+			}
+			add_victory_points = {
+				province = 2058
+				value = 1
+			}
+			add_victory_points = {
+				province = 1459
+				value = 1
+			}
+			add_to_variable = { erk_power = -20 }
+			add_to_variable = { ikramovite_power = 20 }
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = TSR_intellectuals
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TSR_universities }
+		x = 2
+		y = 1
+		relative_position_id = TSR_universities
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = edu_3
+			custom_effect_tooltip = TSR_mod_down
+			custom_effect_tooltip = TSR_big_jad_up
+			custom_effect_tooltip = TSR_slight_alash_up
+			custom_effect_tooltip = TSR_big_fash_up
+			add_to_variable = { edu_rs = 0.035 }
+			add_to_variable = { edu_pp = -0.07 }
+			add_to_variable = { edu_dem = 0.03 }
+			add_to_variable = { edu_fas = 0.04 }
+			add_to_variable = { moderate_power = -15 }
+			add_to_variable = { jadid_power = 20 }
+			add_to_variable = { alash_power = 5 }
+			add_to_variable = { fash_power = 20 }
+		}
+	}
+}

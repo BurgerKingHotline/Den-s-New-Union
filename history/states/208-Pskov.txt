@@ -1,8 +1,7 @@
-
 state={
 	id=208
 	name="STATE_208" # Luga
-	manpower = 341819
+	manpower = 213546
 	
 	state_category = rural
 
@@ -18,7 +17,7 @@ state={
 	}
 
 	provinces={
-		104 126 181 3120 6139 6197 9097 9098 11032 11080 11139 11186 
+		6139 6197 9098 11032 11139 
 	}
 
 	local_supplies=0.0 
