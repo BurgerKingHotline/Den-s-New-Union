@@ -255,8 +255,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_focus_TSR_command_econ"
+		texturefile = "gfx/interface/TSR/TSR_command_econ.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_tsr_min1"
 		texturefile = "gfx/interface/TSR/TSR_mining1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_min2"
+		texturefile = "gfx/interface/TSR/TSR_mining2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tsr_min3"
+		texturefile = "gfx/interface/TSR/TSR_mining3.dds"
 	}
 
 	#misc

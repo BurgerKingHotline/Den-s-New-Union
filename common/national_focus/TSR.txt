@@ -86,17 +86,204 @@ focus_tree = {
 			add_to_variable = { econ_rch = 0.01 }
 		}
 	}
+
 	focus = {
-		id = TSR_gold_dep
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		id = TSR_start_min
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = TSR_find_dep }
-		x = 5
+		x = 0
 		y = 1
 		relative_position_id = TSR_find_dep
 
-		cost = 7
+		cost = 3
 
 		completion_reward = {
+			add_manpower = -3000
+			custom_effect_tooltip = TSR_slight_mod_up
+			add_to_variable = { moderate_power = 5 }
+			custom_effect_tooltip = eco_1
+			add_to_variable = { econ_res = 0.05 }
+		}
+	}
+
+#safety
+	focus = {
+		id = TSR_good_con
+		icon = GFX_focus_tsr_min2
+		prerequisite = { focus = TSR_start_min }
+		x = 3
+		y = 1
+		relative_position_id = TSR_start_min
+
+		cost = 2
+
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = TSR_some_erk_up
+			custom_effect_tooltip = TSR_slight_fash_down
+			add_to_variable = { erk_power = 10 }
+			add_to_variable = { fash_power = -5 }
+			custom_effect_tooltip = eco_4
+			add_to_variable = { econ_res = -0.1 }
+			add_to_variable = { econ_stb = 0.05 }
+		}
+	}
+
+	focus = {
+		id = TSR_worker_input_min
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = TSR_good_con }
+		x = -2
+		y = 1
+		relative_position_id = TSR_good_con
+
+		cost = 3
+
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = TSR_hardli_down
+			add_to_variable = { ikramovite_power = -15 }
+			custom_effect_tooltip = eco_4
+			add_to_variable = { econ_res = -0.05 }
+			add_to_variable = { econ_stb = 0.05 }
+		}
+	}
+
+	focus = {
+		id = TSR_mine_self_man
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = TSR_worker_input_min }
+		mutually_exclusive = { focus = TSR_mine_central_man }
+		x = 1
+		y = 1
+		relative_position_id = TSR_worker_input_min
+
+		cost = 3
+
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = TSR_big_hardli_down
+			custom_effect_tooltip = TSR_big_erk_up
+			custom_effect_tooltip = TSR_some_fash_down
+			add_to_variable = { ikramovite_power = -20 }
+			add_to_variable = { erk_power = 20 }
+			add_to_variable = { fash_power = -10 }
+			custom_effect_tooltip = eco_7
+			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_ppg = -0.07 }
+		}
+	}
+
+	focus = {
+		id = TSR_mine_central_man
+		icon = GFX_focus_TSR_command_econ
+		prerequisite = { focus = TSR_worker_input_min }
+		mutually_exclusive = { focus = TSR_mine_self_man }
+		x = -1
+		y = 1
+		relative_position_id = TSR_worker_input_min
+
+		cost = 4
+
+		completion_reward = {
+			custom_effect_tooltip = TSR_big_hardli_up
+			custom_effect_tooltip = TSR_big_erk_down
+			custom_effect_tooltip = TSR_fash_up
+			add_to_variable = { ikramovite_power = 20 }
+			add_to_variable = { erk_power = -20 }
+			add_to_variable = { fash_power = 15 }
+			custom_effect_tooltip = eco_8
+			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_ppg = 0.04 }
+			add_to_variable = { econ_res = 0.05 }
+		}
+	}
+	
+	focus = {
+		id = TSR_saf_prot
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = TSR_good_con }
+		x = 1
+		y = 1
+		relative_position_id = TSR_good_con
+
+		cost = 2
+
+		completion_reward = {
+			custom_effect_tooltip = eco_4
+			add_to_variable = { econ_res = -0.05 }
+			add_to_variable = { econ_stb = 0.05 }
+		}
+	}	
+	
+	focus = {
+		id = TSR_safety_equip
+		icon = GFX_focus_tsr_min3
+		prerequisite = { focus = TSR_saf_prot }
+		x = 0
+		y = 1
+		relative_position_id = TSR_saf_prot
+
+		cost = 4
+
+		completion_reward = {
+			custom_effect_tooltip = eco_5
+			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_fop = -0.1 }
+			add_to_variable = { econ_csg = 0.05 }
+		}
+	}
+
+	focus = {
+		id = TSR_min_training
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = TSR_safety_equip }
+		x = 0
+		y = 1
+		relative_position_id = TSR_safety_equip
+
+		cost = 4
+
+		completion_reward = {
+			custom_effect_tooltip = eco_6
+			add_to_variable = { econ_res = 0.05 }
+			add_to_variable = { econ_rch = 0.005 }
+			add_to_variable = { econ_fop = 0.02 }
+		}
+	}	
+	
+	focus = {
+		id = TSR_b_con
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = TSR_min_training }
+		prerequisite = { focus = TSR_mine_central_man focus = TSR_mine_self_man }
+		x = 0
+		y = 4
+		relative_position_id = TSR_good_con
+
+		cost = 3
+
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = eco_9
+			add_to_variable = { econ_res = 0.05 }
+			add_to_variable = { econ_fop = 0.03 }
+		}
+	}
+
+#gold
+	focus = {
+		id = TSR_gold_dep
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = TSR_start_min }
+		x = 8
+		y = 1
+		relative_position_id = TSR_start_min
+
+		cost = 6
+
+		completion_reward = {
+			add_manpower = -1500
 			custom_effect_tooltip = eco_3
 			custom_effect_tooltip = TSR_some_fash_up
 			custom_effect_tooltip = TSR_some_hardli_down
@@ -155,7 +342,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_peasants_rise
 		prerequisite = { focus = TSR_educate_program }
 		mutually_exclusive = { focus = TSR_universities }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = TSR_educate_program
 
@@ -178,7 +365,7 @@ focus_tree = {
 		icon = GFX_focus_research2
 		prerequisite = { focus = TSR_educate_program }
 		mutually_exclusive = { focus = TSR_rural_schools }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = TSR_educate_program
 
@@ -209,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = TSR_intellectuals
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = TSR_universities }
 		x = 2
 		y = 1

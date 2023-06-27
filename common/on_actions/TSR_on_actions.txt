@@ -7,6 +7,22 @@ on_actions = {
 		}
 	}
 
+	on_daily_TSR = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = tjh_anger
+				}
+					if = {
+						limit = {
+							check_variable = { tjh_anger > 100 }
+						}
+						set_variable = { tjh_anger = 100 }
+					}
+				}
+			}
+		}
+
 	on_weekly_TSR = {
 		effect = {
 			set_variable = { fashp = 250 }
@@ -108,14 +124,18 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						check_variable = { tjh_anger > 2 }
+						check_variable = { tjh_anger > 11 }
 					}
+					set_variable = { tjk_addr = var:tjh_anger }
 					set_variable = { tjk_res = var:tjh_anger }
 					set_variable = { tjk_com = var:tjh_anger }
 					divide_variable = { tjk_res = 5 }
 					divide_variable = { tjk_com = 12 }
+					divide_variable = { tjk_addr = 8 }
 					round_variable = tjk_res
 					round_variable = tjk_com
+					round_variable = tjk_addr
+					add_to_variable = { var:tjh_anger = var:tjk_addr }
 					742 = { add_resistance = var:tjk_res }
 					742 = { add_resistance = var:tjk_com }
 				}

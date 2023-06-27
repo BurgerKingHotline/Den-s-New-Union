@@ -22,7 +22,7 @@ TSR_factionalism_dynamic_modifier = {
 	democratic_drift = edr
 	conscription_factor = econ
 	army_attack_factor = eatt
-	political_power_factor = modpop
+	political_power_factor = mpop
 	army_defence_factor = mdef
 	communism_drift = mdef
 	consumer_goods_factor = mcos
@@ -42,6 +42,10 @@ TSR_econ_dynamic_modifier = {
 	civilian_factory_use = econ_fact
 	local_resources_factor = econ_res
 	research_speed_factor = econ_rch
+	stability_factor = econ_stb
+	industrial_capacity_factory = econ_fop
+	consumer_goods_factor = econ_csg
+	political_power_factor = econ_ppg
 }
 
 TSR_edu_dynamic_modifier = {

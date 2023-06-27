@@ -16,7 +16,7 @@ reintegrate_t_d = {
 	available = {
 		controls_state = 742
 		check_variable = {
-			tjh_anger < 15
+			tjh_anger < 11
 		}
 	}
 

@@ -13,7 +13,7 @@ country_event = {
 
 		set_country_flag = nm_loyal
 		
-		set_variable = { tjh_anger = 70 }
+		set_variable = { tjh_anger = 65 }
 		set_variable = { brb_anger = 70 }
 
 		set_variable = { fash_power = -210 }
@@ -111,6 +111,7 @@ country_event = {
 		set_variable = { econ_csg = 0 }
 		set_variable = { econ_stb = 0 }
 		set_variable = { econ_fop = 0 }
+		set_variable = { econ_ppg = 0 }
 		hidden_effect = {
 			add_dynamic_modifier = { modifier = TSR_econ_dynamic_modifier }
 		}
