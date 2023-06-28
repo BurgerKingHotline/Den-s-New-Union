@@ -46,6 +46,8 @@ TSR_econ_dynamic_modifier = {
 	industrial_capacity_factory = econ_fop
 	consumer_goods_factor = econ_csg
 	political_power_factor = econ_ppg
+	fuel_gain_factor = econ_flg
+	production_speed_buildings_factor = econ_csp
 }
 
 TSR_edu_dynamic_modifier = {

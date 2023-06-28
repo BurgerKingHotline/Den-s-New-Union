@@ -112,6 +112,8 @@ country_event = {
 		set_variable = { econ_stb = 0 }
 		set_variable = { econ_fop = 0 }
 		set_variable = { econ_ppg = 0 }
+		set_variable = { econ_flg = 0 }
+		set_variable = { econ_csp = 0 }
 		hidden_effect = {
 			add_dynamic_modifier = { modifier = TSR_econ_dynamic_modifier }
 		}

@@ -56,6 +56,20 @@ focus_tree = {
 			}
 		}
 	}
+#trains
+	focus = {
+		id = TSR_connect1
+		icon = 
+		prerequisite = { focus = TSR_econ_program }
+		x = 0
+		y = 1
+		relative_position_id = TSR_econ_program
+
+		cost = 2
+
+		completion_reward = {
+		}
+	}
 #resources
 	focus = {
 		id = TSR_mining_p
@@ -129,7 +143,7 @@ focus_tree = {
 			add_to_variable = { fash_power = -5 }
 			custom_effect_tooltip = eco_4
 			add_to_variable = { econ_res = -0.1 }
-			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_stb = 0.03 }
 		}
 	}
 
@@ -147,9 +161,9 @@ focus_tree = {
 			add_political_power = 20
 			custom_effect_tooltip = TSR_hardli_down
 			add_to_variable = { ikramovite_power = -15 }
-			custom_effect_tooltip = eco_4
+			custom_effect_tooltip = eco_19
 			add_to_variable = { econ_res = -0.05 }
-			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_stb = 0.03 }
 		}
 	}
 
@@ -173,7 +187,7 @@ focus_tree = {
 			add_to_variable = { erk_power = 20 }
 			add_to_variable = { fash_power = -10 }
 			custom_effect_tooltip = eco_7
-			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_stb = 0.03 }
 			add_to_variable = { econ_ppg = -0.07 }
 		}
 	}
@@ -215,8 +229,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = eco_4
-			add_to_variable = { econ_res = -0.05 }
-			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { econ_res = -0.1 }
+			add_to_variable = { econ_stb = 0.03 }
 		}
 	}	
 	
@@ -232,7 +246,6 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = eco_5
-			add_to_variable = { econ_stb = 0.05 }
 			add_to_variable = { econ_fop = -0.1 }
 			add_to_variable = { econ_csg = 0.05 }
 		}
@@ -274,7 +287,209 @@ focus_tree = {
 			add_to_variable = { econ_fop = 0.03 }
 		}
 	}
+#oil
+	focus = {
+		id = TSR_oil_dep
+		icon = GFX_focus_generic_stockpile_fuel
+		prerequisite = { focus = TSR_start_min }
+		x = -8
+		y = 1
+		relative_position_id = TSR_start_min
 
+		cost = 3
+
+		available = {
+			NOT = { has_country_flag = started_mining }
+		}
+
+		completion_reward = {
+			add_manpower = -500
+			add_political_power = 15
+			custom_effect_tooltip = eco_14
+			custom_effect_tooltip = TSR_slight_fash_up
+			custom_effect_tooltip = TSR_slight_jad_up
+			custom_effect_tooltip = finish_then_strt
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { econ_ppg = 0.05 }
+			add_to_variable = { econ_stb = -0.03 }
+			add_to_variable = { econ_flg = 0.02 }
+			add_to_variable = { jadid_power = 5 }
+			add_to_variable = { fash_power = 5 }
+			set_country_flag = started_mining
+		}
+	}
+	focus = {
+		id = TSR_tukrm_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = TSR_oil_dep }
+		x = -3
+		y = 4
+		relative_position_id = TSR_oil_dep
+
+		cost = 5
+
+		completion_reward = {
+			add_manpower = -750
+			584 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 584
+			}
+		}
+	}	
+	focus = {
+		id = TSR_uzb_oil
+		icon = GFX_focus_TSR_oil1
+		prerequisite = { focus = TSR_oil_dep }
+		x = 3
+		y = 4
+		relative_position_id = TSR_oil_dep
+
+		cost = 4
+
+		completion_reward = {
+			add_manpower = -500
+			585 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = oil
+				amount = 1
+				state = 585
+			}
+		}
+	}
+	focus = {
+		id = TSR_impr_oil
+		icon = GFX_focus_TSR_oil2
+		prerequisite = { focus = TSR_oil_dep }
+		x = 0
+		y = 1
+		relative_position_id = TSR_oil_dep
+
+		cost = 2
+
+		completion_reward = {
+			custom_effect_tooltip = eco_15
+			custom_effect_tooltip = TSR_slight_alash_up
+			add_to_variable = { econ_flg = 0.03 }
+			add_to_variable = { econ_rch = 0.005 }
+			add_to_variable = { alash_power = 5 }
+		}
+	}
+	focus = {
+		id = TSR_oil_tech
+		icon = GFX_focus_tsr_min1
+		prerequisite = { focus = TSR_impr_oil }
+		x = 0
+		y = 1
+		relative_position_id = TSR_impr_oil
+
+		cost = 4
+
+		completion_reward = {
+			custom_effect_tooltip = eco_16
+			add_to_variable = { econ_flg = 0.07 }
+			add_to_variable = { econ_fop = -0.05 }
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_synth_oil
+			}			
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_production
+			}
+		}
+	}
+
+	focus = {
+		id = TSR_oil_foreign
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = TSR_oil_tech }
+		mutually_exclusive = { focus = TSR_oil_home }
+		x = -1
+		y = 1
+		relative_position_id = TSR_oil_tech
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = eco_13
+			custom_effect_tooltip = TSR_some_alash_up
+			custom_effect_tooltip = TSR_big_fash_up
+			custom_effect_tooltip = TSR_big_hardli_down
+			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_ppg = -0.05 }
+			add_to_variable = { fash_power = 20 }
+			add_to_variable = { ikramovite_power = -20 }
+			add_to_variable = { alash_power = 10 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}	
+	
+	focus = {
+		id = TSR_oil_home
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = TSR_oil_tech }
+		mutually_exclusive = { focus = TSR_oil_foreign }
+		x = 1
+		y = 1
+		relative_position_id = TSR_oil_tech
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = eco_17
+			custom_effect_tooltip = TSR_slight_jad_up
+			custom_effect_tooltip = TSR_fash_down
+			custom_effect_tooltip = TSR_big_hardli_up
+			custom_effect_tooltip = TSR_some_mod_up
+			add_to_variable = { econ_fop = 0.08 }
+			add_to_variable = { econ_csp = 0.05 }
+			add_to_variable = { econ_flg = -0.03 }
+			add_to_variable = { econ_stb = 0.05 }
+			add_to_variable = { jadid_power = 5 }
+			add_to_variable = { fash_power = -15 }
+			add_to_variable = { ikramovite_power = 20 }
+			add_to_variable = { moderate_power = 10 }
+		}
+	}
+
+	focus = {
+		id = TSR_oil_done
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = TSR_oil_tech focus = TSR_oil_tech }
+		prerequisite = { focus = TSR_uzb_oil focus = TSR_tukrm_oil }
+		x = 0
+		y = 3
+		relative_position_id = TSR_oil_tech
+
+		cost = 2
+
+		completion_reward = {
+			custom_effect_tooltip = eco_18
+			custom_effect_tooltip = TSR_some_fash_up
+			custom_effect_tooltip = finish_then_strt1
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { fash_power = 10 }
+			clr_country_flag = started_mining
+		}
+	}
 #gold
 	focus = {
 		id = TSR_gold_dep
@@ -285,6 +500,10 @@ focus_tree = {
 		relative_position_id = TSR_start_min
 
 		cost = 6
+
+		available = {
+			NOT = { has_country_flag = started_mining }
+		}
 
 		completion_reward = {
 			add_manpower = -500
@@ -342,12 +561,9 @@ focus_tree = {
 			custom_effect_tooltip = eco_13
 			custom_effect_tooltip = TSR_slight_alash_up
 			custom_effect_tooltip = TSR_slight_hardli_down
-			add_to_variable = { edu_fact = -1 }
 			add_to_variable = { ikramovite_power = -5 }
 			add_to_variable = { alash_power = 5 }
-			hidden_effect = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
+			add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}	
 	
@@ -375,6 +591,7 @@ focus_tree = {
 			add_to_variable = { fash_power = -15 }
 		}
 	}
+#steel
 
 #reform
 #reform
