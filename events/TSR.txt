@@ -184,3 +184,37 @@ country_event = {
 		army_experience = 5
 	}
 }
+
+country_event = {
+	id = TSR_events.6
+	title = TSR_6.t
+	desc = TSR_6.d
+	picture = GFX_report_event_gre_trial
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TSR_6.a
+
+		custom_effect_tooltip = TSR_m_fash_up
+		custom_effect_tooltip = TSR_big_mod_down
+		custom_effect_tooltip = eco_22
+		add_to_variable = { moderate_power = -20 }
+		add_to_variable = { fash_power = 25 }
+		add_to_variable = { econ_csp = 0.04 }
+		add_political_power = -150
+		add_stability = -0.1
+	}	
+	
+	option = {
+		name = TSR_6.b
+
+		custom_effect_tooltip = TSR_slight_fash_down
+		custom_effect_tooltip = TSR_some_mod_up
+		custom_effect_tooltip = eco_1
+		add_to_variable = { moderate_power = 10 }
+		add_to_variable = { fash_power = -5 }
+		add_to_variable = { econ_rsg = 0.05 }
+		add_political_power = 5
+	}
+}

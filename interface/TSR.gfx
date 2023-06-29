@@ -297,6 +297,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_TSR_oil2"
 		texturefile = "gfx/interface/TSR/TSR_oil2.dds"
+	}	
+
+spriteType = {
+		name = "GFX_focus_TSR_pol_regs"
+		texturefile = "gfx/interface/TSR/TSR_pol_regs.dds"
 	}
 
 	#misc
