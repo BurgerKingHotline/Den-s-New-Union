@@ -42,7 +42,7 @@ focus_tree = {
 		id = TSR_econ_program
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = TSR_end_cong1 }
-		x = 15
+		x = 25
 		y = 1
 		relative_position_id = TSR_end_cong1
 
@@ -84,12 +84,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = TSR_mining_p
 
-		cost = 7
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = eco_2
 			add_to_variable = { econ_res = 0.05 }
-			add_to_variable = { econ_rch = 0.01 }
+			add_to_variable = { econ_rch = 0.005 }
 		}
 	}
 
@@ -238,7 +238,7 @@ focus_tree = {
 			add_to_variable = { econ_res = -0.05 }
 			add_to_variable = { econ_stb = 0.03 }
 			add_to_variable = { econ_ppg = 0.04 }
-			add_to_variable = { erk_power = 5 }
+			add_to_variable = { erk_power = 15 }
 		}
 	}
 	
@@ -300,7 +300,7 @@ focus_tree = {
 		id = TSR_oil_dep
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = { focus = TSR_start_min }
-		x = -8
+		x = -18
 		y = 1
 		relative_position_id = TSR_start_min
 
@@ -481,7 +481,7 @@ focus_tree = {
 	focus = {
 		id = TSR_oil_done
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = TSR_oil_tech focus = TSR_oil_tech }
+		prerequisite = { focus = TSR_oil_home focus = TSR_oil_foreign }
 		prerequisite = { focus = TSR_uzb_oil focus = TSR_tukrm_oil }
 		x = 0
 		y = 3
@@ -527,7 +527,7 @@ focus_tree = {
 			add_to_variable = { fash_power = 10 }
 			set_country_flag = started_mining
 		}
-	}	
+	}
 	
 	focus = {
 		id = TSR_full_speed_gold
@@ -612,7 +612,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = eco_12
+			custom_effect_tooltip = eco_21
 			custom_effect_tooltip = TSR_some_fash_down
 			custom_effect_tooltip = TSR_big_mod_up
 			add_to_variable = { econ_stb = 0.05 }
@@ -669,6 +669,273 @@ focus_tree = {
 		}
 	}
 #steel
+	focus = {
+		id = TSR_steel_start
+		icon = GFX_focus_TSR_steel1
+		prerequisite = { focus = TSR_start_min }
+		x = -10
+		y = 1
+		relative_position_id = TSR_start_min
+
+		available = {
+			NOT = { has_country_flag = started_mining }
+		}
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = finish_then_strt
+			add_manpower = -1000
+			custom_effect_tooltip = eco_25
+			add_to_variable = { econ_res = 0.02 }
+			add_to_variable = { econ_fop = 0.02 }
+			set_country_flag = started_mining
+		}
+	}
+
+	focus = {
+		id = TSR_steel_priv
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = TSR_steel_start }
+		mutually_exclusive = { focus = TSR_steel_pub }
+		x = -3
+		y = 1
+		relative_position_id = TSR_steel_start
+
+		cost = 2
+
+		completion_reward = {
+			add_manpower = 250
+			custom_effect_tooltip = eco_26
+			custom_effect_tooltip = TSR_slight_fash_up
+			custom_effect_tooltip = TSR_some_jad_up
+			custom_effect_tooltip = TSR_m_alash_up
+			add_to_variable = { econ_csg = -0.05 }
+			add_to_variable = { econ_fop = 0.02 }
+			add_to_variable = { fash_power = 5 }
+			add_to_variable = { jadid_power = 10 }
+			add_to_variable = { alash_power = 25 }
+		}
+	}
+
+	focus = {
+		id = TSR_steel_pub
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = TSR_steel_start }
+		mutually_exclusive = { focus = TSR_steel_priv }
+		x = -1
+		y = 1
+		relative_position_id = TSR_steel_start
+
+		cost = 2
+
+		completion_reward = {
+			add_manpower = -500
+			custom_effect_tooltip = eco_27
+			custom_effect_tooltip = TSR_mod_up
+			custom_effect_tooltip = TSR_some_hardli_up
+			add_to_variable = { econ_ppg = 0.05 }
+			add_to_variable = { econ_fop = 0.02 }
+			add_to_variable = { moderate_power = 15 }
+			add_to_variable = { ikramovite_power = 10 }
+		}
+	}
+
+	focus = {
+		id = TSR_coal
+		icon = GFX_focus_TSR_coal
+		prerequisite = { focus = TSR_steel_pub focus = TSR_steel_priv }
+		x = 1
+		y = 1
+		relative_position_id = TSR_steel_priv
+
+		cost = 3
+
+		completion_reward = {
+			add_manpower = -1000
+			custom_effect_tooltip = eco_28
+			add_to_variable = { econ_flg = 0.05 }
+			add_to_variable = { econ_fop = 0.03 }
+			add_to_variable = { econ_stb = -0.01 }
+		}
+	}
+
+	focus = {
+		id = TSR_oth_steel
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = TSR_coal }
+		x = -1
+		y = 1
+		relative_position_id = TSR_coal
+
+		cost = 4
+
+		completion_reward = {
+			add_manpower = -500
+			584 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 584
+			}
+		}
+	}
+
+	focus = {
+		id = TSR_uzb_steel
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = TSR_coal }
+		x = 1
+		y = 1
+		relative_position_id = TSR_coal
+
+		cost = 10
+
+		completion_reward = {
+			add_manpower = -4500
+			832 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			405 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 1
+				state = 832
+			}
+			add_resource = {
+				type = steel
+				amount = 1
+				state = 585
+			}
+			add_resource = {
+				type = steel
+				amount = 1
+				state = 830
+			}
+			add_resource = {
+				type = steel
+				amount = 1
+				state = 823
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 405
+			}
+		}
+	}
+
+	focus = {
+		id = TSR_steel_mil
+		icon = GFX_focus_generic_tank_air_support
+		prerequisite = { focus = TSR_steel_start }
+		mutually_exclusive = { focus = TSR_steel_civ }
+		x = 1
+		y = 1
+		relative_position_id = TSR_steel_start
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = eco_29
+			custom_effect_tooltip = TSR_fash_up
+			custom_effect_tooltip = TSR_hardli_up
+			add_to_variable = { econ_ppg = -0.05 }
+			add_to_variable = { econ_stb = -0.05 }
+			add_to_variable = { econ_fop = 0.085 }
+			add_to_variable = { ikramovite_power = 15 }
+			add_to_variable = { fash_power = 15 }
+		}
+	}
+
+	focus = {
+		id = TSR_steel_civ
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = TSR_steel_start }
+		mutually_exclusive = { focus = TSR_steel_mil }
+		x = 3
+		y = 1
+		relative_position_id = TSR_steel_start
+
+		cost = 3
+
+		completion_reward = {
+			custom_effect_tooltip = eco_30
+			custom_effect_tooltip = TSR_slight_alash_up
+			custom_effect_tooltip = TSR_big_erk_up
+			custom_effect_tooltip = TSR_some_mod_up
+			add_to_variable = { econ_ppg = 0.03 }
+			add_to_variable = { econ_stb = 0.02 }
+			add_to_variable = { econ_fop = -0.05 }
+			add_to_variable = { econ_csp = 0.07 }
+			add_to_variable = { alash_power = 5 }
+			add_to_variable = { erk_power = 20 }
+			add_to_variable = { moderate_power = 5 }
+		}
+	}
+
+	focus = {
+		id = TSR_steel_grand_project
+		icon = GFX_focus_generic_hydroelectric_energy
+		prerequisite = { focus = TSR_steel_civ focus = TSR_steel_mil }
+		x = -1
+		y = 2
+		relative_position_id = TSR_steel_civ
+
+		cost = 4
+
+		completion_reward = {
+			custom_effect_tooltip = TSR_some_fash_up
+			custom_effect_tooltip = TSR_some_hardli_up
+			custom_effect_tooltip = eco_31
+			add_to_variable = { econ_csp = 0.02 }
+			add_to_variable = { econ_fop = -0.035 }
+			add_war_support = 0.02
+			add_political_power = 75
+			add_to_variable = { fash_power = 10 }
+			add_to_variable = { ikramovite_power = 10 }
+		}
+	}
+
+	focus = {
+		id = TSR_steel_done
+		icon = GFX_focus_generic_aircraft_production
+		prerequisite = { focus = TSR_uzb_steel}
+		prerequisite = { focus = TSR_steel_grand_project focus = TSR_oth_steel }
+		x = 0
+		y = 2
+		relative_position_id = TSR_uzb_steel
+
+		cost = 2
+
+		completion_reward = {
+			clr_country_flag = started_mining
+			custom_effect_tooltip = finish_then_strt1
+			custom_effect_tooltip = eco_23
+			add_to_variable = { econ_fop = 0.02 }
+			add_stability = 0.01
+		}
+	}
+
 #rare metals
 
 #reform

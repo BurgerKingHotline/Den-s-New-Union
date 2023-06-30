@@ -873,14 +873,14 @@ wipe_out_partis = {
 }
 
 TSR_politics_cat = {
-    TSR_centralize_power_d = {
-        icon = generic_colonial_administration
+    TSR_see_fash = {
+        icon = f_icon
 
         allowed = {
 			always = yes
         }
 
-        cost = 120
+        cost = 0
         fire_only_once = no
 
         available = {
@@ -888,9 +888,127 @@ TSR_politics_cat = {
         }
 
         complete_effect = {
-			add_stability = 0.05
-			add_to_variable = { ikramovite_power = 25 }
-			add_to_variable = { fash_power = 10 }
+			set_country_flag = see_fash
+			clr_country_flag = see_als
+			clr_country_flag = see_jad
+			clr_country_flag = see_erk
+			clr_country_flag = see_mod
+			clr_country_flag = see_hdl
+        }
+    }
+    TSR_see_alash = {
+        icon = a_icon
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			clr_country_flag = see_fash
+			set_country_flag = see_als
+			clr_country_flag = see_jad
+			clr_country_flag = see_erk
+			clr_country_flag = see_mod
+			clr_country_flag = see_hdl
+        }
+    }
+    TSR_see_jadid = {
+        icon = j_icon
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			clr_country_flag = see_fash
+			clr_country_flag = see_als
+			set_country_flag = see_jad
+			clr_country_flag = see_erk
+			clr_country_flag = see_mod
+			clr_country_flag = see_hdl
+        }
+    }
+    TSR_see_erk = {
+        icon = e_icon
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			clr_country_flag = see_fash
+			clr_country_flag = see_als
+			clr_country_flag = see_jad
+			set_country_flag = see_erk
+			clr_country_flag = see_mod
+			clr_country_flag = see_hdl
+        }
+    }
+    TSR_see_mod = {
+        icon = m_icon
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			clr_country_flag = see_fash
+			clr_country_flag = see_als
+			clr_country_flag = see_jad
+			clr_country_flag = see_erk
+			set_country_flag = see_mod
+			clr_country_flag = see_hdl
+        }
+    }
+    TSR_see_hdl = {
+        icon = h_icon
+
+        allowed = {
+			always = yes
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        available = {
+			always = yes
+        }
+
+        complete_effect = {
+			clr_country_flag = see_fash
+			clr_country_flag = see_als
+			clr_country_flag = see_jad
+			clr_country_flag = see_erk
+			clr_country_flag = see_mod
+			set_country_flag = see_hdl
         }
     }
 }

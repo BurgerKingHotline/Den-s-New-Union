@@ -9,22 +9,11 @@ on_actions = {
 
 	on_daily_TSR = {
 		effect = {
-			if = {
-				limit = {
-					has_variable = tjh_anger
-				}
-					if = {
-						limit = {
-							check_variable = { tjh_anger > 100 }
-						}
-						set_variable = { tjh_anger = 100 }
-					}
-				}
+			clamp_variable = {
+				var = fash_power
+				min = -250
+				max = 0
 			}
-		}
-
-	on_weekly_TSR = {
-		effect = {
 			set_variable = { fashp = 250 }
 			add_to_variable = { fashp = var:fash_power }
 			divide_variable = { fashp = 250 }
@@ -38,6 +27,11 @@ on_actions = {
 			multiply_variable = { fmanp = var:fashp }
 			round_variable = fmanp
 
+			clamp_variable = {
+				var = alash_power
+				min = -250
+				max = 0
+			}
 			set_variable = { alashp = 250 }
 			add_to_variable = { alashp = var:alash_power }
 			divide_variable = { alashp = 250 }
@@ -48,6 +42,11 @@ on_actions = {
 			set_variable = { apolp = 0.35 }
 			multiply_variable = { apolp = var:alashp }
 
+			clamp_variable = {
+				var = alash_power
+				min = -250
+				max = 0
+			}
 			set_variable = { jadidp = 250 }
 			add_to_variable = { jadidp = var:jadid_power }
 			divide_variable = { jadidp = 250 }
@@ -56,6 +55,11 @@ on_actions = {
 			set_variable = { jcon = 0.25 }
 			multiply_variable = { jcon = var:jadidp }
 
+			clamp_variable = {
+				var = erk_power
+				min = -250
+				max = 0
+			}
 			set_variable = { erkp = 250 }
 			add_to_variable = { erkp = var:erk_power }
 			divide_variable = { erkp = 250 }
@@ -70,6 +74,11 @@ on_actions = {
 			set_variable = { eatt = -0.2 }
 			multiply_variable = { eatt = var:erkp }
 
+			clamp_variable = {
+				var = moderate_power
+				min = -250
+				max = 0
+			}
 			set_variable = { modp = 250 }
 			add_to_variable = { modp = var:moderate_power }
 			divide_variable = { modp = 250 }
@@ -79,7 +88,12 @@ on_actions = {
 			multiply_variable = { mcos = var:modp }
 			set_variable = { mdef = 0.1 }
 			multiply_variable = { mdef = var:modp }
-
+			
+			clamp_variable = {
+				var = ikramovite_power
+				min = -250
+				max = 0
+			}
 			set_variable = { hardp = 250 }
 			add_to_variable = { hardp = var:ikramovite_power }
 			divide_variable = { hardp = 250 }
@@ -89,7 +103,31 @@ on_actions = {
 			multiply_variable = { hcons = var:hardp }
 			set_variable = { hbuild = 0.3 }
 			multiply_variable = { hbuild = var:hardp }
-			
+			if = {
+				limit = {
+					has_variable = tjh_anger
+				}
+					clamp_variable = {
+						var = tjh_anger
+						min = 0
+						max = 100
+					}
+				}
+			if = {
+				limit = {
+					has_variable = brb_anger
+				}
+					clamp_variable = {
+						var = brb_anger
+						min = 0
+						max = 100
+					}
+				}
+			}
+		}
+
+	on_weekly_TSR = {
+		effect = {
 			if = {
 				limit = {
 					has_variable = tjh_anger

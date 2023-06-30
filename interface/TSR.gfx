@@ -150,7 +150,39 @@ spriteTypes = {
 		name = "GFX_brb_icon"
 		texturefile = "gfx/leaders/TSR/TSR/misc/tsr_bandits.dds"
 	}
+
+	#decisions
 	
+	spriteType = {
+		name = "GFX_decision_f_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_f.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_j_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_j.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_a_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_a.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_e_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_e.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_m_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_m.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_h_icon"
+		texturefile = "gfx/leaders/TSR/TSR/misc/gui2/dec_h.dds"
+	}
+
 	#GUI - 2 - icons
 
 	spriteType = {
@@ -297,9 +329,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_TSR_oil2"
 		texturefile = "gfx/interface/TSR/TSR_oil2.dds"
-	}	
+	}
 
-spriteType = {
+	spriteType = {
+		name = "GFX_focus_TSR_steel1"
+		texturefile = "gfx/interface/TSR/TSR_steel1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TSR_coal"
+		texturefile = "gfx/interface/TSR/TSR_coal.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_TSR_pol_regs"
 		texturefile = "gfx/interface/TSR/TSR_pol_regs.dds"
 	}
