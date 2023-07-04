@@ -46,6 +46,9 @@
   CSP_choosing_a_king: "Choosing a King"
   CSP_choosing_a_king_desc: "The time has come for us to choose a proper monarch, as the council lacks decisiveness and speed. A monarch will surely rally the nation more than the Legionary Junta can."
 
+  CSP_parade_in_astrakhan: "Parade in Astrakhan"
+  CSP_parade_in_astrakhan_desc: "It would be best if we rallied our capital and center of power first, as that is where our core and industry lies. Only after that can we effectively exert control over the rest of the nation."
+
   # Traits
   CSP_industrial_king: "Industrial King"
   CSP_militaristic_king: "Militaristic King"

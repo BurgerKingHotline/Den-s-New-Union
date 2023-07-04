@@ -14,15 +14,53 @@ focus_tree = {
         icon = GFX_focus_CSP_choosing_a_king
 
         cost = 5
-        x = 1
+        x = 3
 		y = 0
 
         completion_reward = {
-            add_political_power = 30
-            add_stability = 0.05
+            add_political_power = 50
+            add_stability = 0.1
             CSP = { country_event = CSP_events.2 }
         }
 
-        search_filters = { FOCUS_FILTER_POLITICAL }
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+    }
+    focus = {
+        id = CSP_parade_in_astrakhan
+        icon = GFX_
+
+        cost = 5
+        relative_position_id = CSP_choosing_a_king
+        x = 0
+		y = 1
+
+        prerequisite = { focus = CSP_choosing_a_king }
+
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.1
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+    }
+    focus = {
+        id = CSP_pacifying_the_north
+        icon = GFX_
+
+        cost = 5
+        relative_position_id = CSP_choosing_a_king
+        x = 0
+		y = 2
+
+        prerequisite = { focus = CSP_parade_in_astrakhan }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CSP_low_public_trust
+                add_idea = CSP_low_public_trust_2
+            }
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
     }
 }
