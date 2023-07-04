@@ -15,10 +15,169 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1500 }
 
     focus = {
-		id = SKH_the_rising_horde
-		icon = GFX_goal_unknown
+		id = SKH_the_great_push
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		x = 2 y = 0
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SKH_industrialization_effort
+				days = 280
+			}
+		}
+	}
+
+    focus = {
+		id = SKH_rural_electrification
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = -1 y = 1
+		relative_position_id = SKH_the_great_push
+
+		prerequisite = { focus = SKH_the_great_push }
+
+		available = {
+		}
+		
+		completion_reward = {
+			329 = {
+				set_building_level = {
+    				type = infrastructure
+    				level = 3
+   				 	instant_build = yes
+				}
+			}
+			567 = {
+				set_building_level = {
+    				type = infrastructure
+    				level = 3
+   				 	instant_build = yes
+				}
+			}	
+		}
+	}
+
+    focus = {
+		id = SKH_urban_development
+		icon = GFX_goal_generic_construction
+		cost = 10
+		x = 1 y = 1
+		relative_position_id = SKH_the_great_push
+
+		prerequisite = { focus = SKH_the_great_push }
+
+		available = {
+		}
+		
+		completion_reward = {
+			568 = {
+				set_state_category = large_town
+				set_building_level = {
+    				type = infrastructure
+    				level = 5
+   				 	instant_build = yes
+				}	
+			}
+		}
+	}
+
+    focus = {
+		id = SKH_industrial_complex
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 0 y = 2
+		relative_position_id = SKH_the_great_push
+
+		prerequisite = { focus = SKH_urban_development }
+		prerequisite = { focus = SKH_rural_electrification }
+
+		available = {
+		}
+		
+		completion_reward = {
+			568 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = SKH_arms_manufacturing_plant
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 0 y = 1
+		relative_position_id = SKH_industrial_complex
+
+		prerequisite = { focus = SKH_industrial_complex }
+
+		available = {
+		}
+		
+		completion_reward = {
+			568 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = SKH_finish_basic_reforms
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		x = 0 y = 1
+		relative_position_id = SKH_arms_manufacturing_plant
+
+		prerequisite = { focus = SKH_arms_manufacturing_plant }
+
+		available = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = SKH_low_industrialization
+    			add_idea = SKH_basic_industrialization
+			}
+		}
+	}
+
+    focus = {
+		id = SKH_standardize_worker_training
+		icon = GFX_goal_generic_production
+		cost = 10
+		x = 1 y = 1
+		relative_position_id = SKH_urban_development
+
+		prerequisite = { focus = SKH_urban_development }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = SKH_skilled_laborers
+		}
+	}
+
+    focus = {
+		id = SKH_the_rightful_khan
+		icon = GFX_focus_SOV_father_of_nations
 		cost = 5
-		x = 5 y = 0
+		x = 6 y = 0
+		mutually_exclusive = { focus = SKH_opposition }
+		relative_position_id = SKH_the_great_push
 
 		available = {
 		}
@@ -29,13 +188,13 @@ focus_tree = {
 	}
 
     focus = {
-		id = SKH_the_khan_rides
-		icon = GFX_goal_unknown
-		cost = 5
+		id = SKH_the_khans_purge
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10
 		x = 0 y = 1
-		relative_position_id = SKH_the_rising_horde
+		relative_position_id = SKH_the_rightful_khan
 
-		prerequisite = { focus = SKH_the_rising_horde }
+		prerequisite = { focus = SKH_the_rightful_khan }
 
 		available = {
 		}
@@ -45,29 +204,95 @@ focus_tree = {
 	}
 
     focus = {
-		id = SKH_one_year_plan
+		id = SKH_centralization
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		x = -1 y = 1
+		relative_position_id = SKH_the_khans_purge
+
+		prerequisite = { focus = SKH_the_khans_purge }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_the_token_khural
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10
+		x = 0 y = 1
+		relative_position_id = SKH_centralization
+
+		prerequisite = { focus = SKH_centralization }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_peoples_commissariats
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		x = 1 y = 1
+		relative_position_id = SKH_the_khans_purge
+
+		prerequisite = { focus = SKH_the_khans_purge }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_assert_authority_in_villages
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10
+		x = 0 y = 1
+		relative_position_id = SKH_peoples_commissariats
+
+		prerequisite = { focus = SKH_peoples_commissariats }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_honor_the_khan
+		icon = GFX_focus_SOV_stalins_cult_of_personality
+		cost = 10
+		x = 0 y = 3
+		relative_position_id = SKH_the_khans_purge
+
+		prerequisite = { focus = SKH_assert_authority_in_villages }
+		prerequisite = { focus = SKH_the_token_khural }
+
+		available = {
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_eastern_warplan
 		icon = GFX_goal_unknown
 		cost = 10
-		x = -2 y = 1
-		relative_position_id = SKH_the_khan_rides
+		x = -1 y = 1
+		relative_position_id = SKH_honor_the_khan
 
-		prerequisite = { focus = SKH_the_khan_rides }
-
-		available = {
-		}
-		
-		completion_reward = {
-		}
-	}
-
-    focus = {
-		id = SKH_looking_outward
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 2 y = 1
-		relative_position_id = SKH_the_khan_rides
-
-		prerequisite = { focus = SKH_the_khan_rides }
+		prerequisite = { focus = SKH_honor_the_khan }
+		mutually_exclusive = { focus = SKH_urals_warplan }
 
 		available = {
 		}
@@ -77,18 +302,35 @@ focus_tree = {
 	}
 
     focus = {
-		id = SKH_first_strike
+		id = SKH_urals_warplan
 		icon = GFX_goal_unknown
 		cost = 10
 		x = 1 y = 1
-		relative_position_id = SKH_looking_outward
+		relative_position_id = SKH_honor_the_khan
 
-		prerequisite = { focus = SKH_looking_outward }
+		prerequisite = { focus = SKH_honor_the_khan }
+		mutually_exclusive = { focus = SKH_eastern_warplan }
 
 		available = {
 		}
 		
 		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = SKH_opposition
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 5
+		x = 6 y = 0
+		mutually_exclusive = { focus = SKH_the_rightful_khan }
+		relative_position_id = SKH_the_rightful_khan
+
+		available = {
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 

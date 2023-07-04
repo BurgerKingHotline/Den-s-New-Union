@@ -5,3 +5,11 @@ SKH_move_capital = {
 
     icon = GFX_decision_category_generic
 }
+
+SKH_russian_reunification = {
+    allowed = {
+        original_tag = SKH
+    }
+
+    icon = GFX_decision_category_SOV_soviet_academy_of_sciences
+}

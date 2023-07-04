@@ -29,9 +29,18 @@
 
 # Ideas
  SKH_steppe_warriors: "Steppe Warriors"
+ SKH_steppe_warriors_desc: "We are warriors of the steppe, like our ancestors before us; our people move with great speed, and will gladly take up arms in defense of their families."
  SKH_low_industrialization: "Low Industrialization"
+ SKH_low_industrialization_desc: "Most of our country consists of small, isolated communities, with only a handful of major population centers. As such, we lack a strong industrial base - should we hope to expand our borders, this must change."
+ SKH_opposition_to_the_khan: "Opposition to the Khan"
+ SKH_opposition_to_the_khan_desc: "Stalin Khan is not yet the undisputed ruler of our Khanate, and there are several opposition groups actively undermining his authority; rivals vying for the title of Khan, and a democratic bloc seeking to abolish the Khanate altogether. For our people to thrive, one side must come out on top - no matter which."
  SKH_cult_of_the_khan: "Cult of the Khan"
+ SKH_cult_of_the_khan: "The great Stalin Khan is beloved by the people, revered as both a strong warrior and steadfast leader! It seems there are no longer any who could reasonably oppose his rule..."
+ SKH_industrialization_effort: "Industrialization Effort"
+ SKH_basic_industrialization: "Basic Industrialization"
+ SKH_skilled_laborers: "Skilled Laborers"
 
 # Events
+
 
 # Decisions
