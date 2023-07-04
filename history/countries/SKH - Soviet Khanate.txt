@@ -1,4 +1,4 @@
-﻿capital = 329
+﻿capital = 568
 
 set_research_slots = 3
 
@@ -13,9 +13,6 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	
-	mass_assault = 1
-	fleet_in_being = 1
 }
 
 if = {
@@ -93,7 +90,7 @@ recruit_character = SKH_ungern
 add_ideas = {
 	SKH_steppe_warriors
 	SKH_low_industrialization
-	SKH_cult_of_the_khan
+	SKH_opposition_to_the_khan
 }
 
 set_politics = {
@@ -104,6 +101,8 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 85
-	fascism = 15
+	communism = 60
+	fascism = 20
+	neutrality = 15
+	democratic = 5
 }

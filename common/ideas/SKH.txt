@@ -11,9 +11,22 @@ ideas = {
 			removal_cost = -1
 			modifier = {
                 army_speed_factor = 0.15
-                conscription_factor = 0.05
+                conscription_factor = 0.1
 			}
 		}
+	    SKH_industrialization_effort = {
+			picture = generic_build_infrastructure
+			allowed = {
+				original_tag = SKH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                production_speed_buildings_factor = 0.20
+			}
+		}			
 	    SKH_low_industrialization = {
 			picture = POL_disjointed_industry
 			allowed = {
@@ -25,17 +38,59 @@ ideas = {
 			removal_cost = -1
 			modifier = {
                 production_speed_buildings_factor = -0.3 
-				production_factory_max_efficiency_factor = -0.2 
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1 
 			}
 		}
+	    SKH_basic_industrialization = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				original_tag = SKH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1 
+			}
+		}
+	    SKH_skilled_laborers = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = SKH
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+                production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}						
+		SKH_opposition_to_the_khan = {
+			picture = SOV_factionalism_modifier
+			allowed = {
+				original_tag = SKH
+				has_government = communism
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				political_power_cost = 0.15
+			}
+		}			
 		SKH_cult_of_the_khan = {
 			picture = SKH_cult_of_stalin
 			allowed = {
 				original_tag = SKH
-				has_country_leader = {
-					character = SKH_stalinkhan
-					ruling_only = yes
-				}
+				has_government = communism
 			}
 			allowed_civil_war = {
 				always = yes
