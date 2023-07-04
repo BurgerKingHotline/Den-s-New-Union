@@ -3,31 +3,31 @@ units= {
 	##### NAVAL UNITS #####
 	
 	fleet = {
-		name = "WIP Normal"			
+		name = "1st Adyghe Sh'ewmona Fleet"			
 		naval_base = 719  # Novorossysk
 		task_force = {				
-			name = "WIP"
+			name = "Tekwe Force"
 			location = 719  # Novorossysk
 			
-			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Komintern Class" } } }
-			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CIR version_name = "Bug Class" } } }	
+			ship = { name = "Ghuniba" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Xhamish" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Adama" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Qafnir" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CIR version_name = "Komintern Class" } } }
+			ship = { name = "Shoshtur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CIR version_name = "Bug Class" } } }	
 		}
 	}
 	
 	fleet = {
-		name = "WIP Subs"			
+		name = "1st Adyghe K'emynef Fleet"			
 		naval_base = 719  # Novorossysk
 		task_force = {				
-			name = "WIP"
+			name = "Wemere Guardians"
 			location = 719  # Novorossysk
 			
-			ship = { name = "Shch-123" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "Series V Shchuka" } } }						
-			ship = { name = "A-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "AG Class" } } }
-			ship = { name = "A-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "AG Class" } } }		
-			ship = { name = "L-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CIR version_name = "Series II Leninets" } } }	
+			ship = { name = "Ghuniba" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "Series V Shchuka" } } }						
+			ship = { name = "Xhamish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "AG Class" } } }
+			ship = { name = "Adama" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CIR version_name = "AG Class" } } }		
+			ship = { name = "Kwabza" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CIR version_name = "Series II Leninets" } } }	
 		}
 	}
 }

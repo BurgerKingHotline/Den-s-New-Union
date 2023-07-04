@@ -18,6 +18,14 @@ CIR = {
 	color = rgb { 41  105  18 }
 	color_ui = rgb { 41  105  18 }
 }
+CUK = {
+	color = rgb { 0  100  124 } 
+	color_ui = rgb { 0  100  124 }
+}
+CVO = {
+	color = rgb { 153 153 153 } 
+	color_ui = rgb { 153 153 153 }
+}
 XUA = {
 	color = rgb { 20 20 20 }
 	color_ui = rgb { 20 20 20 }

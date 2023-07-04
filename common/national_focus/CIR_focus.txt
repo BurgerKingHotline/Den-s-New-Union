@@ -4,7 +4,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = {
+		modifier = { 
 			add = 10
 			tag = CIR
 		}
@@ -15,11 +15,11 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	focus = {
-		id = CIR_WIP_will_add_more_and_focueses_wont_be_separate_like_rn
-		icon = GFX_CIR_WIP_will_add_more_and_focueses_wont_be_separate_like_rn
-		cost = 10
+		id = CIR_ran_out_of_time_veri_sad
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 0
 		
-		x = 17
+		x = 25
 		y = 0
 		#relative_position_id = CIR_
 		
@@ -44,9 +44,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CIR_choosing_our_capital
-		icon = GFX_CIR_choosing_our_capital
-		cost = 10
+		id = CIR_circassia_reborn
+		icon = GFX_CIR_circassia_reborn
+		cost = 4
 		
 		x = 20
 		y = 0
@@ -63,11 +63,41 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = CIR_capital_tt
-			hidden_effect = { 
+			add_stability = 0.05
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_capital_decision
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_circassia_reborn
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_circassia_reborn
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
 				CIR = { 
 					country_event = CIR_choose_capial.1 
-				}
+				} 
+			hidden_effect = { 
 				set_country_flag = choose_capital
 			}
 		}
@@ -80,26 +110,58 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CIR_protect_our_national_identity
-		icon = GFX_CIR_protect_our_national_identity
-		cost = 10
+		id = CIR_a_nation_in_flames
+		icon = GFX_CIR_a_nation_in_flames 
+		cost = 4
 		
 		x = 0
 		y = 1
-		relative_position_id = CIR_choosing_our_capital
+		relative_position_id = CIR_the_capital_decision
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	
 		prerequisite = {
-			focus = CIR_choosing_our_capital
+			focus = CIR_the_capital_decision
 		}
 	
 		available = {	
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = CIR_a_nation_in_flames_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+  
+	focus = {
+		id = CIR_the_communist_plot
+		icon = GFX_CIR_the_communist_plot
+		cost = 5
+		
+		x = -2
+		y = 1
+		relative_position_id = CIR_a_nation_in_flames
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_a_nation_in_flames
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_the_communist_plot_tt
 		}
 		
 		bypass = {
@@ -110,20 +172,226 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CIR_teach_adyghe_in_schools
-		icon = GFX_CIR_teach_adyghe_in_schools
-		cost = 10
+		id = CIR_infiltrate_the_communist
+		icon = GFX_CIR_infiltrate_the_communist
+		cost = 3
 		
 		x = -1
 		y = 1
-		relative_position_id = CIR_protect_our_national_identity
+		relative_position_id = CIR_the_communist_plot
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	
 		prerequisite = {
-			focus = CIR_protect_our_national_identity
+			focus = CIR_the_communist_plot
+		}
+	
+		available = {	
+		}
+ 
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_assassinate_high_communist_figures
+		icon = GFX_CIR_assassinate_high_communist_figures
+		cost = 3
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_the_communist_plot
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_the_communist_plot
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_ethems_plot
+		icon = GFX_CIR_ethems_plot
+		cost = 5
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_the_communist_plot
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no 
+		available_if_capitulated = no 
+	
+		prerequisite = {
+			focus = CIR_infiltrate_the_communist
+		}
+		
+		prerequisite = {
+			focus = CIR_assassinate_high_communist_figures
+		} 
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_ethems_plot_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_gather_more_proof
+		icon = GFX_CIR_gather_more_proof
+		cost = 10
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_ethems_plot
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_ethems_plot
+		}
+		
+		mutually_exclusive = {
+			focus = CIR_no_time
+		}
+		
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_gather_more_proof_tt
+			add_stability = 0.02
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_no_time
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 2
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_ethems_plot
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_ethems_plot
+		}
+		
+		mutually_exclusive = {
+			focus = CIR_gather_more_proof 
+		}
+		
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_no_time_tt
+			add_stability = -0.04
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_raid_his_home
+		icon = GFX_CIR_raid_his_home
+		cost = 1
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_ethems_plot 
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_no_time focus = CIR_gather_more_proof
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_raid_his_home_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_ban_the_communist_party
+		icon = GFX_CIR_ban_the_communist_party
+		cost = 5
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_raid_his_home
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_raid_his_home
 		}
 	
 		available = {	
@@ -140,12 +408,347 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CIR_caucasian_expansion
-		icon = GFX_CIR_caucasian_expansion
-		cost = 10
+		id = CIR_plot_destroyed
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 4
 		
-		x = 10
+		x = 0
 		y = 1
+		relative_position_id = CIR_ban_the_communist_party
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_ban_the_communist_party
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_plot_destroyed_tt
+		}
+		
+		bypass = {
+		} 
+		
+		ai_will_do = {
+		} 
+	}
+	
+	focus = {
+		id = CIR_a_minority_in_our_own_nation
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 5
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_a_nation_in_flames
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_a_nation_in_flames
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_a_minority_in_our_own_nation_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_resettle_our_lands
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_a_minority_in_our_own_nation
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_a_minority_in_our_own_nation
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = CIR_resettle_our_lands_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_first_of_many
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 5
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_resettle_our_lands
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_resettle_our_lands
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			233 = {
+			add_manpower = 343000
+			}
+			909 = {
+			add_manpower = 167000
+			}
+			234 = {
+			add_manpower = 127000
+			}
+			235 = {
+			add_manpower = 76000
+			}
+			827 = {
+			add_manpower = 97000
+			}
+			828 = {
+			add_manpower = 27000
+			}
+			826 = {
+			add_manpower = 102000
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_offer_cash_for_resettlers
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_the_first_of_many
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_the_first_of_many
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_expand_cities
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 5
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_offer_cash_for_resettlers
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_offer_cash_for_resettlers
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			233 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			826 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			827 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			828 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_circassia_circassian_once_more
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_circassia_circassian_once_more
+		cost = 4
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_offer_cash_for_resettlers
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_expand_cities
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			remove_ideas = CIR_circassian_diaspora
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_extinguish_the_fire
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_extinguish_the_fire
+		cost = 5
+		
+		x = -1
+		y = 2
+		relative_position_id = CIR_circassia_circassian_once_more
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_plot_destroyed 
+		}
+		
+		prerequisite = {
+			focus = CIR_circassia_circassian_once_more
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+focus = {
+		id = CIR_burry_berzeg
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_extinguish_the_fire
+		cost = 5
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_extinguish_the_fire
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_plot_destroyed 
+		}
+		
+		prerequisite = {
+			focus = CIR_extinguish_the_fire
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CIR_berzegs_legacy_not_buried
+				add_idea = CIR_berzegs_legacy
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+
+	focus = {
+		id = CIR_redominate_the_caucasus
+		icon = GFX_CIR_no_time_grr_shine
+		cost = 4
+		
+		x = 30
+		y = 0
 		#relative_position_id = CIR_
 		
 		cancel_if_invalid = yes
@@ -154,6 +757,656 @@ focus_tree = {
 	
 		prerequisite = {
 			#focus = CIR_
+		}
+	
+		available = {	
+			has_completed_focus = CIR_extinguish_the_fire 
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_new_inal
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_the_new_inal
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_redominate_the_caucasus
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_redominate_the_caucasus
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_dreams_of_a_grand_circassia
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_dreams_of_a_grand_circassia
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_the_new_inal
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_the_new_inal
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_northern_campaign
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_northern_campaign
+		cost = 5
+		
+		x = 3
+		y = 1
+		relative_position_id = CIR_dreams_of_a_grand_circassia
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_dreams_of_a_grand_circassia
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_the_stalingrad_area
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_the_stalingrad_area
+		cost = 10
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_northern_campaign
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_northern_campaign
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 217
+			add_state_claim = 245
+			add_state_claim = 218
+			add_state_claim = 238
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_test_our_thier_defences
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_test_our_thier_defences
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_claim_the_stalingrad_area
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_the_stalingrad_area
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 234
+					num_provinces = 1
+					on_win = CIR_border_conflict.1
+					on_lose = CIR_border_conflict.2
+					on_cancel = CIR_border_conflict.3
+					modifier = 0.1
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 238
+					num_provinces = 1
+					on_win = CIR_DEF_border_conflict.1
+					on_lose = CIR_DEF_border_conflict.2
+					on_cancel = CIR_DEF_border_conflict.3
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_an_ultimatum
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_an_ultimatum
+		cost = 5
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_claim_the_stalingrad_area
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_test_our_thier_defences
+		}
+		
+		prerequisite = {
+			focus = CIR_silently_place_troops_behind_thier_lines
+			
+			hidden_effect = {
+				set_country_flag = troops_behind_border_cf
+			}
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			238 = {
+				owner = {
+					ROOT = {
+						country_event = CIR_demand_stalingrad.1
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_silently_place_troops_behind_thier_lines
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_silently_place_troops_behind_thier_lines
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_claim_the_stalingrad_area
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_the_stalingrad_area
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = troops_behind_border_tt
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_begin_the_invasion
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_begin_the_invasion
+		cost = 5
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_an_ultimatum
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_an_ultimatum
+		}
+	
+		available = {
+			
+			has_country_flag = no_cf
+		}
+
+		completion_reward = {
+			238 = {
+				owner = {
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 238 }
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_create_a_ukrainian_state_in_the_rostov_area
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_create_a_ukrainian_state_in_the_rostov_area
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_begin_the_invasion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_an_ultimatum
+		}
+	
+		available = {	
+			CIR = {
+				owns_state = 218
+				owns_state = 245
+			}
+		}
+
+		completion_reward = {
+			CIR = {
+				puppet = {
+					target = CUK
+					end_wars = no
+				}
+			}
+			CUK = {
+				transfer_state = 218
+				transfer_state = 246
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_german_volga_state
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_the_german_volga_state
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_create_a_ukrainian_state_in_the_rostov_area
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_create_a_ukrainian_state_in_the_rostov_area
+		}
+		
+		prerequisite = {
+			focus = CIR_demand_land_as_compensation
+		}
+	
+		available = {
+			CIR = {
+				owns_state = 238 
+				owns_state = 217 
+				owns_state = 237
+				owns_state = 236
+			}		
+		}
+
+		completion_reward = {
+			CIR = {
+				puppet = {
+					target = CVO
+					end_wars = no
+				}
+			}
+			CVO = {
+				transfer_state = 238 
+				transfer_state = 217 
+				transfer_state = 237
+				transfer_state = 236
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_drive_the_romans_away
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_drive_the_romans_away
+		cost = 5
+		
+		x = 2
+		y = 1
+		relative_position_id = CIR_northern_campaign
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_northern_campaign
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_claim_the_astrakhan_region
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_the_astrakhan_region
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_drive_the_romans_away
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_drive_the_romans_away
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_prepare_the_infrastructure
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_prepare_the_infrastructure
+		cost = 5
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_claim_the_astrakhan_region
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_the_astrakhan_region
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			234 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			235 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_army_drills_at_the_border
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_army_drills_at_the_border
+		cost = 5
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_claim_the_astrakhan_region
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_the_astrakhan_region
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			army_experience = 45
+			air_experience = 20
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_stage_a_roman_border_attack
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_stage_a_roman_border_attack
+		cost = 4
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_claim_the_astrakhan_region
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_prepare_the_infrastructure
+		}
+		
+		prerequisite = {
+			focus = CIR_army_drills_at_the_border
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_demand_land_as_compensation
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_demand_land_as_compensation
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_stage_a_roman_border_attack
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_stage_a_roman_border_attack
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_commence_the_attack
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_commence_the_attack
+		cost = 5
+		
+		x = 1
+		y = 1
+		relative_position_id = CIR_demand_land_as_compensation
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_demand_land_as_compensation
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+
+	focus = {
+		id = CIR_caucasian_expansion
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_caucasian_expansion
+		cost = 5
+		
+		x = -2
+		y = 1
+		relative_position_id = CIR_dreams_of_a_grand_circassia
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_dreams_of_a_grand_circassia
 		}
 	
 		available = {	
@@ -171,10 +1424,10 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_south_caucasian_expansion
-		icon = GFX_CIR_south_caucasian_expansion
-		cost = 10
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_south_caucasian_expansion
+		cost = 5
 		
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = CIR_caucasian_expansion
 		
@@ -201,10 +1454,10 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_claim_georgia
-		icon = GFX_CIR_claim_georgia
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_georgia
 		cost = 4
 		
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = CIR_south_caucasian_expansion
 		
@@ -231,42 +1484,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CIR_claim_armenia
-		icon = GFX_CIR_claim_armenia
-		cost = 4
-		
-		x = 0
-		y = 1
-		relative_position_id = CIR_south_caucasian_expansion
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-	
-		prerequisite = {
-			focus = CIR_south_caucasian_expansion
-		}
-	
-		available = {	
-		}
-
-		completion_reward = {
-			add_state_claim = 230
-		}
-		
-		bypass = {
-		}
-		
-		ai_will_do = {
-		}
-	}
-	
-	focus = {
 		id = CIR_claim_azrabejan
-		icon = GFX_CIR_claim_azrabejan
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_azrabejan
 		cost = 4
 		
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = CIR_south_caucasian_expansion
 		
@@ -293,8 +1515,43 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = CIR_claim_armenia
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_armenia
+		cost = 4
+		
+		x = 0
+		y = 2
+		relative_position_id = CIR_south_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_claim_georgia
+		}
+		
+		prerequisite = {
+			focus = CIR_claim_azrabejan
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			add_state_claim = 230
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
 		id = CIR_take_the_south
-		icon = GFX_CIR_take_the_south
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_take_the_south
 		cost = 4
 		
 		x = 0
@@ -366,10 +1623,10 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_east_caucasian_expansion
-		icon = GFX_CIR_east_caucasian_expansion
-		cost = 4
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_east_caucasian_expansion
+		cost = 5
 		
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = CIR_caucasian_expansion
 		
@@ -385,7 +1642,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_claim = 229
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_mountainous_republic
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_the_mountainous_republic
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_east_caucasian_expansion
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		prerequisite = {
+			focus = CIR_east_caucasian_expansion
+		}
+	
+		available = {
+		}
+
+		completion_reward = {
 		}
 		
 		bypass = {
@@ -397,19 +1683,19 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_claim_chechnya
-		icon = GFX_CIR_claim_chechnya
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_chechnya
 		cost = 4
 		
 		x = -1
 		y = 1
-		relative_position_id = CIR_east_caucasian_expansion
+		relative_position_id = CIR_the_mountainous_republic
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	
 		prerequisite = {
-			focus = CIR_east_caucasian_expansion
+			focus = CIR_the_mountainous_republic
 		}
 	
 		available = {	
@@ -428,19 +1714,19 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_claim_dagestan
-		icon = GFX_CIR_claim_dagestan
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_claim_dagestan
 		cost = 4
 		
 		x = 1
 		y = 1
-		relative_position_id = CIR_east_caucasian_expansion
+		relative_position_id = CIR_the_mountainous_republic
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	
 		prerequisite = {
-			focus = CIR_east_caucasian_expansion
+			focus = CIR_the_mountainous_republic
 		}
 	
 		available = {	
@@ -459,12 +1745,12 @@ focus_tree = {
 
 	focus = {
 		id = CIR_take_the_east
-		icon = GFX_CIR_take_the_east
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_take_the_east
 		cost = 4
 		
 		x = 0
 		y = 2
-		relative_position_id = CIR_east_caucasian_expansion
+		relative_position_id = CIR_the_mountainous_republic
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -518,11 +1804,11 @@ focus_tree = {
 	
 	focus = {
 		id = CIR_caucasia_secured
-		icon = GFX_CIR_caucasia_secured
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_caucasia_secured
 		cost = 4
 		
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = CIR_caucasian_expansion
 		
 		cancel_if_invalid = yes
@@ -540,6 +1826,149 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.04
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_the_circassian_caucassian_federation
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_the_circassian_caucassian_federation
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_caucasia_secured
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_caucasia_secured
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = CIR_Circassian_Caucasian_Federation 
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_we_are_all_caucasian
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_we_are_all_caucasian
+		cost = 20
+		
+		x = -1
+		y = 1
+		relative_position_id = CIR_the_circassian_caucassian_federation
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_the_circassian_caucassian_federation
+		}
+	
+		available = {	
+		}
+
+		completion_reward = { 
+
+			custom_effect_tooltip = CIR_we_are_all_caucasian_tt
+			hidden_effect = {
+				CIR = {
+					add_state_core = 232
+					add_state_core = 821
+					add_state_core = 231
+					add_state_core = 230
+					add_state_core = 229
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_revenge_on_the_russian_state
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_revenge_on_the_russian_state
+		cost = 20
+		
+		x = 2
+		y = 1
+		relative_position_id = CIR_the_circassian_caucassian_federation
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_the_circassian_caucassian_federation
+		}
+
+		prerequisite = {
+			focus = CIR_the_german_volga_state
+		}
+	
+		available = {	
+		}
+
+		completion_reward = {
+		}
+		
+		bypass = {
+		}
+		
+		ai_will_do = {
+		}
+	}
+	
+	focus = {
+		id = CIR_for_all_that_died
+		icon = GFX_CIR_no_time_grr_shine # = GFX_CIR_revenge_on_the_russian_state
+		cost = 5
+		
+		x = 0
+		y = 1
+		relative_position_id = CIR_revenge_on_the_russian_state
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = CIR_revenge_on_the_russian_state
+		}
+		
+		available = {	
+		}
+
+		completion_reward = {
+			CIR = {
+				declare_war_on = {
+					target = TOM
+					type = annex_everything
+				}
+			}
 		}
 		
 		bypass = {

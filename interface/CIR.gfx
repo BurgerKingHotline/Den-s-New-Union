@@ -23,6 +23,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CIR_inal_the_great.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_idea_CIR_circassian_diaspora"
+		texturefile = "gfx/interface/ideas/CIR_circassian_diaspora.dds"
+	}
+	
 	# Characters
 	
 	spriteType = {
@@ -70,4 +75,412 @@ spriteTypes = {
 		texturefile = "gfx/leaders/CIR/portrait_CIR_bekir_sami_kunduh.dds"
 	}
 	
+	# Goals
+	
+	SpriteType = {
+		name = "GFX_CIR_circassia_reborn"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_circassia_reborn.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_circassia_reborn_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_circassia_reborn.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_circassia_reborn.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_circassia_reborn.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_a_nation_in_flames"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_a_nation_in_flames.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_a_nation_in_flames_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_a_nation_in_flames.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_a_nation_in_flames.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_a_nation_in_flames.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_the_communist_plot"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_the_communist_plot.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_the_communist_plot_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_the_communist_plot.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_the_communist_plot.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_the_communist_plot.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_assassinate_high_communist_figures"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_assassinate_high_communist_figures.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_assassinate_high_communist_figures_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_assassinate_high_communist_figures.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_assassinate_high_communist_figures.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_assassinate_high_communist_figures.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_CIR_infiltrate_the_communist"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_infiltrate_the_communist.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_infiltrate_the_communist_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_infiltrate_the_communist.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_infiltrate_the_communist.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_infiltrate_the_communist.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_ethems_plot"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_ethems_plot.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_ethems_plot_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_ethems_plot.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_ethems_plot.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_ethems_plot.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_gather_more_proof"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_gather_more_proof.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_gather_more_proof_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_gather_more_proof.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_gather_more_proof.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_gather_more_proof.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_raid_his_home"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_raid_his_home.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_raid_his_home_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_raid_his_home.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_raid_his_home.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_raid_his_home.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_ban_the_communist_party"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_ban_the_communist_party.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_ban_the_communist_party_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_ban_the_communist_party.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_ban_the_communist_party.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_ban_the_communist_party.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_a_minority_in_our_own_nation"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_a_minority_in_our_own_nation.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_a_minority_in_our_own_nation_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_a_minority_in_our_own_nation.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_a_minority_in_our_own_nation.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_a_minority_in_our_own_nation.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_CIR_no_time_grr"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_no_time_grr.png"			
+	}
+	SpriteType = {
+		name = "GFX_CIR_no_time_grr_shine"
+		texturefile = "gfx/interface/goals/CIR/focus_CIR_no_time_grr.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_no_time_grr.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIR/focus_CIR_no_time_grr.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 }

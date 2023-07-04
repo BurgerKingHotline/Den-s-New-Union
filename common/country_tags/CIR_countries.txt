@@ -1,1 +1,3 @@
 CIR = "countries/Circassia.txt"
+CUK = "countries/Circassian Ukraine.txt"
+CVO = "countries/Circassian Volga.txt"

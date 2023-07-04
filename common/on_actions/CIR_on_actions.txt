@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CIR = {
+				country_event =  CIR_city_names.1
+			}
+		}
+	}
+}

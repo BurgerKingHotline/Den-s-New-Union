@@ -3,30 +3,30 @@ units= {
 	##### NAVAL UNITS #####
 	
 	fleet = {
-		name = "WIP Normal"			
+		name = "1st Adyghe Sh'ewmona Fleet"			
 		naval_base = 719  # Novorossysk
 		task_force = {
-			name = "WIP"
+			name = "Tekwe Force"
 			location = 719  # Novorossysk
 			
-			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
-			ship = { name = "Chervonaya Ukraina" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
-			ship = { name = "Komintern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }	
+			ship = { name = "Zafir" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
+			ship = { name = "Thambe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
+			ship = { name = "Sozer" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }
+			ship = { name = "Qafnir" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CIR } } }	
 		}
 	}
 	
 	fleet = {
-		name = "WIP Subs"			
+		name = "1st Adyghe K'emynef Fleet"			
 		naval_base = 719  # Novorossysk
 		task_force = {
-			name = "WIP"
+			name = "Wemere Guardians"
 			location = 719  # Novorossysk
 			
-			ship = { name = "Shch-123" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
-			ship = { name = "A-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
-			ship = { name = "A-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
-			ship = { name = "L-5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = CIR } } }			
+			ship = { name = "Ghuniba" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
+			ship = { name = "Xhamish" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
+			ship = { name = "Adama" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CIR } } }			
+			ship = { name = "Kwabza" definition = submarine equipment = { submarine_2 = { amount = 1 owner = CIR } } }			
 		}
 	}
 }

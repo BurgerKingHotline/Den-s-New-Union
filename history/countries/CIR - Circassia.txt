@@ -54,10 +54,11 @@ recruit_character = CIR_aslan_Temirbekov_adnanov
 
 add_ideas = {
 	CIR_inal_the_great
-	CIR_berzegs_legacy
+	CIR_berzegs_legacy_not_buried
 	CIR_circassian_resilience
 	CIR_circassian_pride
 	CIR_horrors_of_the_past
+	CIR_circassian_diaspora
 }
 
 add_opinion_modifier = { 

@@ -8,12 +8,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_completed_focus = CIR_choosing_our_capital
 	}
 
 	option = {
 		name = CIR_choose_capial.1.a
-		custom_effect_tooltip = CIR_choose_Sochi
+		custom_effect_tooltip = CIR_choose_Sochi_tt
 		add_stability = 0.05
 		add_war_support = 0.05
 		add_political_power = 100
@@ -23,9 +22,183 @@ country_event = {
 		set_capital = {
 			state = 234
 			remember_old_capital = yes
-		}
+		}   
 		add_stability = -0.05
 		add_war_support = -0.05
 		add_political_power = 250
+	}
+}
+
+add_namespace = CIR_city_names
+
+country_event = { 
+	id = CIR_city_names.1
+	title = CIR_city_names.1.title
+	desc = CIR_city_names.1.desc
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_city_names.1.a
+		custom_effect_tooltip = CIR_circassian_city_names_tt
+		hidden_effect = { 
+			set_province_name = { id = 3734 name = "Khefypsha"}
+			set_province_name = { id = 719 name = "Cherkeskawe"}
+			set_province_name = { id = 3720 name = "Myeqo"}
+			set_province_name = { id = 9663 name = "Shacha"}
+			set_province_name = { id = 11696 name = "Stewerqhu"}
+			set_province_name = { id = 11614 name = "Nalshyqawe"}
+			set_province_name = { id = 9628 name = "Thylkhew"}
+			set_province_name = { id = 11617 name = "Sukhum"}
+			
+			826 = { set_state_name = "Apsny" }
+			233 = { set_state_name = "Shacha" }
+			909 = { set_state_name = "Adyghe" }
+			234 = { set_state_name = "Khefypsha" }
+			235 = { set_state_name = "Stewerqhu" }
+			827 = { set_state_name = "Keperdey-Balker" }
+			235 = { set_state_name = "Khussar Iryston" }
+			
+			set_country_flag = circassian_names
+		}
+	}
+	option = {
+		name = CIR_city_names.1.b
+		custom_effect_tooltip = CIR_normal_city_names_tt
+	}
+}
+
+add_namespace = CIR_demand_stalingrad
+
+country_event = { 
+	id = CIR_demand_stalingrad.1
+	title = CIR_demand_stalingrad.1.title
+	desc = CIR_demand_stalingrad.1.desc
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_demand_stalingrad.1.a
+		
+		CIR = {
+			country_event = CIR_no.1
+		}
+		
+	}
+}
+
+add_namespace = CIR_no
+
+country_event = { 
+	id = CIR_no.1
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_no.1.a
+		
+		hidden_effect = {
+			set_country_flag = CIR_no_tt
+		}
+		
+	}
+}
+
+add_namespace = CIR_border_conflict
+
+country_event = { 
+	id = CIR_border_conflict.1
+	title = CIR_border_conflict.1.title
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_border_conflict.1.a
+		
+	}
+}
+
+country_event = { 
+	id = CIR_border_conflict.2
+	title = CIR_border_conflict.2.title
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_border_conflict.2.a
+		
+	}
+}
+
+country_event = { 
+	id = CIR_border_conflict.3
+	title = CIR_border_conflict.3.title
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = CIR_border_conflict.3.a
+		
+	}
+}
+
+country_event = { 
+	id = CIR_DEF_border_conflict.1
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+	option = {
+		name = CIR_DEF_border_conflict.1.a
+		
+	}
+}
+country_event = { 
+	id = CIR_DEF_border_conflict.2
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+	option = {
+		name = CIR_DEF_border_conflict.2.a
+		
+	}
+}
+country_event = { 
+	id = CIR_DEF_border_conflict.3
+	
+	picture = GFX_
+	fire_only_once = yes
+
+	trigger = {
+	}
+	option = {
+		name = CIR_DEF_border_conflict.3.a
+		
 	}
 }

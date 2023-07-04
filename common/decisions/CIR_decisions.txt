@@ -1,0 +1,278 @@
+CIR_renaming_cities = {
+
+    CIR_chechnya = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 3672 name = "Gyerwe"}
+			821 = { set_state_name = "Nemekhwe" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+    CIR_dagestan = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 6701 name = "Makhachkale"}
+			232 = { set_state_name = "Deghistan" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+    CIR_georgia = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 1599 name = "Tbilis"}
+			set_province_name = { id = 3653 name = "Batymi"}			
+			231 = { set_state_name = "Gurje" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+    CIR_armenia = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 12320 name = "Erivan"}
+			set_province_name = { id = 12441 name = "Ghemry"}
+			230 = { set_state_name = "Armyn" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+    CIR_azerbaijan = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 11674 name = "Gandzha"}
+			set_province_name = { id = 7661 name = "Bakou"}
+			229 = { set_state_name = "Azarbaydzhen" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+   CIR_stalingrad = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		} 
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 3529 name = "inalmygwe"}
+			217 = { set_state_name = "inalmygwe" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+	
+   CIR_astrakhan = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+            has_completed_focus = CIR_caucasian_expansion
+            CIR = {
+                is_ai = no
+            }
+			CIR = {
+				has_country_flag = circassian_names
+			}
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			set_province_name = { id = 3529 name = "inalmygwe"}
+			217 = { set_state_name = "inalmygwe" }
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+}
+
+CIR_war = {
+
+    CIR_behind_lines_d = { 
+
+        icon = decision_generic_construction
+
+        available = {
+            CIR = {
+                is_ai = no
+            }
+        }
+
+        fire_only_once = yes
+
+        visible = {
+		
+            has_completed_focus = CIR_caucasian_expansion
+			
+            CIR = {
+                is_ai = no
+            }
+		}
+
+        cost = 10
+
+        complete_effect = { 
+			load_oob = "CIR_behind_lines"
+        }
+
+        ai_will_do = {
+            factor = 30
+        }
+    }
+}
