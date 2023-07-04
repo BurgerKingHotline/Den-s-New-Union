@@ -74,3 +74,78 @@ RES = {
 	color = rgb { 50 135 165 }
 	color_ui = rgb { 50 135 165 }
 }
+XUK = {
+    color = { 22 32 38 }
+    color_ui = { 21 36 21 }
+}
+
+XLI = {
+    color = { 25 32 23 }
+    color_ui = { 36 27 34 }
+}
+
+XFI = {
+    color = { 16 35 23 }
+    color_ui = { 11 20 37 }
+}
+
+XMU = {
+    color = { 17 34 10 }
+    color_ui = { 15 30 21 }
+}
+
+XKO = {
+    color = { 35 26 11 }
+    color_ui = { 34 22 38 }
+}
+
+XVO = {
+    color = { 34 22 22 }
+    color_ui = { 23 38 38 }
+}
+
+XKU = {
+    color = { 10 31 20 }
+    color_ui = { 12 16 35 }
+}
+
+XCA = {
+    color = { 34 22 17 }
+    color_ui = { 40 30 16 }
+}
+
+XUR = {
+    color = { 40 15 37 }
+    color_ui = { 12 38 13 }
+}
+
+XQA = {
+    color = { 37 16 26 }
+    color_ui = { 24 17 22 }
+}
+
+XTU = {
+    color = { 38 35 18 }
+    color_ui = { 21 19 15 }
+}
+
+XSI = {
+    color = { 32 13 17 }
+    color_ui = { 20 35 22 }
+}
+
+XMO = {
+    color = { 40 38 15 }
+    color_ui = { 22 34 16 }
+}
+
+XFE = {
+    color = { 24 37 23 }
+    color_ui = { 34 20 16 }
+}
+
+XMA = {
+    color = { 13 18 17 }
+    color_ui = { 34 12 27 }
+}
+

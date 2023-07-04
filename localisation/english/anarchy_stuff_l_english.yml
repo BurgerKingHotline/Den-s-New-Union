@@ -1,0 +1,76 @@
+l_english:
+# Ukraine
+ XUK: "Ukrainian anarchy"
+ XUK_DEF: "the Ukrainian anarchy"
+ XUK_ADJ: "Ukrainian"
+ 
+# Litvin
+ XLI: "Litvin anarchy"
+ XLI_DEF: "the Litvin anarchy"
+ XLI_ADJ: "Litvin"
+ 
+# Finnsland
+ XFI: "Finnic anarchy"
+ XFI_DEF: "the Finnic anarchy"
+ XFI_ADJ: "Finnic"
+ 
+# Muscovy
+ XMU: "Muscovian anarchy"
+ XMU_DEF: "the Muscovian anarchy"
+ XMU_ADJ: "Muscovian"
+ 
+# Komi
+ XKO: "Komi anarchy"
+ XKO_DEF: "the Komi anarchy"
+ XKO_ADJ: "Komi"
+ 
+# the Volga
+ XVO: "Volga anarchy"
+ XVO_DEF: "the Volga anarchy"
+ XVO_ADJ: "Volga"
+ 
+# the Kuban
+ XKU: "Kuban anarchy"
+ XKU_DEF: "the Kuban anarchy"
+ XKU_ADJ: "Kuban"
+ 
+# Caucasus
+ XCA: "Caucasian anarchy"
+ XCA_DEF: "the Caucasian anarchy"
+ XCA_ADJ: "Caucasian"
+ 
+# Urheimat
+ XUR: "Uralic anarchy"
+ XUR_DEF: "the Uralic anarchy"
+ XUR_ADJ: "Uralic"
+ 
+# Qazaqstan
+ XQA: "Qazaq anarchy"
+ XQA_DEF: "the Qazaq anarchy"
+ XQA_ADJ: "Qazaq"
+ 
+# Turan
+ XTU: "Turanic anarchy"
+ XTU_DEF: "the Turanic anarchy"
+ XTU_ADJ: "Turanic"
+ 
+# Sinkiang
+ XSI: "Sinkiang anarchy"
+ XSI_DEF: "the Sinkiang anarchy"
+ XSI_ADJ: "Sinkiang"
+ 
+# Mongols
+ XMO: "Mongol anarchy"
+ XMO_DEF: "the Mongol anarchy"
+ XMO_ADJ: "Mongol"
+ 
+# the Far East
+ XFE: "Far East anarchy"
+ XFE_DEF: "the Far East anarchy"
+ XFE_ADJ: "Far East"
+ 
+# Manchuria
+ XMA: "Manchu anarchy"
+ XMA_DEF: "the Manchu anarchy"
+ XMA_ADJ: "Manchu"
+ 
