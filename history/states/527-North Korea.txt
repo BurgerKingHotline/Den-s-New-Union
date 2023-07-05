@@ -9,7 +9,7 @@ state={
 		tungsten=28 # was: 52
 	}
 
-	history={
+	history={ owner = XMA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

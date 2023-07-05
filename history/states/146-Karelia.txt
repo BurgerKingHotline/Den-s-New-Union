@@ -4,7 +4,7 @@ state={
 
 	state_category = town
 
-	history={
+	history={ owner = XFI
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2

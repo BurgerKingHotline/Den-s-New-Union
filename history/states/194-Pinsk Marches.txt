@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 2
 			air_base = 3
 		}

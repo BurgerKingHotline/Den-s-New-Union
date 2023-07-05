@@ -2,7 +2,7 @@ state={
 	id=714
 	name="STATE_714"
 
-	history={
+	history={ owner = XMA
 		buildings = {
 			infrastructure = 2
 

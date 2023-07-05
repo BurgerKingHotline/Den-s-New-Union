@@ -2,7 +2,7 @@ state = {
 	id = 876 
 	name = "STATE_876" #Udachny
 
-	history = {
+	history = { owner = XTU
 		victory_points = {
 			6085 1 
 		}

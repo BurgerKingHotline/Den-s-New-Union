@@ -6,7 +6,7 @@ state={
 	
 	state_category = rural
 
-	history={
+	history={ owner = XFI
 		buildings = {
 			infrastructure = 3 #was: 5
 		}

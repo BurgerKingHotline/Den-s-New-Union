@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			3255 1 #Jekabpils
 		}
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
@@ -27,6 +27,6 @@ state={
 		222 310 319 341 3298 6459 7482 9275 11222 
 	}
 	manpower=600250
-	buildings_max_level_factor=1.000
+	owner = XLI add_core_of = XLI buildings_max_level_factor=1.000
 	state_category=town
 }

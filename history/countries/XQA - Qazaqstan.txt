@@ -1,2 +1,2 @@
-capital = 1
+capital = 881
 anarchy_tag_setup = yes

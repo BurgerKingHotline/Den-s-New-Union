@@ -5,7 +5,7 @@ state={
 		chromium=15.000
 	}
 
-	history={
+	history={ owner = XQA
 		victory_points = {
 			7341 1
 		}

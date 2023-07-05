@@ -6,7 +6,7 @@ state={
 		victory_points = {
 			9304 1
 		}
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 3
 			air_base = 3
 
@@ -17,7 +17,7 @@ state={
 		318 3281 3366 3393 6359 6413 9236 9304 9359 11341 13206 
 	}
 	manpower=1598900
-	buildings_max_level_factor=1.000
+	owner = XLI add_core_of = XLI buildings_max_level_factor=1.000
 	state_category=rural
 
 	local_supplies=6.0 

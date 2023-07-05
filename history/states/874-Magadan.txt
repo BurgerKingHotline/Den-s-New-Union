@@ -5,7 +5,7 @@ state = {
 	manpower = 63481
 	state_category = pastoral
 	
-	history = {
+	history = { owner = XFE
 		victory_points = { 
 			12683 1 
 		}

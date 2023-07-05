@@ -6,7 +6,7 @@ state=
 	
 	state_category = town
 	
-	history= {
+	history= { history = XUK add_core_of = XUK
 		victory_points = {
 			3707 1
 		}

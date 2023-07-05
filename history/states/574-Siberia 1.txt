@@ -6,7 +6,7 @@ state = {
 	
 	state_category = pastoral
 
-	history={
+	history={ owner = XFE
 		victory_points = {
 			10641 1
 		}

@@ -9,7 +9,7 @@ state = {
 		steel=18 # was: 24
 	}
 
-	history={
+	history={ owner = XMA
 		buildings = {
 			infrastructure = 2
 		}

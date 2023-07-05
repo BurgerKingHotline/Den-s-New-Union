@@ -9,7 +9,7 @@ state={
 		steel=14 # was: 20
 	}
 
-	history={
+	history={ owner = XVO
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

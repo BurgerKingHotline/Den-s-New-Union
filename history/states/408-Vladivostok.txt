@@ -9,7 +9,7 @@ state = {
 	
 	state_category = town
 
-	history={
+	history={ owner = XMA
 		victory_points = {
 			957 15
 		}

@@ -9,7 +9,7 @@ state={
 		steel=16 # was: 28
 	}
 
-	history={
+	history={ owner = XMU
 		victory_points = {
 			6380 50 
 		}

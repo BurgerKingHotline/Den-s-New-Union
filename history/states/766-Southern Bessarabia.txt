@@ -6,7 +6,7 @@ state=
 	
 	state_category = rural
 	
-	history= {
+	history= { history = XUK add_core_of = XUK
 		victory_points = {
 			6727 1
 		}

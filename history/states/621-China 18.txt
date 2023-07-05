@@ -2,7 +2,7 @@ state={
 	id=621
 	name="STATE_621"
 
-	history={
+	history={ owner = XMO
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

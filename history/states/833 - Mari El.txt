@@ -6,7 +6,7 @@ state = {
 	
 	state_category = town
 
-	history = {
+	history = { owner = XVO
 		victory_points = {
 			9402 1 
 		}

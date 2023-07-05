@@ -10,7 +10,7 @@ state={
 		steel=7 # was: 8
 		chromium=2 # was: 2
 	}
-	history={
+	history={ owner = XFI
 		buildings = {
 			infrastructure = 1
 		}

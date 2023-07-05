@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 
-	history={
+	history={ owner = XKU
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1

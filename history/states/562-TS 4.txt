@@ -5,7 +5,7 @@ state = {
 	manpower = 63480
 	state_category = pastoral
 
-	history = {
+	history = { owner = XFE
 		buildings = {
 			infrastructure = 1
 		}

@@ -13,7 +13,7 @@ state={
 		victory_points = {
 			11349 1
 		}
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 3 #was: 5
 		}
 		}

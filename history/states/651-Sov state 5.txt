@@ -6,8 +6,8 @@ state = {
 
 	state_category = city
 
-	history = {
-		buildings = {
+	history = { owner = XVO
+		buildings = { 
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
 

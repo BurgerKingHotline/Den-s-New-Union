@@ -3,7 +3,7 @@ state={
 	name="STATE_94"
 
 	history={
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 2
 
 		}
@@ -19,7 +19,7 @@ state={
 		535 560 3256 3309 3392 3496 3556 6280 6306 6415 6546 6579 9520 11285 11503 11528 
 	}
 	manpower=1232200
-	buildings_max_level_factor=1.000
+	owner = XLI add_core_of = XLI buildings_max_level_factor=1.000
 	state_category=rural
 
 	local_supplies=0.0 

@@ -13,7 +13,7 @@ state={
 		victory_points = {
 			6314 1
 		}
-		buildings = {
+		owner = XLI add_core_of = XLI buildings = {
 			infrastructure = 3 #was: 5
 			6314 = {
 				naval_base = 1
@@ -29,6 +29,6 @@ state={
 
 	local_supplies=0.0 
 	manpower=697100
-	buildings_max_level_factor=1.000
+	owner = XLI add_core_of = XLI buildings_max_level_factor=1.000
 	state_category=town
 }

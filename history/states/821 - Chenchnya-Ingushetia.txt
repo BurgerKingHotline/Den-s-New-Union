@@ -10,7 +10,7 @@ state = {
 		oil = 9 # was split from Dagestan which had 19 oil, and retained 10
 	}
 
-	history = {
+	history = { owner = XCA
 		buildings = {
 			infrastructure = 2
 		}

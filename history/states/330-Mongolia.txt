@@ -7,7 +7,7 @@ state={
 		chromium=3.000
 	}
 
-	history={
+	history={ owner = XMO
 		victory_points = {
 			4801 10
 		}

@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 
-	history={
+	history={ owner = XMA
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

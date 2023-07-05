@@ -2,7 +2,7 @@ state = {
 	id = 877
 	name = "STATE_877" # Verkhoyansk
 
-	history = {
+	history = { owner = XFE
 		victory_points = {
 			12549 1 
 		}

@@ -9,7 +9,7 @@ state={
 		chromium=23 # was: 32
 	}
 
-	history={
+	history={ owner = XVO
 		victory_points = {
 			10329 1
 		}

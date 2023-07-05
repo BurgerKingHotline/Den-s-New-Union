@@ -11,7 +11,7 @@ state = {
 		tungsten = 10 # was: 34, then 16 but split
 	}
 
-	history = {
+	history = { owner = XKU
 		buildings = {
 			infrastructure = 2
 		}

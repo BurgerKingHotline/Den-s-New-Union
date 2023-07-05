@@ -6,7 +6,7 @@ state={
 	
 	state_category = rural
 
-	history={
+	history={ owner = XCA
 		victory_points = {
 			7969 5
 		}

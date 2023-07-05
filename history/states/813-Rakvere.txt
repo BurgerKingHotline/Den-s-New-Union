@@ -3,7 +3,7 @@ state={
 	id=813
 	name="STATE_813"
 
-	history={
+	history={ owner = XFI
 		victory_points = {
 			4640 1 #Narva
 		}

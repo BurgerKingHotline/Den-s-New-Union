@@ -11,4 +11,9 @@ anarchy_tag_setup = {
 		name = "Anarchy"
 		ideology = anarchism
 	}
+	every_owned_state = {
+		PREV = {
+			add_core_of = PREV
+		}
+	}
 }
